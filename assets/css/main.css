@@ -1,70 +1,114 @@
-@media only screen and (min-width: 801px) {
-    body {
-        background-color: #ddf5f9;
-        font-family: 'Raleway', sans-serif;
-    }
+body {
+    background-color: #ddf5f9;
+    font-family: 'Raleway', sans-serif;
+}
 
-    header {
-        color: #03599C;
-        height: auto;
-        border: 4px solid #03599C;
-        padding: 20px 0;
-    }
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 30px 10px;
+    column-gap: 30px;
+}
 
-    article {
-        padding: 20px;
-        border: 1px solid black;
-    }
-
-    aside {
-        border: 1px solid black;
-    }
-
-    .center {
-        text-align: center;
-    }
-
+/* phone */
+@media only screen and (max-width: 720px) {
     .main-wrapper {
-        display: grid;
-        grid-template-columns: 5fr 1fr;
-        margin: 30px 10px;
-        column-gap: 30px;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
     }
+}
 
-    .personal-icon {
-        background-color: none;
-        display: block;
-        margin: 1vw auto;
-        width: 10vw;
-        height: 10vw;
-        object-fit: cover;
-        object-position: center;
-        border: none;
-        border-radius: 100px;
-    }
+header {
+    color: #03599C;
+    height: auto;
+    border: 4px solid #03599C;
+    padding: 20px 0;
+}
 
-    .owner-name {
-        display: block;
-        text-align: center;
-        font-size: 1.2vw;
-        font-weight: bold;
-    }
+article {
+    padding: 20px;
+    border: 1px solid black;
+}
 
-    .social-icon-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+aside {
+    border: 1px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+.sidebar-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    margin: 0 1.5vw;
+}
+
+/* phone */
+@media only screen and (max-width: 720px) {
+    .sidebar-wrapper {
+        grid-template-columns: 1fr 2fr;
         column-gap: 10px;
+        row-gap: 0;
+        padding: 1.2vw 1.5vw;
         margin: 0 1.5vw;
+        align-items: center;
     }
+}
 
+.personal-icon {
+    display: block;
+    margin: 1vw auto;
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 7.5vw;
+    margin-bottom: 20px;
+}
+
+/* phone */
+@media only screen and (max-width: 720px) {
+    .personal-icon {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 15vw;
+        margin-bottom: 0;
+    }
+}
+
+.owner-name {
+    display: block;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.social-icon-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 1.2vw 3vw;
+    margin: 0 3vw;
+}
+
+.social-icon-a {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* phone */
+@media only screen and (max-width: 720px) {
     .social-icon-a {
-        width: 2vw;
-        height: 2vw;
-        margin: 0 auto;
-        cursor: pointer;
+        width: 75%;
+        height: 75%;
     }
+}
 
-    .social-icon {
-        pointer-events: none;
-    }
+.social-icon {
+    pointer-events: none;
 }
