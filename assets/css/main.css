@@ -19,9 +19,9 @@ body {
 }
 
 header {
-    color: #03599C;
+    color: rgb(3, 89, 156);
     height: auto;
-    border: 4px solid #03599C;
+    border: 4px solid rgb(3, 89, 156);
     padding: 20px 0;
 }
 
