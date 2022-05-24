@@ -21,6 +21,30 @@
 
     <!--phone resolution-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--katex-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"
+        integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"
+        integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4"
+        crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"
+        integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+    <script type="module">
+        import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.mjs";
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false }
+            ]
+        });
+    </script>
 </head>
 
 <body>
@@ -32,7 +56,14 @@
             </header>
             <br>
             <article>
-                <p>Sorry, nothing here now...</p>
+                <p class="maf-eq">
+                    The following is black magic!
+                    $$\int\frac{dx}{x^{\frac{q}{p}}+1}$$
+
+                    $$=p\int
+                    \textbf{Q}\left[\frac{u^{p-1}}{u^q+1}\right]\left(x^{\frac{1}{p}}\right)dx+\frac{p}{q}\sum_{\omega^q+1=0}\textbf{R}\left[\frac{u^{p-1}}{u^q+1}\right]\left(\omega\right)\frac{\ln\left(x^{\frac{1}{p}}-\omega\right)}{\omega^{q-1}\
+                    }+C$$
+                </p>
             </article>
         </main>
 

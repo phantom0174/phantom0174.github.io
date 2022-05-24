@@ -86,6 +86,13 @@ aside {
     font-weight: bold;
 }
 
+/* phone */
+@media only screen and (max-width: 720px) {
+    .owner-name {
+        display: none;
+    }
+}
+
 .social-icon-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -111,4 +118,11 @@ aside {
 
 .social-icon {
     pointer-events: none;
+}
+
+.maf-eq {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
