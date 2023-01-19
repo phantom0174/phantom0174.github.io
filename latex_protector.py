@@ -3,8 +3,8 @@ import os
 
 # must ends with '/'
 ENTRIES_TO_PROTECT_UNDER_SOURCE_FOLDER = [
-    './about/',
-    './_posts/'
+    'about/',
+    '_posts/'
 ]
 
 
@@ -59,4 +59,4 @@ def traverse_folder(root_path):
 
 
 for entry in ENTRIES_TO_PROTECT_UNDER_SOURCE_FOLDER:
-    traverse_folder(entry)
+    traverse_folder(f'./source/{entry}')
