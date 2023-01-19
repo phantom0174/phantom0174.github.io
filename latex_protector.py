@@ -72,4 +72,4 @@ def traverse_folder(root_path):
 for entry in ENTRIES_TO_PROTECT_UNDER_SOURCE_FOLDER:
     traverse_folder(f'./source/{entry}')
 
-print(f'\033[1;32m[LaTeX Protector] Protected {protected_count} files.\033[0m')
+print(f'\033[1;32m[LaTeX Protector] Protected {protected_count} files.\033[0m\n')
