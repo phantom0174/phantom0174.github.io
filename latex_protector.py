@@ -7,6 +7,7 @@ ENTRIES_TO_PROTECT_UNDER_SOURCE_FOLDER = [
     '_posts/'
 ]
 
+SKIP_SYNTAX = "<!--skip_lp-->"
 
 def protect_md_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -14,9 +15,27 @@ def protect_md_file(file_path):
 
     new = []
 
+    """
+    status
+        i: need to find initiate
+        e: need to find ending
+        s: being skipped, toggle:
+            i -> s -> i
+    """
+
     status = "i"
     for (i, line) in enumerate(content):
-        if status == "i" and line.startswith("$$") and line.endswith("$$") and len(line) > 2:
+        # custom skipping mark
+        if status == "i" and line.startswith(SKIP_SYNTAX):
+            new.append(SKIP_SYNTAX)
+            status = "s"
+        
+        elif status == "s" and line.startswith(SKIP_SYNTAX):
+            new.append(SKIP_SYNTAX)
+            status = "i"
+        
+        # start and end on the same line
+        elif status == "i" and line.startswith("$$") and line.endswith("$$") and len(line) > 4:
             if not content[i-1].startswith("<p>"):
                 new.append("<p>")
             
@@ -24,7 +43,8 @@ def protect_md_file(file_path):
             
             if not content[i+1].startswith("</p>"):
                 new.append("</p>")
-            
+        
+        # start on one line
         elif status == "i" and line.startswith("$$"):
             if not content[i-1].startswith("<p>"):
                 new.append("<p>")
@@ -32,6 +52,7 @@ def protect_md_file(file_path):
             new.append(line)
             status = "e"
         
+        # end on one line
         elif status == "e" and line.endswith("$$"):
             new.append(line)
             
