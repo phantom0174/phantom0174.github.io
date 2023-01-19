@@ -7,77 +7,69 @@ ENTRIES_TO_PROTECT_UNDER_SOURCE_FOLDER = [
     '_posts/'
 ]
 
-SKIP_SYNTAX = "<!--skip_lp-->"
+SKIP_ALL_SYNTAX = "<!--lp:skip-all-->"
+SKIP_SOME_SYNTAX = "<!--lp:skip-some-->"
 
-def protect_md_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        content: list[str] = file.read().split('\n')
+protected_count = 0
 
-    new = []
+def protect(file_path):
+    global protected_count
 
-    """
-    status
-        i: need to find initiate
-        e: need to find ending
-        s: being skipped, toggle:
-            i -> s -> i
-    """
+    state = "N"
+    content = []
 
-    status = "i"
+    # [index, context]
+    insert_cmd = []
+
+    with open(file_path, 'r', encoding='utf-8') as i_file:
+        content = i_file.read().split('\n')
+
     for (i, line) in enumerate(content):
-        # custom skipping mark
-        if status == "i" and line.startswith(SKIP_SYNTAX):
-            new.append(SKIP_SYNTAX)
-            status = "s"
-        
-        elif status == "s" and line.startswith(SKIP_SYNTAX):
-            new.append(SKIP_SYNTAX)
-            status = "i"
-        
-        # start and end on the same line
-        elif status == "i" and line.startswith("$$") and line.endswith("$$") and len(line) > 4:
-            if not content[i-1].startswith("<p>"):
-                new.append("<p>")
-            
-            new.append(line)
-            
-            if not content[i+1].startswith("</p>"):
-                new.append("</p>")
-        
-        # start on one line
-        elif status == "i" and line.startswith("$$"):
-            if not content[i-1].startswith("<p>"):
-                new.append("<p>")
-            
-            new.append(line)
-            status = "e"
-        
-        # end on one line
-        elif status == "e" and line.endswith("$$"):
-            new.append(line)
-            
-            if not content[i+1].startswith("</p>"):
-                new.append("</p>")
-            
-            status = 'i'
-        
-        else:
-            new.append(line)
+        if state == "N":
+            if line.startswith("$$"):
+                state = "S"
+                
+                if not content[i - 1].startswith("<p>"):
+                    insert_cmd.append([i, "<p>"])
 
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write('\n'.join(new))
+                if not (line.endswith("$$") and len(line) > 4):
+                    continue
+                
+            elif line.startswith(SKIP_SOME_SYNTAX):
+                state = "I"
+            elif line.startswith(SKIP_ALL_SYNTAX):
+                return
+
+        if state == "S" and line.endswith("$$"):
+            state = "N"
+            
+            if (i + 1) >= len(content) or not content[i + 1].startswith("</p>"):
+                insert_cmd.append([i + 1, "</p>"])
+
+        if state == "I" and line.startswith(SKIP_SOME_SYNTAX):
+            state = "N"
+
+    insert_cmd.reverse()
+
+    for cmd in insert_cmd:
+        content.insert(cmd[0], cmd[1])
+
+    with open(file_path, 'w', encoding='utf-8') as o_file:
+        o_file.write('\n'.join(content))
 
     print(f'[Protected] {file_path}')
+    protected_count += 1
 
 
 # root_path ended with '/'
 def traverse_folder(root_path):
     for filename in os.listdir(root_path):
         if filename.endswith('.md'):
-            protect_md_file(f'{root_path}{filename}')
+            protect(f'{root_path}{filename}')
         elif filename.find('.') == -1:
             traverse_folder(f'{root_path}{filename}/')
 
-
 for entry in ENTRIES_TO_PROTECT_UNDER_SOURCE_FOLDER:
     traverse_folder(f'./source/{entry}')
+
+print(f'\033[1;32m[LaTeX Protector] Protected {protected_count} files.\033[0m')
