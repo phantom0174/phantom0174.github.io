@@ -8,13 +8,15 @@
     <link href="/2023/01/latex-protector/"/>
     <url>/2023/01/latex-protector/</url>
     
-    <content type="html"><![CDATA[<!--lp:skip-all--><h2 id="前言">前言</h2><p>上篇內容，是有關於怎麼輕量型渲染 hexo-posts 中的 LaTeX (KaTeX) 語法。</p><p>在<a href="https://phantom0174.github.io/2023/01/lightweight_hexo_latex_rendering/#%E5%AF%A6%E4%BD%9C%E9%81%8E%E7%A8%8B">某個段落中</a>，筆者放了一個簡易版的 <code>latex-protector.py</code> 程式碼，但這短短的程式碼顯然不具有任何語法檢查功能，跑起來效能也很差。</p><p>所以筆者用另一個邏輯重新寫了 <code>latex-protector</code> 並將其打包起來，相比舊程式有著以下 <strong>4 大特點</strong>：</p><ol><li>支持語法檢查</li><li>可插入 <strong>忽略部分區塊</strong> 或 <strong>忽略全部內容</strong> 的語法</li><li>過程快速</li><li>輸出美化</li></ol><h2 id="所以我說那個程式碼呢">所以我說那個程式碼呢</h2><p>請見此 <a href="https://github.com/phantom0174/latex-protector">Github Repo.</a>。</p><h2 id="名詞定義">名詞定義</h2><p>先提一下奇怪的名詞</p><blockquote><p>p.s. 因為 characteristics 太長了，縮寫又會變成 <code>char</code>，所以乾脆把數學中的 <code>eigen</code> 前綴借來用 owo。</p></blockquote><ul><li><code>$$</code> 稱為 特徵字串（eigenstring）</li><li>特徵區塊（eigenblock）是由一個前導 <code>$$</code> 與後導 <code>$$</code> 封閉起來的區塊，兩兩為一對，稱為 特徵對（eigenpair）。</li></ul><h2 id="實作邏輯">實作邏輯</h2><p>整體分為5大部分，括弧中為在程式碼中用的代號。</p><ol><li><p>特徵化（<code>eigenize</code>）<br>將 md 檔案內容讀入，並將每一行中有多少 eigenstring 記錄下來；同時將 <strong>忽略語法</strong> 編碼為 <code>-1</code>。<br>此過程得到的東西稱為特徵資訊（<code>eigeninfo</code>）</p></li><li><p>忽略自訂區塊（<code>ignore_eigeninfo</code>）<br>將使用者以 <strong>忽略語法</strong> 包起來的區塊從 eigeninfo 中移除。<br>同時檢查忽略語法有沒有成雙成對。</p></li><li><p>檢查特徵語法（<code>check_eigen_info</code>）<br>特徵語法有可能會出錯，像是：</p><ol><li>同行中出現超過兩個 eigenstring</li><li>檔案中 eigenstring 的數目為奇數，也就是至少有一個 eigenpair 出問題了。</li></ol></li><li><p>檢查特徵區塊（<code>check_eigen_block</code>）<br>檢查一個 eigenpair 中間是否有被 <strong>單行eigenpair</strong>（一行中有兩個 eigenstring）擋住。</p></li><li><p>取得插入位置與標記（<code>get_insertion_cmd</code>）<br>從 eigeninfo 中最後決定要在哪裡插入 <code>&lt;p&gt;</code>；哪裡插入 <code>&lt;/p&gt;</code>，並將行數與要插入的字串回傳。</p></li></ol><h2 id="後言">後言</h2><p>總之用起來就是又快又開心 \^~^/。</p><p>然後因為筆者程式超爛，所以有出 bug 的話請直接發 issues，有時間的話會來修。</p>]]></content>
+    <content type="html"><![CDATA[<!--lp:skip-all--><h2 id="前言">前言</h2><p>上篇內容，是有關於怎麼輕量型渲染 hexo-posts 中的 LaTeX (KaTeX) 語法。</p><p>在<a href="https://phantom0174.github.io/2023/01/lightweight_hexo_latex_rendering/#%E5%AF%A6%E4%BD%9C%E9%81%8E%E7%A8%8B">某個段落中</a>，筆者放了一個簡易版的 <code>latex-protector.py</code> 程式碼，但這短短的程式碼顯然不具有任何語法檢查功能，跑起來效能也很差。</p><p>所以筆者用另一個邏輯重新寫了 <code>latex-protector</code> 並將其打包起來，相比舊程式有著以下 <strong>4 大特點</strong>：</p><ol><li>支持語法檢查</li><li>可插入 <strong>忽略部分區塊</strong> 或 <strong>忽略全部內容</strong> 的語法</li><li>過程快速</li><li>輸出美化</li></ol><h2 id="所以說那個程式碼呢">所以說那個程式碼呢</h2><p>請見此 <a href="https://github.com/phantom0174/latex-protector">Github Repo.</a>。</p><h2 id="名詞定義">名詞定義</h2><p>先提一下奇怪的名詞</p><blockquote><p>p.s. 因為 characteristics 太長了，縮寫又會變成 <code>char</code>，所以乾脆把數學中的 <code>eigen</code> 前綴借來用 owo。</p></blockquote><ul><li><code>$$</code> 稱為 特徵字串（eigenstring）</li><li>特徵區塊（eigenblock）是由一個前導 <code>$$</code> 與後導 <code>$$</code> 封閉起來的區塊，兩兩為一對，稱為 特徵對（eigenpair）。</li></ul><h2 id="實作邏輯">實作邏輯</h2><p>整體分為5大部分，括弧中為在程式碼中用的代號。</p><ol><li><p>特徵化（<code>eigenize</code>）<br>將 md 檔案內容讀入，並將每一行中有多少 eigenstring 記錄下來；同時將 <strong>忽略語法</strong> 編碼為 <code>-1</code>。<br>此過程得到的東西稱為特徵資訊（<code>eigeninfo</code>）</p></li><li><p>忽略自訂區塊（<code>ignore_eigeninfo</code>）<br>將使用者以 <strong>忽略語法</strong> 包起來的區塊從 eigeninfo 中移除。<br>同時檢查忽略語法有沒有成雙成對。</p></li><li><p>檢查特徵語法（<code>check_eigen_info</code>）<br>特徵語法有可能會出錯，像是：</p><ol><li>同行中出現超過兩個 eigenstring</li><li>檔案中 eigenstring 的數目為奇數，也就是至少有一個 eigenpair 出問題了。</li></ol></li><li><p>檢查特徵區塊（<code>check_eigen_block</code>）<br>檢查一個 eigenpair 中間是否有被 <strong>單行eigenpair</strong>（一行中有兩個 eigenstring）擋住。</p></li><li><p>取得插入位置與標記（<code>get_insertion_cmd</code>）<br>從 eigeninfo 中最後決定要在哪裡插入 <code>&lt;p&gt;</code>；哪裡插入 <code>&lt;/p&gt;</code>，並將行數與要插入的字串回傳。</p></li></ol><h2 id="後言">後言</h2><p>總之用起來就是又快又開心 \^~^/。</p><p>然後因為筆者程式超爛，所以有出 bug 的話請直接發 issues，有時間的話會來修。</p><hr><p>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Winkler</a> on <a href="https://unsplash.com/photos/3LVhSjCXRKc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>.</p>]]></content>
     
     
     
     <tags>
       
-      <tag>program - mafs</tag>
+      <tag>program</tag>
+      
+      <tag>mafs</tag>
       
     </tags>
     
@@ -52,9 +54,9 @@
     
     <tags>
       
-      <tag>mafs</tag>
-      
       <tag>program</tag>
+      
+      <tag>mafs</tag>
       
     </tags>
     
