@@ -6,6 +6,7 @@ updated: 2023-01-28 17:43:00
 index_img: /assets/cover/lightweight_hexo_latex_rendering.webp
 banner_img: /assets/cover/lightweight_hexo_latex_rendering.webp
 tags:
+    - hexo
     - program
     - mafs
 ---

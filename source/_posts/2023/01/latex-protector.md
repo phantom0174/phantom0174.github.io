@@ -7,6 +7,7 @@ index_img: /assets/cover/latex-protector-cover.webp
 banner_img: /assets/banner/latex-protector-banner.webp
 tags:
     - program
+    - hexo
     - mafs
 ---
 

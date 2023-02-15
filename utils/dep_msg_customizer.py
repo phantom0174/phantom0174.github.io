@@ -24,14 +24,7 @@ def save_file():
 
 load_file()
 
-msg_refine = ""
-if len(sys.argv) > 1 and sys.argv[1]:
-    msg_refine = sys.argv[1]
-else:
-    msg_refine = None
-
-
-config_file["deploy"]["message"] = msg_refine
+config_file["deploy"]["message"] = sys.argv[1] if len(sys.argv) > 1 else None
 save_file()
 
 

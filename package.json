@@ -1,6 +1,6 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "quantamis-realm",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "pl": "python ./utils/latex_protector.py",
