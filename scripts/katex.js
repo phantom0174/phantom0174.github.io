@@ -2,7 +2,8 @@ const inject_code = `
 <style>
     .katex>.katex-html {
         white-space: nowrap;
-        overflow: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
     }
 </style>
 
@@ -12,13 +13,10 @@ const inject_code = `
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
-            // customized options
-            // • auto-render specific keys, e.g.:
             delimiters: [
                 {left: '$$', right: '$$', display: true},
                 {left: '$', right: '$', display: false}
             ],
-            // • rendering keys, e.g.:
             throwOnError: false
         });
     });
