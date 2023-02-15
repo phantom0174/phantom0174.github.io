@@ -42,13 +42,6 @@ page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
               <%- inject_point('postMarkdownEnd') %>
             <% } else { %>
               <div class="markdown-body">
-                <!---- TOC INSERT CODE  --->
-                <p class="toc-title">Contents</p>
-                <%- toc(page.content, {
-                  list_number: false,
-                  max_depth: 3
-                }) %>
-                <!---- TOC INSERT CODE  --->
                 <%- inject_point('postMarkdownBegin') %>
                 <%- page.content %>
                 <%- inject_point('postMarkdownEnd') %>
@@ -85,8 +78,6 @@ page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
                 </div>
               <% } %>
             </div>
-            <div id="disqus_recommendations"></div>
-
             <%- inject_point('postComments') %>
           </article>
         </div>

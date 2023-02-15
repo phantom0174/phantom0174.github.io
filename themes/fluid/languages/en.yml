@@ -33,6 +33,7 @@ links:
   title: 'Links'
   subtitle: 'Links'
 
+# CUSTOMIZED
 page404:
   menu: 'Page not found'
   title: '404'
