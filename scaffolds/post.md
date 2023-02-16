@@ -7,7 +7,7 @@ banner_img: ""
 tags: 
     - mafs
     - program
-    - life
+    - hexo
 ---
 
 <!--Remove "@" before use-->
