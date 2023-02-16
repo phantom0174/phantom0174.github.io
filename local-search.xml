@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Blog 設定公開</title>
+    <link href="/2023/02/blog-config-reveal/"/>
+    <url>/2023/02/blog-config-reveal/</url>
+    
+    <content type="html"><![CDATA[<!--lp:skip-all--><h2 id="前言">前言</h2><p>筆者開始用 hexo 作為部落格生成器之後，常常遇到想要但沒有的功能；也找不到類似的 plugins，所以只能自己來弄。筆者大多都在研究數學&amp;程式，所以做的修改大多都是有助於撰寫這方面的東西。</p><p>大部分功能的實現是依賴 hexo 本身的注入器與 fluid 主題的增強注入器。</p><blockquote><p><a href="https://fluid-dev.github.io/hexo-fluid-docs/advance/">注入器 Documentation</a></p></blockquote><h2 id="本文">本文</h2><h3 id="修改了什麼">修改了什麼</h3><p>以下為主要增強點：</p><ol><li><p>數學式渲染（KaTeX）</p><blockquote><p>必需的吧 OwO，沒有這個就甚麼都做不了惹。</p></blockquote></li><li><p>文章推薦（disqus recommendations)</p></li><li><p>動態背景（canvas-nest.js）</p></li><li><p>自動生成 Table Of Contents</p><blockquote><p>筆者覺得 hexo fluid 本身的側欄 toc 不太好用</p></blockquote></li><li><p>客製化字體</p><blockquote><p>英文：PT Serif, 中文：Noto Serif TC, 程式語法：Fira Code</p></blockquote></li></ol><h3 id="其他東西">其他東西</h3><p>除了以上幾點外，筆者也弄了一些小動畫、調整了一些元素的大小、優化了一些文件的載入順序、設定了一些會影響 SEO 評分的東西。總而言之，就是要讓這個部落格好看一點 \^~^/。</p><h3 id="公開的地點">公開的地點</h3><p>請看 <a href="https://github.com/phantom0174/phantom0174.github.io">這個網頁的原始碼</a>。主要為 <code>./scripts/</code> 和 <code>./source/css/</code> 底下的東西。</p><h2 id="後言">後言</h2><p>網路上看很多人都有公開自己的 hexo blog 設定與客製化設定，想說等弄完基本修改之後就來公佈自己的。如果你也想要公開自己的設定（注意不要讓敏感資料外洩），可以參考<a href="https://guiblogs.com/hexo30-23/">這篇文章</a>。</p><p>希望這篇文章可以幫助到想要客製化自己部落格的人。</p><p>那就先醬。</p><hr><p>Photo by <a href="https://unsplash.com/@joshredd?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Josh Redd</a> on <a href="https://unsplash.com/photos/zBtM8P2OaeA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>.</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何理解拉格朗日乘子</title>
     <link href="/2023/02/how-to-understand-lagrange-multiplier/"/>
     <url>/2023/02/how-to-understand-lagrange-multiplier/</url>
@@ -52,11 +71,11 @@
     
     <tags>
       
-      <tag>hexo</tag>
-      
       <tag>mafs</tag>
       
       <tag>program</tag>
+      
+      <tag>hexo</tag>
       
     </tags>
     
@@ -94,11 +113,11 @@
     
     <tags>
       
-      <tag>hexo</tag>
-      
       <tag>mafs</tag>
       
       <tag>program</tag>
+      
+      <tag>hexo</tag>
       
     </tags>
     
