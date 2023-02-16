@@ -1,4 +1,5 @@
-const inject_code = `
+// styling and auto-rendering
+const katex = `
 <style>
     .katex>.katex-html {
         white-space: nowrap;
@@ -14,14 +15,28 @@ const inject_code = `
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
             delimiters: [
-                {left: '$$', right: '$$', display: true},
-                {left: '$', right: '$', display: false}
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false }
             ],
             throwOnError: false
         });
     });
 </script>
 `;
+hexo.extend.injector.register('head_end', katex, 'post');
+hexo.extend.injector.register('head_end', katex, 'about');
 
-hexo.extend.injector.register('head_end', inject_code, 'post');
-hexo.extend.injector.register('head_end', inject_code, 'about');
+
+// prevents google-translate from translating
+const no_trans = `
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        katex_list = document.getElementsByClassName('katex');
+        for (let i = 0; i < katex_list.length; i++) {
+            katex_list[i].classList.add('notranslate');
+        }
+    });
+</script>
+`;
+hexo.extend.injector.register('body_end', no_trans, 'post');
+hexo.extend.injector.register('body_end', no_trans, 'about');

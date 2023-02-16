@@ -1,4 +1,4 @@
-const inject_code = `
+const img_enlarge_anima = `
 <style>
     .index-img {
         transition: .4s;
@@ -9,5 +9,4 @@ const inject_code = `
     }
 </style>
 `;
-
-hexo.extend.injector.register('head_end', inject_code, 'home');
+hexo.extend.injector.register('head_end', img_enlarge_anima, 'home');

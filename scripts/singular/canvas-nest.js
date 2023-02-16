@@ -1,4 +1,4 @@
-const inject_code = `
+const code = `
 <script type="text/javascript"
     color="180,180,180"
     pointColor="180,180,180"
@@ -9,4 +9,4 @@ const inject_code = `
 </script>
 `;
 
-hexo.extend.injector.register('body_end', inject_code, 'home');
+hexo.extend.injector.register('body_end', code, 'home');

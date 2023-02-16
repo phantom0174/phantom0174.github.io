@@ -1,4 +1,5 @@
-const inject_code = `
+// subtitle enlarge & hover::glowing animation
+const subtitle_style = `
 <style>
     #subtitle, .typed-cursor {
         font-size: 2rem;
@@ -18,5 +19,4 @@ const inject_code = `
     }
 </style>
 `;
-
-hexo.extend.injector.register('head_end', inject_code, 'default');
+hexo.extend.injector.register('head_end', subtitle_style, 'default');
