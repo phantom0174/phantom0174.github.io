@@ -2,6 +2,7 @@
 title: 'Blog 設定公開'
 excerpt: '公開我對這個 hexo fluid blog 的客製化設定'
 date: 2023-02-16 17:06:00
+updated: 2023-02-22 12:55:00
 index_img: /assets/cover/blog-config-reveal.webp
 banner_img: /assets/banner/blog-config-reveal.jpg
 tags:
@@ -28,7 +29,8 @@ tags:
 
 2. 文章推薦（disqus recommendations)
 
-3. 動態背景（canvas-nest.js）
+3. 動態背景
+    > 舊用 canvas-nest.js，現已切換到筆者自己開發的優化版套件 [canvas-noice.js](https://phantom0174.github.io/2023/02/introduce-canvas-noice.js/)
 
 4. 自動生成 Table Of Contents
     > 筆者覺得 hexo fluid 本身的側欄 toc 不太好用
