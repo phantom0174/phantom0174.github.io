@@ -15,8 +15,7 @@ tags:
 
 筆者開始用 hexo 作為部落格生成器之後，常常遇到想要但沒有的功能；也找不到類似的 plugins，所以只能自己來弄。筆者大多都在研究數學&程式，所以做的修改大多都是有助於撰寫這方面的東西。
 
-大部分功能的實現是依賴 hexo 本身的注入器與 fluid 主題的增強注入器。
-> [注入器 Documentation](https://fluid-dev.github.io/hexo-fluid-docs/advance/)
+大部分功能的實現是依賴 hexo 本身的注入器與 fluid 主題的增強注入器[^1]。
 
 ## 本文
 
@@ -27,10 +26,10 @@ tags:
 1. 數學式渲染（KaTeX）
     > 必需的吧 OwO，沒有這個就甚麼都做不了惹。
 
-2. 文章推薦（disqus recommendations)
+2. 文章推薦（disqus recommendations）
 
 3. 動態背景
-    > 舊用 canvas-nest.js，現已切換到筆者自己開發的優化版套件 [canvas-noice.js](https://phantom0174.github.io/2023/02/introduce-canvas-noice.js/)
+    > 舊用 canvas-nest.js，現已切換到筆者自己開發的優化版套件 canvas-noice.js[^2]。
 
 4. 自動生成 Table Of Contents
     > 筆者覺得 hexo fluid 本身的側欄 toc 不太好用
@@ -48,7 +47,7 @@ tags:
 
 ## 後言
 
-網路上看很多人都有公開自己的 hexo blog 設定與客製化設定，想說等弄完基本修改之後就來公佈自己的。如果你也想要公開自己的設定（注意不要讓敏感資料外洩），可以參考[這篇文章](https://guiblogs.com/hexo30-23/)。
+網路上看很多人都有公開自己的 hexo blog 設定與客製化設定，想說等弄完基本修改之後就來公佈自己的。如果你也想要公開自己的設定（注意不要讓敏感資料外洩），可以參考這篇[教學文章](https://guiblogs.com/hexo30-23/)。
 
 希望這篇文章可以幫助到想要客製化自己部落格的人。
 
@@ -57,3 +56,6 @@ tags:
 ---
 
 Photo by [Josh Redd](https://unsplash.com/@joshredd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/zBtM8P2OaeA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+
+[^1]: [注入器 Documentation](https://fluid-dev.github.io/hexo-fluid-docs/advance/)
+[^2]: 詳情請見[此文](https://phantom0174.github.io/2023/02/introduce-canvas-noice.js/)

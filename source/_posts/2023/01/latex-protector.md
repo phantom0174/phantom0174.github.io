@@ -15,9 +15,7 @@ tags:
 
 ## 前言
 
-上篇內容，是有關於怎麼輕量型渲染 hexo-posts 中的 LaTeX (KaTeX) 語法。
-
-在[某個段落中](https://phantom0174.github.io/2023/01/lightweight_hexo_latex_rendering/#實作過程)，筆者放了一個簡易版的 `latex-protector.py` 程式碼，但這短短的程式碼顯然不具有任何語法檢查功能，跑起來效能也很差。
+上篇內容，是有關於怎麼輕量型渲染 hexo-posts 中的 LaTeX (KaTeX) 語法。在某個段落中[^1]，筆者放了一個簡易版的 `latex-protector.py` 程式碼，但這短短的程式碼顯然不具有任何語法檢查功能，跑起來效能也很差。
 
 所以筆者用另一個邏輯重新寫了 `latex-protector` 並將其打包起來，相比舊程式有著以下 **4 大特點**：
 
@@ -28,7 +26,8 @@ tags:
 
 ## 所以說那個程式碼呢
 
-請見此 [Github Repo.](https://github.com/phantom0174/latex-protector)。
+請見 Github:
+https://github.com/phantom0174/latex-protector
 
 ## 名詞定義
 
@@ -71,3 +70,5 @@ tags:
 ---
 
 Photo by [Markus Winkler](https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/3LVhSjCXRKc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+
+[^1]: https://phantom0174.github.io/2023/01/lightweight_hexo_latex_rendering/#實作過程

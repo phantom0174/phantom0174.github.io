@@ -31,10 +31,10 @@ tags:
 
 ### 找資料，卡住
 
-找了許久，最有印象的是[這篇](http://lowrank.science/Hexo-KaTeX/)，簡單整理下它的重點：
+找了許久，最有印象的是這篇教學文章[^1]，簡單整理下它的重點：
 
 1. 移除 `@traptitech/markdown-it-katex`
-2. 使用 KaTeX 官網附贈的 [Auto-render Extension](https://katex.org/docs/autorender.html)
+2. 使用 KaTeX 官網附贈的 Auto-render Extension[^2]
 3. 卡住，遇到問題
 
 為什麼會遇到問題？因為在 `md -> html` 的過程中，會進行字元跳脫等轉譯動作（筆者對這方面正確用詞不是太熟悉，還請見諒）。
@@ -63,7 +63,7 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 
 結果在渲染出來時，它變成了：
 
-![](/assets/contents/lightweight_hexo_latex_rendering/1.png)
+![錯誤的渲染結果](/assets/contents/lightweight_hexo_latex_rendering/1.png)
 
 仔細即可看出原因：它把原始語法中的 `_g}\left(\frac{f(u)}{g'(u)}\Big|_` 的左右兩個 `_` 看成 md 語法中的 **強調文字** 了。
 解決方式跟跳脫字元方式一樣：把 **每個** `_` 前面都多加上 `\`，變成 `_` 的跳脫字元。
@@ -74,9 +74,9 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 ### 好像可以解決？
 
 但要怎麼不讓我們在 md 檔中寫的 LaTeX 語法與普通的 md 語法做出區別呢？
-筆者在埋頭找尋解決方式的過程中，偶然看到了在 [`hexo-renderer-markdown-it` 套件](https://github.com/hexojs/hexo-renderer-markdown-it)在 Github README 上所寫的一段話：
+筆者在埋頭找尋解決方式的過程中，偶然看到了在 `hexo-renderer-markdown-it` 套件[^3]在說明文件上所寫的一段話：
 
-![](/assets/contents/lightweight_hexo_latex_rendering/2.png)
+![說明文件的一部分](/assets/contents/lightweight_hexo_latex_rendering/2.png)
 
 > Render options
 > html
@@ -87,8 +87,8 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 
 ### 實作過程
 
-1. [資料來源](https://fluid-dev.github.io/hexo-fluid-docs/advance/#hexo-%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81)
-    1. 使用 **HEXO注入器**，在專案的根目錄（`root/`）新增一個名為 `scripts` 的資料夾，並在其底下新增名為 `katex.js` 的檔案。
+1. 新增 css 與 Auto-render Extension
+    1. 使用 **HEXO注入器**[^4]，在專案的根目錄（`root/`）新增一個名為 `scripts` 的資料夾，並在其底下新增名為 `katex.js` 的檔案。
 
     ![](/assets/contents/lightweight_hexo_latex_rendering/3.png)
 
@@ -99,7 +99,8 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
         <style>
             .katex>.katex-html {
                 white-space: nowrap;
-                overflow: auto;
+                overflow-x: scroll;
+                overflow-y: hidden;
             }
         </style>
 
@@ -125,16 +126,18 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
     `, 'default');
     ```
 
-    - 這個程式的意思是：**在每一個page或是post所生成的html檔的 `<head>...</head>` 中，加上兩個東西**。
-    - 其一，是起始的 `<style>...</style>`。這是防止渲染出來的 KaTeX 結果超出邊界，幫它加上滾輪瀏覽視窗。
+    這個程式碼的意思是：在每一個 page 或是 post 所生成的 html 檔的 `<head>...</head>` 中，加上**兩個東西**。
+    
+    - 其一，是起始的 css 部分。這是幫超出邊界的數學式加上滾輪視窗。
 
     ![](/assets/contents/lightweight_hexo_latex_rendering/4.gif)
 
-    - 其二，是剩下 `Auto-render Extension` 程式碼。
+    - 其二，是 `Auto-render Extension` 的程式碼。
 
-2. 移除原先使用的 `@traptitech/markdown-it-katex` 套件，並確認有安裝 `hexo-renderer-markdown-it` 套件。
+2. 移除舊套件與設定檔
+    - 移除原先使用的 `@traptitech/markdown-it-katex` 套件，並確認有安裝 `hexo-renderer-markdown-it` 套件。
 
-3. 在 `config.yml` 中刪除以下設定檔
+    - 在 `config.yml` 中刪除 `@traptitech/markdown-it-katex` 的設定檔，否則會報錯。
 
     ```yml
     markdown:
@@ -142,9 +145,8 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
         - "@traptitech/markdown-it-katex"
     ```
 
-    這是移除 `@traptitech/markdown-it-katex` 套件遺留下來的設定檔，不刪除會報錯。
-
-4. 在 `config.yml` 中新增以下設定檔
+3. 讓包在 `<p>...</p>` 中的 latex 語法不要受侵蝕。
+    在 `config.yml` 中新增以下設定檔
 
     ```yml
     markdown:
@@ -152,11 +154,9 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
         html: true
     ```
 
-    這是讓包在 `<p>...</p>` 中的東西不要被侵蝕。
-
-5. 為了要把 md 檔中的LaTeX語法用 `<p>...</p>` 包起來，需要使用程式自動化。
+4. 新增自動化程式，用 `<p>...</p>` 保護所有 `.md` 檔中的 latex 語法。
     {% note warning %}
-    此程式只是簡單版的，更好的程式碼請見 **[此文章](https://phantom0174.github.io/2023/01/latex-protector/)**。
+    底下程式是早期的版本，更好的程式請見 **[此文章](https://phantom0174.github.io/2023/01/latex-protector/)**。
     {% endnote %}
 
     1. 在 `./source/` 底下新增名為 `latex_protector.py` 的檔案，並將以下程式碼複製貼上：
@@ -236,10 +236,10 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 
     - 須知，這個程式碼只會識別將所有以 `$$...$$` 包起來的 LaTeX 區塊，如果 inline LaTeX (`$...$`) 在渲染上有些問題，請手動幫其加上 `<p>...</p>`。
 
-6. 使用 `hexo clean && hexo g && hexo s` 進行預覽，沒問題的話即可deploy。
-    - 須知，之後每次 deploy 前都請記得執行 `latex_protector.py`。
+5. 使用 `hexo clean && hexo g && hexo s` 進行預覽，沒問題的話即可deploy。
+    - 之後每次 deploy 前都請記得執行 `latex_protector.py`。
 
-7. 大功告成！
+6. 大功告成！
 
 ## 後言
 
@@ -252,3 +252,8 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 ---
 
 p.s. 手一樣好酸owo
+
+[^1]: http://lowrank.science/Hexo-KaTeX/
+[^2]: https://katex.org/docs/autorender.html
+[^3]: https://github.com/hexojs/hexo-renderer-markdown-it
+[^4]: https://fluid-dev.github.io/hexo-fluid-docs/advance/#hexo-注入代码

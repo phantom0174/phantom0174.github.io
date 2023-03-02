@@ -1,6 +1,6 @@
 ---
 title: '【更新】隆重介紹 canvas-noice.js'
-excerpt: '對 canvas-nest.js 進行算法優化，增快將近 46.7 FPS。'
+excerpt: '對 canvas-nest.js 進行算法優化，增快將近 46.7 FPS！'
 index_img: /assets/cover/canvas-noice.js.webp
 banner_img: /assets/banner/canvas-noice.js.webp
 date: 2023-02-21 21:37:00
