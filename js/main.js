@@ -1,5 +1,5 @@
 new CanvasNice({
-    point_dist: 120,
+    point_dist: 100,
     point_count: 60,
     point_size: {
         min: 1,
@@ -14,6 +14,6 @@ new CanvasNice({
     canvas_opacity: 1,
     render_rate: 45,
     chunk_capacity: 15,
-    chunk_size_constant: 0.8,
+    chunk_size_constant: 0.9,
     pointer_inter_type: -1
 });
