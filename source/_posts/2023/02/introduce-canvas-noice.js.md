@@ -4,7 +4,7 @@ excerpt: '對 canvas-nest.js 進行算法優化，增快將近 46.7 FPS。'
 index_img: /assets/cover/canvas-noice.js.webp
 banner_img: /assets/banner/canvas-noice.js.webp
 date: 2023-02-21 21:37:00
-updated: 2023-02-23 23:49:00
+updated: 2023-03-02 17:37:00
 tags:
   - program
   - mafs
@@ -64,6 +64,10 @@ $$
 而 `canvas-noice.js` 利用 chunks 優化過後的遍歷量大約在 `44500` 上下浮動，運算量差了大約 11.22 倍。這也就是利用一些空間換取時間的古老手法 owo。
   > 以筆者的測試環境來說，大概建了 `120` 塊 chunks
 
+{% note warning %}
+筆者現在才發現因為不用模擬重力、遍歷的方向性又已經被決定了，所以可以從根本上減少試算的次數，現在在同樣設定下計算次數已經降到了大約 `22000` 次，優化了 `22.7` 倍計算量。
+{% endnote %}
+
 ![chunks 加速](/assets/contents/canvas-noice.js/noice-1.webp)
 
 ![一些後台數據](/assets/contents/canvas-noice.js/noice-0.webp)
@@ -121,6 +125,10 @@ os: 把點全部放進去 qt + 全部查詢過一遍碰撞候選點 + 直接把 
 除了嘗試自己實作 webgl 外，可以用的套件有 pixi.js，但是光 rollup 就要 20 秒，api又難用，放棄。
 
 還有一個比較友善的是寫好的 canvas2d to webgl 模組，可是那模組大小直接大於 50KB（筆者沒詳細算所有 dependencies 加起來到底有多大），顯然對輕量型模組非常不友善。如果筆者到時候有去玩 webgl 的話可能再發布一個有 webgl 加速的版本吧 owo。
+{% endnote %}
+
+{% note warning %}
+吐槽++：現在的筆者已經試圖用過 `jagenjo / Canvas2DtoWebGL` 實作一個 webgl 加速版本了。但它api竟然沒有寫好 (氣)，畫點的功能出bug、線條粗細出 bug、一堆咚咚都一直出 bug，然後效能甚至變爛了，webgl 版本還是先算了吧 qq。
 {% endnote %}
 
 而也有另外一個優化可以大幅降低（筆者猜大概比一半少一點）要畫的線數目，那就是 **chunk divergence**。筆者會想出來這種優化方式是最近剛好在學散度與旋度。

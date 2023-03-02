@@ -2,7 +2,6 @@
 title: about
 date: 2023-01-15 18:40:59
 layout: about
-math: true
 ---
 
 <p>
