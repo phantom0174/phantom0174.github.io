@@ -237,10 +237,10 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - "/css/fonts.css"
-  - "/css/fontawesome/css/fontawesome.min.css"
-  - "/css/fontawesome/css/brands.min.css"
-  - "/css/fontawesome/css/regular.min.css"
-  - "/css/fontawesome/css/solid.min.css"
+  # - "/css/fontawesome/css/fontawesome.min.css"
+  # - "/css/fontawesome/css/brands.min.css"
+  # - "/css/fontawesome/css/regular.min.css"
+  # - "/css/fontawesome/css/solid.min.css"
 
 # 网页访问统计
 # Analysis of website visitors
@@ -318,7 +318,7 @@ lazyload:
 
 # 图标库，包含了大量社交类图标，主题依赖的不包含在内，因此可自行修改，详见 https://hexo.fluid-dev.com/docs/icon/
 # Icon library, which includes many social icons, does not include those theme dependent, so your can modify link by yourself. See: https://hexo.fluid-dev.com/docs/en/icon/
-iconfont: # //at.alicdn.com/t/font_1736178_lbnruvf0jn.css
+iconfont: //at.alicdn.com/t/font_1736178_lbnruvf0jn.css
 
 
 #---------------------------
@@ -427,7 +427,7 @@ footer:
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-    <i class="fa-regular fa-heart fa-beat" style="--fa-beat-scale: 1.2;"></i>
+    <i class="iconfont icon-love"></i>
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
   '
 
@@ -912,9 +912,9 @@ about:
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "fa-brands fa-github", link: "https://github.com/phantom0174", tip: "GitHub" }
-    - { class: "fa-brands fa-youtube", link: "https://www.youtube.com/@Quantami", tip: "Youtube" }
-    - { class: "fa-brands fa-spotify", link: "https://open.spotify.com/playlist/2RbUpK0ZwUZFkAMxWc0gzB", tip: "Spotify" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/phantom0174", tip: "GitHub" }
+    - { class: "iconfont icon-youtube-fill", link: "https://www.youtube.com/@Quantami", tip: "Youtube" }
+    - { class: "icon-spotify", link: "https://open.spotify.com/playlist/2RbUpK0ZwUZFkAMxWc0gzB", tip: "Spotify" }
 
 
 #---------------------------

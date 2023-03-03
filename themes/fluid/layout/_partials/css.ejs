@@ -32,3 +32,12 @@
 <% if (theme.custom_css) { %>
   <%- css(theme.custom_css) %>
 <% } %>
+
+<%# CUSTOMIZED %>
+
+<% let icon_css = [
+  '/css/icomoon/style.css'
+]; %>
+<% for (const link of icon_css) { %>
+  <link rel="preload" href="<%= link %>" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<% } %>

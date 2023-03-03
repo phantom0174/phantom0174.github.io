@@ -1,7 +1,7 @@
 const social_icon_minify = `
 <style>
-    .about-icons>a>i {
-        font-size: 1.3rem;
+    i.icon-spotify {
+        font-size: 1.35rem !important;
     }
 </style>
 `;
