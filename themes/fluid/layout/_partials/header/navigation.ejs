@@ -57,7 +57,10 @@
           </li>
           <% import_js(theme.static_prefix.internal_js, 'local-search.js') %>
         <% } %>
-        <% if(theme.dark_mode && theme.dark_mode.enable) { %>
+
+        <%# CUSTOMIZED : disable color mode toggle: add "false" %>
+
+        <% if(false && theme.dark_mode && theme.dark_mode.enable) { %>
           <li class="nav-item" id="color-toggle-btn">
             <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
               <i class="iconfont icon-dark" id="color-toggle-icon"></i>

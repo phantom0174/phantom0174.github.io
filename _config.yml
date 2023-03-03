@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: update cov.&ban. && add links
+  message: rmv color mode toggle
 
 # protect content inside html tags
 markdown:
