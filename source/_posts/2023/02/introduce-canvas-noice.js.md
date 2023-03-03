@@ -167,11 +167,15 @@ need_draw = origin_chunk.div || (origin_chunk.div === target_chunk.div);
 其實這東西蠻好的，只是拿掉變成輕量化之後，就要全部相信各位站長自己設定的參數不會讓訪客的電腦炸開，因為沒有fps檢查 owo。（像是什麼 3000 個點然後線超粗）
 {% endnote %}
 
-### 為什麼是 canvas-noice ?
+### 為什麼是取名 canvas-noice ?
 
 因為是 `canvas-nest.js` 的優化版，自然就想要取個類似但有正面意義的名字，所以就想到了這張梗圖：
 
 ![noice](https://media.tenor.com/HhdLXIxTKfEAAAAC/noice.gif)
+
+{% note warning %}
+用梗圖拿來當正式版名稱顯然太不正經了，所以就換回來正常點的吧。owo
+{% endnote %}
 
 ### 專案連結
 
