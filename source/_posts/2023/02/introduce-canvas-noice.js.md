@@ -4,7 +4,7 @@ excerpt: '對 canvas-nest.js 進行算法優化，增快將近 46.7 FPS！'
 index_img: /assets/cover/canvas-noice.js.webp
 banner_img: /assets/banner/canvas-noice.js.webp
 date: 2023-02-21 21:37:00
-updated: 2023-03-02 17:37:00
+updated: 2023-03-03 21:23:00
 tags:
   - program
   - mafs
@@ -88,6 +88,33 @@ $$
   > 筆者原本想要用 linked-list，但越寫越多 bug，果斷放棄重投 array 的懷抱 owo
 
 題外話：使用 chunks 後的時間複雜度難以估算，筆者算了一個晚上的數學建模後得出來的最簡單狀況下的時間複雜度**可能是** $O(w\cdot h)$，$w,\ h$ 是每塊 chunks 的寬高。
+
+<!--lp:skip-some-->
+
+{% note warning %}
+這邊應該忘記乘上 $P$（點的數目）了，然後這個結果應該是在 $w,\ h$ 都跟 $r$（互動半徑）差不多時的複雜度。
+
+所以可以把時間複雜度寫成
+
+<p>
+$$
+O(P\cdot r^2)
+$$
+</p>
+
+而空間複雜度就是
+
+<p>
+$$
+O(r^{-2})
+$$
+</p>
+
+> 但這仍然是簡單版模型推算出來的結果
+
+{% endnote %}
+
+<!--lp:skip-some-->
 
 {% note warning %}
 改版之後之所以不用**好像**更好的空間分割資料結構 - 四元樹（QuadTree）是因為它非常不擅長應對動態的物件（像是跑來跑去的點），它比較擅長應對靜態物件 owo。

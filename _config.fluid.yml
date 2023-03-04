@@ -1,17 +1,4 @@
 #---------------------------
-# Hexo Theme Fluid
-# Author: Fluid-dev
-# Github: https://github.com/fluid-dev/hexo-theme-fluid
-#
-# 配置指南: https://hexo.fluid-dev.com/docs/guide/
-# 你可以从指南中获得更详细的说明
-#
-# Guide: https://hexo.fluid-dev.com/docs/en/guide/
-# You can get more detailed help from the guide
-#---------------------------
-
-
-#---------------------------
 # 全局
 # Global
 #---------------------------
@@ -26,7 +13,7 @@ apple_touch_icon: /img/favicon.webp
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
-tab_title_separator: " - "
+tab_title_separator: "|"
 
 # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
 # Force all links to be HTTPS (applicable to HTTP mixed error)
@@ -147,6 +134,7 @@ color:
   # Color of navigation bar background
   navbar_bg_color: "#2f4154"
   navbar_bg_color_dark: "#1f3144"
+  # navbar_bg_color_dark: "#1589e9"
 
   # 顶部菜单字体色
   # Color of navigation bar text
@@ -186,12 +174,14 @@ color:
   # 文章超链接字体色
   # Color of post link
   post_link_color: "#0366d6"
-  post_link_color_dark: "#1589e9"
+  # post_link_color_dark: "#1589e9"
+  post_link_color_dark: "#30a9de"
 
   # 超链接悬浮时字体色
   # Color of link when hovering
   link_hover_color: "#30a9de"
-  link_hover_color_dark: "#30a9de"
+  # link_hover_color_dark: "#30a9de"
+  link_hover_color_dark: "#fec5e5"
 
   # 超链接悬浮背景色
   # Color of link background when hovering
@@ -237,10 +227,6 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - "/css/fonts.css"
-  # - "/css/fontawesome/css/fontawesome.min.css"
-  # - "/css/fontawesome/css/brands.min.css"
-  # - "/css/fontawesome/css/regular.min.css"
-  # - "/css/fontawesome/css/solid.min.css"
 
 # 网页访问统计
 # Analysis of website visitors
@@ -252,52 +238,10 @@ web_analytics:  # 网页访问统计
   # See: https://www.w3.org/TR/tracking-dnt/
   follow_dnt: true
 
-  # 百度统计的 Key，值需要获取下方链接中 `hm.js?` 后边的字符串
-  # Baidu analytics, get the string behind `hm.js?`
-  # See: https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376
-  baidu:
-
-  # Google 统计的 Tracking ID
-  # Google analytics, set Tracking ID
-  # See: https://developers.google.com/analytics/devguides/collection/analyticsjs
-  google:
-
   # Google gtag.js 的媒体资源 ID
   # Google gtag.js GA_MEASUREMENT_ID
   # See: https://developers.google.com/analytics/devguides/collection/gtagjs/
   gtag: G-7FGHSBCQB5
-
-  # 腾讯统计的 H5 App ID，开启高级功能才有cid
-  # Tencent analytics, set APP ID
-  # See: https://mta.qq.com/h5/manage/ctr_app_manage
-  tencent:
-    sid:
-    cid:
-
-  # 51.la 站点统计 ID
-  # 51.la analytics
-  # See: https://www.51.la/user/site/index
-  woyaola:  # 51.la 站点统计 ID，参见
-
-  # 友盟/cnzz 站点统计 web_id
-  # cnzz analytics
-  # See: https://web.umeng.com/main.php?c=site&a=show
-  cnzz:
-
-  # LeanCloud 计数统计，可用于 PV UV 展示，如果 `web_analytics: enable` 没有开启，PV UV 展示只会查询不会增加
-  # LeanCloud count statistics, which can be used for PV UV display. If `web_analytics: enable` is false, PV UV display will only query and not increase
-  leancloud:
-    app_id:
-    app_key:
-    # REST API 服务器地址，国际版不填
-    # Only the Chinese mainland users need to set
-    server_url:
-    # 统计页面时获取路径的属性
-    # Get the attribute of the page path during statistics
-    path: window.location.pathname
-    # 开启后不统计本地路径( localhost 与 127.0.0.1 )
-    # If true, ignore localhost & 127.0.0.1
-    ignore_local: false
 
 # 对页面中的图片和评论插件进行懒加载处理，可见范围外的元素不会提前加载
 # Lazy loading of images and comment plugin on the page
@@ -390,7 +334,7 @@ banner:
 # 向下滚动的箭头
 # Scroll down arrow
 scroll_down_arrow:
-  enable: true
+  enable: false
 
   # 头图高度不小于指定比例，才显示箭头
   # Only the height of the banner image is greater than the ratio, the arrow is displayed
@@ -431,21 +375,6 @@ footer:
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
   '
 
-  # 展示网站的 PV、UV 统计数
-  # Display website PV and UV statistics
-  statistics:
-    enable: false
-
-    # 统计数据来源，使用 leancloud 需要设置 `web_analytics: leancloud` 中的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
-    # Data source. If use leancloud, you need to set the parameter in `web_analytics: leancloud`
-    # Options: busuanzi | leancloud
-    source: "busuanzi"
-
-  # 国内大陆服务器的备案信息
-  # For Chinese mainland website policy, other areas keep disable
-  beian:
-    enable: false
-
 
 #---------------------------
 # 首页
@@ -474,28 +403,6 @@ index:
     # 为空则按 hexo config.subtitle 显示
     # If empty, text based on `subtitle` in hexo config
     text: "Quantami's posts"
-
-    # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
-    # Subtitle of the homepage through the API, must be returned a JSON. If the request fails, it will be displayed in `text` value. This feature must first enable the typing animation
-    api:
-      enable: false
-
-      # 请求地址
-      # Request url
-      url: ""
-
-      # 请求方法
-      # Request method
-      # Available: GET | POST | PUT
-      method: "GET"
-
-      # 请求头
-      # Request headers
-      headers: {}
-
-      # 从请求结果获取字符串的取值字段，最终必须是一个字符串，例如返回结果为 {"data": {"author": "fluid", "content": "An elegant theme"}}, 则取值字段为 ['data', 'content']；如果返回是列表则自动选择第一项
-      # The value field of the string obtained from the response. For example, the response content is {"data": {"author": "fluid", "content": "An elegant theme"}}, the expected `keys: ['data','content']`; if the return is a list, the first item is automatically selected
-      keys: []
 
   # 自动截取文章摘要
   # Auto extract post
@@ -533,6 +440,12 @@ post:
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
   default_index_img: /assets/cover/default.webp
+
+  toc:
+    enable: true
+    placement: right
+    headingSelector: "h1,h2,h3"
+    collapseDepth: 0
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -595,47 +508,6 @@ post:
     # Options: default | primary | info | success | warning | danger | light
     note_class: light
 
-  # 侧边栏展示当前分类下的文章
-  # Sidebar of category
-  category_bar:
-    enable: false
-
-    # 开启后，只有在文章 Front-matter 里指定 `category_bar: true` 才会展示分类，也可以通过 `category_bar: ["分类A"]` 来指定分类
-    # If true, only set `category_bar: true` in Front-matter will enable sidebar of category, also set `category_bar: ["CategoryA"]` to specify categories
-    specific: true
-
-    # 置于板块的左侧或右侧
-    # place in the board
-    # Options: left | right
-    placement: left
-
-    # 文章的排序字段，前面带减号是倒序，不带减号是正序
-    # Sort field for posts, with a minus sign is reverse order
-    # Options: date | title | or other field of front-matter
-    post_order_by: "title"
-
-    # 单个分类中折叠展示文章数的最大值，超过限制会显示 More，0 则不限制
-    # The maximum number of posts in a single category. If the limit is exceeded, it will be displayed More. If 0 no limit
-    post_limit: 0
-
-  # 侧边栏展示文章目录
-  # Table of contents (TOC) in the sidebar
-  toc:
-    enable: false
-
-    # 置于板块的左侧或右侧
-    # place in the board
-    # Options: left | right
-    placement: right
-
-    # 目录会选择这些节点作为标题
-    # TOC will select these nodes as headings
-    headingSelector: "h1,h2,h3,h4,h5,h6"
-
-    # 层级的折叠深度，0 是全部折叠，大于 0 后如果存在下级标题则默认展开
-    # Collapse depth. If 0, all headings collapsed. If greater than 0, it will be expanded by default if there are sub headings
-    collapseDepth: 0
-
   # 版权声明，会显示在每篇文章的结尾
   # Copyright, will be displayed at the end of each post
   copyright:
@@ -686,20 +558,6 @@ post:
     # 脚注的节标题，也可以在 front-matter 中通过 `footnote: <h2>Reference</h2>` 这种形式修改单独页面的 header
     # The section title of the footnote, you can also modify the header of a single page in the form of `footnote: <h2>Reference</h2>` in front-matter
     header: '<h2>參考</h2>'
-
-  # 数学公式，开启之前需要更换 Markdown 渲染器，否则复杂公式会有兼容问题，具体请见：https://hexo.fluid-dev.com/docs/guide/##latex-数学公式
-  # Mathematical formula. If enable, you need to change the Markdown renderer, see: https://hexo.fluid-dev.com/docs/en/guide/#math
-  math:
-    # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `math: true`
-    # If you want to use math on the custom page, you need to set `math: true` in Front-matter
-    enable: false
-
-    # 开启后，只有在文章 Front-matter 里指定 `math: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
-    # If true, only set `math: true` in Front-matter will enable math, to load faster when the page does not contain math
-    specific: true
-
-    # Options: mathjax | katex
-    engine: katex
 
   # 流程图，基于 mermaid-js，具体请见：https://hexo.fluid-dev.com/docs/guide/#mermaid-流程图
   # Flow chart, based on mermaid-js, see: https://hexo.fluid-dev.com/docs/en/guide/#mermaid
@@ -756,90 +614,6 @@ disqus:
   disqusjs: false
   apikey: 
 
-# Gitalk
-# 基于 GitHub Issues
-# Based on GitHub Issues
-# See: https://github.com/gitalk/gitalk#options
-gitalk:
-  clientID:
-  clientSecret:
-  repo:
-  owner:
-  admin: ['name']
-  language: zh-CN
-  labels: ['Gitalk']
-  perPage: 10
-  pagerDirection: last
-  distractionFreeMode: false
-  createIssueManually: true
-  # 默认 proxy 可能会失效，解决方法请见下方链接
-  # The default proxy may be invalid, refer to the links for solutions
-  # https://github.com/gitalk/gitalk/issues/429
-  # https://github.com/Zibri/cloudflare-cors-anywhere
-  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
-
-# Valine
-# 基于 LeanCloud
-# Based on LeanCloud
-# See: https://valine.js.org/
-valine:
-  appId:
-  appKey:
-  path: window.location.pathname
-  placeholder:
-  avatar: 'retro'
-  meta: ['nick', 'mail', 'link']
-  requiredFields: []
-  pageSize: 10
-  lang: 'zh-CN'
-  highlight: false
-  recordIP: false
-  serverURLs: ''
-  emojiCDN:
-  emojiMaps:
-  enableQQ: false
-
-# Waline
-# 从 Valine 衍生而来，额外增加了服务端和多种功能
-# Derived from Valine, with self-hosted service and new features
-# See: https://waline.js.org/
-waline:
-  serverURL: ''
-  path: window.location.pathname
-  meta: ['nick', 'mail', 'link']
-  requiredMeta: ['nick']
-  lang: 'zh-CN'
-  emoji: ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
-  dark: 'html[data-user-color-scheme="dark"]'
-  wordLimit: 0
-  pageSize: 10
-
-
-# Cusdis
-# 基于第三方服务或自托管服务
-# Based on third-party or self-hosted service
-# See https://cusdis.com
-cusdis:
-  host:
-  app_id:
-  lang: zh-cn
-
-# Giscus
-# 基于 GitHub Discussions，类似于 Utterances
-# Based on GitHub Discussions, similar to Utterances
-# See: https://giscus.app/
-giscus:
-  repo:
-  repo-id:
-  category:
-  category-id:
-  theme-light: light
-  theme-dark: dark
-  mapping: pathname
-  reactions-enabled: 1
-  emit-metadata: 0
-  input-position: top
-  lang: zh-CN
 
 #---------------------------
 # 归档页
@@ -858,7 +632,7 @@ archive:
 category:
   enable: false
   banner_img: /img/default.webp
-  banner_img_height: 60
+  banner_img_height: 70
   banner_mask_alpha: 0.3
 
   # 分类的排序字段，前面带减号是倒序，不带减号是正序
@@ -887,7 +661,7 @@ category:
 tag:
   enable: true
   banner_img: /img/default.webp
-  banner_img_height: 80
+  banner_img_height: 70
   banner_mask_alpha: 0.3
   tagcloud:
     min_font: 15
@@ -937,7 +711,7 @@ page:
 page404:
   enable: true
   banner_img: /img/default.webp
-  banner_img_height: 85
+  banner_img_height: 100
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
   # Delay in redirecting to home page (milliseconds)
@@ -966,12 +740,6 @@ links:
     #   title: "Fluid Docs",
     #   intro: "主题使用指南",
     #   link: "https://hexo.fluid-dev.com/docs/",
-    #   avatar: "/img/favicon.png"
-    # }
-    # - {
-    #   title: "Fluid Repo",
-    #   intro: "主题 GitHub 仓库",
-    #   link: "https://github.com/fluid-dev/hexo-theme-fluid",
     #   avatar: "/img/favicon.png"
     # }
 
