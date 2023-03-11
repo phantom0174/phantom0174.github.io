@@ -226,7 +226,7 @@ custom_js:
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
-  - "/css/fonts.css"
+  # - "/css/fonts.css"
 
 # 网页访问统计
 # Analysis of website visitors
@@ -441,11 +441,6 @@ post:
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
   default_index_img: /assets/cover/default.webp
 
-  toc:
-    enable: true
-    placement: right
-    headingSelector: "h1,h2,h3"
-    collapseDepth: 0
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -507,6 +502,11 @@ post:
     # Note class
     # Options: default | primary | info | success | warning | danger | light
     note_class: light
+  toc:
+    enable: true
+    placement: right
+    headingSelector: "h1,h2,h3"
+    collapseDepth: 0
 
   # 版权声明，会显示在每篇文章的结尾
   # Copyright, will be displayed at the end of each post
@@ -558,7 +558,10 @@ post:
     # 脚注的节标题，也可以在 front-matter 中通过 `footnote: <h2>Reference</h2>` 这种形式修改单独页面的 header
     # The section title of the footnote, you can also modify the header of a single page in the form of `footnote: <h2>Reference</h2>` in front-matter
     header: '<h2>參考</h2>'
-
+  math:
+    # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `math: true`
+    # If you want to use math on the custom page, you need to set `math: true` in Front-matter
+    enable: false
   # 流程图，基于 mermaid-js，具体请见：https://hexo.fluid-dev.com/docs/guide/#mermaid-流程图
   # Flow chart, based on mermaid-js, see: https://hexo.fluid-dev.com/docs/en/guide/#mermaid
   mermaid:

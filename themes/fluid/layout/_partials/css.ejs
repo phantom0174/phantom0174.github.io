@@ -35,9 +35,10 @@
 
 <%# CUSTOMIZED %>
 
-<% let icon_css = [
-  '/css/icomoon/style.css'
+<% let custom_css = [
+  "/css/fonts.css",
+  "/css/icomoon/style.css"
 ]; %>
-<% for (const link of icon_css) { %>
+<% for (const link of custom_css) { %>
   <link rel="preload" href="<%= link %>" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 <% } %>
