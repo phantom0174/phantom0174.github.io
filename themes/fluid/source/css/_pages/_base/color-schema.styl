@@ -1,3 +1,6 @@
+// CUSTOMIZED: force dark mode
+
+/*
 :root
   --color-mode "light"
   --body-bg-color $body-bg-color
@@ -19,8 +22,10 @@
   --button-hover-bg-color $button-hover-bg-color
   --highlight-bg-color $highlight-bg-color
   --inlinecode-bg-color $inlinecode-bg-color
+*/
 
-dark-colors()
+// dark-colors()
+:root
   --body-bg-color $body-bg-color-dark
   --board-bg-color $board-bg-color-dark
   --text-color $text-color-dark
@@ -44,7 +49,7 @@ dark-colors()
   img
     -webkit-filter brightness(.9)
     filter brightness(.9)
-    transition filter .2s ease-in-out
+    // transition filter .2s ease-in-out
 
   .navbar .dropdown-collapse, .top-nav-collapse, .navbar-col-show
     if $navbar-glass-enable
@@ -52,19 +57,19 @@ dark-colors()
 
   .license-box
     background-color rgba(#3e4b5e, .35)
-    transition background-color .2s ease-in-out
+    // transition background-color .2s ease-in-out
 
   .gt-comment-admin .gt-comment-content
     background-color transparent
-    transition background-color .2s ease-in-out
+    // transition background-color .2s ease-in-out
 
-if (hexo-config("dark_mode.enable"))
-  @media (prefers-color-scheme: dark)
-    :root
-      --color-mode "dark"
+// if (hexo-config("dark_mode.enable"))
+//   @media (prefers-color-scheme: dark)
+//     :root
+//       --color-mode "dark"
 
-    :root:not([data-user-color-scheme])
-      dark-colors()
+//     :root:not([data-user-color-scheme])
+//       dark-colors()
 
-  [data-user-color-scheme="dark"]
-    dark-colors()
+//   [data-user-color-scheme="dark"]
+//     dark-colors()

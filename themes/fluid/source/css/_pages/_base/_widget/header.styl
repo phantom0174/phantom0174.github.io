@@ -1,3 +1,5 @@
+// CUSTOMIZED: force dark mode
+
 // Rewrite navbar
 .navbar
   background-color transparent
@@ -14,7 +16,8 @@
   .nav-item .nav-link
     display block
     color var(--navbar-text-color)
-    transition color .2s ease-in-out, background-color .2s ease-in-out
+    // transition color .2s ease-in-out, background-color .2s ease-in-out
+    transition color 0s, background-color .2s ease-in-out
 
     &:hover
       color var(--link-hover-color)
@@ -35,7 +38,8 @@
   &.scrolling-navbar
     will-change background, padding
     -webkit-transition background 0.5s ease-in-out, padding 0.5s ease-in-out
-    transition background 0.5s ease-in-out, padding 0.5s ease-in-out
+    // transition background 0.5s ease-in-out, padding 0.5s ease-in-out
+    transition background 0s, padding 0.5s ease-in-out
 
     @media (min-width: 600px)
       &
