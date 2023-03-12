@@ -13,7 +13,7 @@ apple_touch_icon: /img/favicon.webp
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
-tab_title_separator: "|"
+tab_title_separator: " | "
 
 # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
 # Force all links to be HTTPS (applicable to HTTP mixed error)
@@ -227,6 +227,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   # - "/css/fonts.css"
+  # - "/css/icomoon/style.css"
 
 # 网页访问统计
 # Analysis of website visitors
@@ -238,10 +239,11 @@ web_analytics:  # 网页访问统计
   # See: https://www.w3.org/TR/tracking-dnt/
   follow_dnt: true
 
-  # Google gtag.js 的媒体资源 ID
-  # Google gtag.js GA_MEASUREMENT_ID
-  # See: https://developers.google.com/analytics/devguides/collection/gtagjs/
-  gtag: G-7FGHSBCQB5
+  # Google Analytics 4 的媒体资源 ID
+  # Google Analytics 4 MEASUREMENT_ID
+  # See: https://support.google.com/analytics/answer/9744165#zippy=%2Cin-this-article
+  google:
+    measurement_id: G-7FGHSBCQB5
 
 # 对页面中的图片和评论插件进行懒加载处理，可见范围外的元素不会提前加载
 # Lazy loading of images and comment plugin on the page
@@ -554,10 +556,10 @@ post:
   # 脚注语法，会在文章底部生成脚注，如果 Markdown 渲染器本身支持，则建议关闭，否则可能会冲突
   # Support footnote syntax, footnotes will be generated at the bottom of the post page. If the Markdown renderer itself supports it, please disable it, otherwise it may conflict
   footnote:
-    enable: true
+    enable: false
     # 脚注的节标题，也可以在 front-matter 中通过 `footnote: <h2>Reference</h2>` 这种形式修改单独页面的 header
     # The section title of the footnote, you can also modify the header of a single page in the form of `footnote: <h2>Reference</h2>` in front-matter
-    header: '<h2>參考</h2>'
+    header: ''
   math:
     # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `math: true`
     # If you want to use math on the custom page, you need to set `math: true` in Front-matter

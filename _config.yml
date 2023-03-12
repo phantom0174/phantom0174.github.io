@@ -113,12 +113,46 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: update style
+  message: using google measure. id
 
 # protect content inside html tags
 markdown:
   render:
     html: true
+
+# hexo-optimize
+# filter_optimize:
+#   enable: false
+#   # static resource versioning
+#   versioning: false
+#   css:
+#     # minify all css files
+#     minify: true
+#     excludes:
+#     - '**/*.min.css'
+#     # use preload to load css elements dynamically
+#     delivery:
+#     - 'fonts.googleapis.com'
+#     # make specific css content inline into the html page
+#     inlines:
+#       # support full path only
+#     - css/main.css
+#   js:
+#     # minify all js files
+#     minify: true
+#     excludes:
+#     - '**/*.min.js'
+#     - '**/jquery.fancybox.pack.js'
+#     - '**/index.js'
+#     # remove the comments in each of the js files
+#     remove_comments: true
+#   html:
+#     # minify all html files
+#     minify: true
+#     excludes:
+#   # set the priority of this plugin,
+#   # lower means it will be executed first, default of Hexo is 10
+#   priority: 12
 
 # hexo-neat
 # 博文压缩
@@ -142,3 +176,6 @@ neat_js:
   - '**/*.min.js'
   - '**/jquery.fancybox.pack.js'
   - '**/index.js'
+
+sitemap:
+  path: sitemap.xml

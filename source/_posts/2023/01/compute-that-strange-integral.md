@@ -477,4 +477,6 @@ $$
 
 p.s. 寫到手快斷掉owo
 
+## 參考
+
 [^1]: https://zh.m.wikipedia.org/zh-tw/反正切#定義

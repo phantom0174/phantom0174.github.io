@@ -17,7 +17,7 @@ tags:
 
 本文適用於正在使用 `@traptitech/markdown-it-katex` 套件進行 HEXO 文章中 LaTeX 語法渲染，且與筆者一樣，都有強迫症的人。
 
-## 本文
+## 正文
 
 不知道你是否曾經為 HEXO 所生成出的厚重檔案所苦？
 尤其是當原始 md 檔裡面有許多 LaTeX 語法時，生成出來的東西就會像這樣：
@@ -241,7 +241,7 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 
 6. 大功告成！
 
-## 後言
+## 後記
 
 在經過我們的 <del>調教</del> 修理後，原本15KB的檔案生成後只有 **34KB**。
 相比原來結果，空間節省率高達 **94%**。
@@ -252,6 +252,8 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 ---
 
 p.s. 手一樣好酸owo
+
+## 參考
 
 [^1]: http://lowrank.science/Hexo-KaTeX/
 [^2]: https://katex.org/docs/autorender.html

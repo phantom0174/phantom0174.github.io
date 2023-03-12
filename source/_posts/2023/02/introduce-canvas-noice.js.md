@@ -26,7 +26,7 @@ tags:
 
 ![感想](https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/thematedkid/phpPlfUuy.gif)
 
-## 本文
+## 正文
 
 筆者很久以前就對 `canvas-nest.js` 有印象，看著這個動畫既紓壓又療癒 \\^~^/。簡單來說，他就是一個輕量型（？）的網頁背景動畫，模擬數十至數百乃至一千出頭個點作隨機運動；兩點之間以線連接，形成一大型網狀結構，同時也可與游標互動。
   > 有興趣者可以來[這邊看 demo](https://git.hust.cc/canvas-nest.js/)
@@ -219,7 +219,7 @@ need_draw = origin_chunk.div || (origin_chunk.div === target_chunk.div);
 - [Github Repo](https://github.com/phantom0174/canvas-nice.js)
     > 之後會寫 documentation，但直接看 `main.js` & `index.html` 中的東西或許還比較快 owo
 
-## 後言
+## 後記
 
 {% note warning %}
 正式版的程式碼打包之後的大小是 `8.65 KiB`，總算是小一點了 owo。

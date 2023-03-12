@@ -29,7 +29,9 @@ tags:
 請見 Github:
 https://github.com/phantom0174/latex-protector
 
-## 名詞定義
+## 實作
+
+### 名詞定義
 
 先提一下奇怪的名詞
 
@@ -38,7 +40,7 @@ https://github.com/phantom0174/latex-protector
 - `$$` 稱為 特徵字串（eigenstring）
 - 特徵區塊（eigenblock）是由一個前導 `$$` 與後導 `$$` 封閉起來的區塊，兩兩為一對，稱為 特徵對（eigenpair）。
 
-## 實作邏輯
+### 流程
 
 整體分為5大部分，括弧中為在程式碼中用的代號。
 
@@ -61,7 +63,7 @@ https://github.com/phantom0174/latex-protector
 5. 取得插入位置與標記（`get_insertion_cmd`）
     從 eigeninfo 中最後決定要在哪裡插入 `<p>`；哪裡插入 `</p>`，並將行數與要插入的字串回傳。
 
-## 後言
+## 後記
 
 總之用起來就是又快又開心 \\^~^/。
 
@@ -70,5 +72,7 @@ https://github.com/phantom0174/latex-protector
 ---
 
 Photo by [Markus Winkler](https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/3LVhSjCXRKc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+
+## 參考
 
 [^1]: https://phantom0174.github.io/2023/01/lightweight_hexo_latex_rendering/#實作過程

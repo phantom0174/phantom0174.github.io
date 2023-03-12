@@ -17,7 +17,7 @@ tags:
 
 大部分功能的實現是依賴 hexo 本身的注入器與 fluid 主題的增強注入器[^1]。
 
-## 本文
+## 正文
 
 ### 修改了什麼
 
@@ -45,7 +45,7 @@ tags:
 
 請看 [這個網頁的原始碼](https://github.com/phantom0174/phantom0174.github.io)。主要為 `./scripts/` 和 `./source/css/` 底下的東西。
 
-## 後言
+## 後記
 
 網路上看很多人都有公開自己的 hexo blog 設定與客製化設定，想說等弄完基本修改之後就來公佈自己的。如果你也想要公開自己的設定（注意不要讓敏感資料外洩），可以參考這篇[教學文章](https://guiblogs.com/hexo30-23/)。
 
@@ -56,6 +56,8 @@ tags:
 ---
 
 Photo by [Josh Redd](https://unsplash.com/@joshredd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/zBtM8P2OaeA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+
+## 參考
 
 [^1]: [注入器 Documentation](https://fluid-dev.github.io/hexo-fluid-docs/advance/)
 [^2]: 詳情請見[此文](https://phantom0174.github.io/2023/02/introduce-canvas-noice.js/)
