@@ -117,6 +117,13 @@
   </url>
   
   <url>
+    <loc>https://phantom0174.github.io/tags/life/</loc>
+    <lastmod>2023-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://phantom0174.github.io/tags/hexo/</loc>
     <lastmod>2023-03-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -125,13 +132,6 @@
   
   <url>
     <loc>https://phantom0174.github.io/tags/program/</loc>
-    <lastmod>2023-03-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://phantom0174.github.io/tags/life/</loc>
     <lastmod>2023-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
