@@ -75,4 +75,4 @@ Photo by [Markus Winkler](https://unsplash.com/@markuswinkler?utm_source=unsplas
 
 ## 參考
 
-[^1]: https://phantom0174.github.io/2023/01/lightweight_hexo_latex_rendering/#實作過程
+[^1]: https://phantom0174.github.io/2023/01/lightweight-hexo-latex-rendering/#實作過程
