@@ -41,8 +41,10 @@ page404:
 
 post:
   toc: 'Table of Contents'
-  prev_post: 'Previous'
-  next_post: 'Next'
+
+  # CUSTOMIZED
+  prev_post: 'Next'
+  next_post: 'Previous'
   updated: 'Last updated on %s'
   meta:
     wordcount: '%s words'

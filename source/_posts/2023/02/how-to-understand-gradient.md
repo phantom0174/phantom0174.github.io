@@ -7,6 +7,7 @@ index_img: /assets/cover/how-to-understand-gradient.png
 banner_img: /assets/banner/how-to-understand-gradient.png
 tags:
   - mafs
+keywords: 梯度, gradient, 鏈鎖律, 全微分, 方向導數, 梯度性質, 數學, 向量微積分, vector calculus
 ---
 
 <!--Remove "@" before use-->

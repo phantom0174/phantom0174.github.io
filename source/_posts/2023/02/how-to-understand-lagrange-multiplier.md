@@ -7,6 +7,7 @@ index_img: /assets/cover/how-to-understand-lagrange-multiplier.png
 banner_img: /assets/banner/how-to-understand-lagrange-multiplier.png
 tags:
   - mafs
+keywords: 拉格朗日乘子, lagrange multiplier, 限制求解, 視覺化, 理解, 數學, 向量微積分
 ---
 
 <!--Remove "@" before use-->

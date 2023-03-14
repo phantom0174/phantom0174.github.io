@@ -9,6 +9,7 @@ tags:
     - hexo
     - program
     - mafs
+keywords: hexo, theme, fluid, latex, katex, 數學式, 渲染, 程式, python
 ---
 
 <!--lp:skip-all-->

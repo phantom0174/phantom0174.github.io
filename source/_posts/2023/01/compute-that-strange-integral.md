@@ -7,6 +7,7 @@ index_img: /assets/cover/strange_integral.webp
 banner_img: /assets/banner/strange_integral.webp
 tags:
     - mafs
+keywords: 積分, 微積分, 數學, 部分分式, 封閉解, 通式
 ---
 
 ## 簡單版的積分（正整數）

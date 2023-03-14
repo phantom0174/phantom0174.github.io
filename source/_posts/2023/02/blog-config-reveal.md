@@ -7,6 +7,7 @@ index_img: /assets/cover/blog-config-reveal.webp
 banner_img: /assets/banner/blog-config-reveal.jpg
 tags:
   - hexo
+keywords: hexo, theme, fluid, 美化, 客製化, blog, canvas-nice.js, toc
 ---
 
 <!--lp:skip-all-->

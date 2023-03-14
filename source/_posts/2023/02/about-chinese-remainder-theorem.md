@@ -7,6 +7,7 @@ tags:
   - mafs
   - life
 date: 2023-03-13 23:35:00
+keywords: 中國剩餘定理, 中國餘式定理, CRT, 同餘, 數論, 數學, 自學
 ---
 
 ## 前言
@@ -35,9 +36,9 @@ Statement:
 <p>
 $$
 \begin{align*}
-a &\equiv b\quad (mod\, k),\\
-c &\equiv d\quad (mod\, k)\\
-\Rightarrow ac &\equiv bd\quad (mod\, k)
+a &\equiv b \pmod k,\\
+c &\equiv d \pmod k\\
+\Rightarrow ac &\equiv bd \pmod k
 \end{align*}
 $$
 </p>
@@ -57,9 +58,9 @@ $$
 <p>
 $$
 \begin{align*}
-ac &\equiv bc \quad (mod\, k) \tag{known fact}\\
-\Rightarrow bc &\equiv b(d+kn) \equiv bd \quad (mod\, k) \tag{by (1)}\\
-\Rightarrow ac &\equiv bd \quad (mod\, k)\ _\blacksquare
+ac &\equiv bc \pmod k \tag{known fact}\\
+\Rightarrow bc &\equiv b(d+kn) \equiv bd \pmod k \tag{by (1)}\\
+\Rightarrow ac &\equiv bd \pmod k\ _\blacksquare
 \end{align*}
 $$
 </p>
@@ -92,7 +93,7 @@ $$
 
 <p>
 $$
-x = \sum a_i M_i M_i^{-1}(m_i) + Mk,\quad k\in\mathbb{Z}
+x = \sum a_i M_i M_i^{-1}(m_i) + Mk,\enspace k\in\mathbb{Z}
 $$
 </p>
 

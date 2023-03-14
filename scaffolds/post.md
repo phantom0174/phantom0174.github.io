@@ -8,6 +8,8 @@ tags:
     - mafs
     - program
     - hexo
+    - life
+keywords: 
 ---
 
 <!--Remove "@" before use-->

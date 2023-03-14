@@ -6,6 +6,7 @@ banner_img: /assets/cover/mafs_mixture.webp
 date: 2023-01-21 21:38:00
 tags:
     - mafs
+keywords: 數學, 自學, 微分方程, 數論, 微積分, 積分, 微分, 極座標, gamma function, 複變分析, 複數線積分, 算子理論, Inter-universal Teichmüller theory
 ---
 
 
@@ -41,7 +42,7 @@ $$
 
 <p>
 $$
-a^{p-1}\equiv 1\quad (\bmod\ p)
+a^{p-1}\equiv 1 \pmod p
 $$
 </p>
 
@@ -49,7 +50,7 @@ $$
 
 <p>
 $$
-a^{\varphi(n)}\equiv 1\quad (\bmod\ n),\ \gcd(a,n)=1
+a^{\varphi(n)}\equiv 1 \pmod n,\ \gcd(a,n)=1
 $$
 </p>
 

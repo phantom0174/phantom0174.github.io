@@ -6,7 +6,7 @@
 title: Quantami's realm
 subtitle: '量子的隨筆'
 description: '既然沒有人對答案感興趣，那至少讓我來試試看'
-keywords: 數學, 微積分, 積分, 程式, hexo
+keywords: 數學, 微積分, 程式設計, 資工, hexo, fluid
 author: phantom0174
 language: en
 timezone: 'Asia/Taipei'
@@ -113,60 +113,22 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'fix katex render tag problem'
+  message: 'add posts keywords'
 
 # protect content inside html tags
 markdown:
   render:
     html: true
 
-# hexo-optimize
-# filter_optimize:
-#   enable: false
-#   # static resource versioning
-#   versioning: false
-#   css:
-#     # minify all css files
-#     minify: true
-#     excludes:
-#     - '**/*.min.css'
-#     # use preload to load css elements dynamically
-#     delivery:
-#     - 'fonts.googleapis.com'
-#     # make specific css content inline into the html page
-#     inlines:
-#       # support full path only
-#     - css/main.css
-#   js:
-#     # minify all js files
-#     minify: true
-#     excludes:
-#     - '**/*.min.js'
-#     - '**/jquery.fancybox.pack.js'
-#     - '**/index.js'
-#     # remove the comments in each of the js files
-#     remove_comments: true
-#   html:
-#     # minify all html files
-#     minify: true
-#     excludes:
-#   # set the priority of this plugin,
-#   # lower means it will be executed first, default of Hexo is 10
-#   priority: 12
-
 # hexo-neat
-# 博文压缩
 neat_enable: true
-# 压缩html
 neat_html:
   enable: true
   exclude:
-# 压缩css  
 neat_css:
   enable: true
   exclude:
   - '**/*.min.css'
-# 压缩js
 neat_js:
   enable: true
   mangle: true
