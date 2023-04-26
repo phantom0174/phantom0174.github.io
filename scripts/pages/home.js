@@ -16,3 +16,20 @@ const img_enlarge_anima = `
 </style>
 `;
 hexo.extend.injector.register('head_end', img_enlarge_anima, 'home');
+
+// probably not suitable for fluid theme layout
+
+// const alternating_flex_direction = `
+// <style>
+//     .row:nth-child(even) {
+//         flex-direction: row-reverse;
+//     }
+
+//     // .row:nth-child(even) .index-info {
+//     //     align-items: flex-end;
+//     //     text-align: right;
+//     // }
+// </style>
+// `;
+
+// hexo.extend.injector.register('head_end', alternating_flex_direction, 'home');
