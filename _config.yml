@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'change favicon'
+  message: 'new post: origin'
 
 # protect content inside html tags
 markdown:
