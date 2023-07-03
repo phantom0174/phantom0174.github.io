@@ -15,7 +15,6 @@ Status Code
 6: non consecutive syntax error
 """
 
-from .color import Colors
 from .settings import (
     skip_all_syntax,
     skip_some_syntax,
@@ -23,6 +22,14 @@ from .settings import (
     tag_e
 )
 
+status_code_translator = {
+    "0": "Protection Success",
+    "1": "No need of protection",
+    "3": "Skip-syntax Error",
+    "4": "Syntax maximum error",
+    "5": "Unclosed syntax error",
+    "6": "Non-consecutive syntax error"
+}
 
 def eigenize(contents: list[str]) -> dict:
     """
@@ -300,31 +307,3 @@ def get_insertion_cmd(contents: list[str], eigen_info: list[list]) -> list[list]
         "status": 0,
         "payload": insert_cmds
     }
-
-
-def output_result(SUCCESS, ERROR) -> dict:
-    for item in SUCCESS.items():
-        k = item[0]
-        files = item[1]
-
-        if len(files) == 0:
-            continue
-
-        if k == "0":
-            print(f"{Colors.OKGREEN}Protect Successful:{Colors.ENDC}")
-        elif k == "1":
-            print(f"{Colors.OKCYAN}No Need of Protection:{Colors.ENDC}")
-        
-        result = ""
-        if len(files) > 5:
-            result = '\n'.join(files[:5]) + f"\nand {len(files) - 5} other files...\n"
-        else:
-            result = '\n'.join(files) + '\n'
-
-        print(result)
-
-    for item in ERROR.items():
-        vs = item[1]
-
-        for v in vs:
-            print(f"{Colors.FAIL}{v[0]} |:{Colors.ENDC}\n{v[1]}\n")
