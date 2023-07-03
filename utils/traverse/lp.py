@@ -1,3 +1,11 @@
+"""
+
+融進 async-traverser 之後的版本，初代版本請見：
+https://phantom0174.github.io/2023/01/lightweight-hexo-latex-rendering/
+https://phantom0174.github.io/2023/01/latex-protector/
+
+"""
+
 from io import TextIOWrapper
 from traverser import Response
 
@@ -55,4 +63,3 @@ def lp(file_path: str, file: TextIOWrapper, responser: Response):
     return responser.add(f"s/{sct['0']}", {
         "path": file_path
     })
-

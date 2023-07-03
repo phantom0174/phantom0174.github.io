@@ -5,11 +5,11 @@
   "scripts": {
     "trv": "python ./utils/traverse/main.py",
     "mdm": "python ./utils/dep_msg_customizer.py",
-    "g": "npm run pl && hexo g",
+    "g": "npm run trv && hexo g",
     "cg": "hexo clean && npm run g",
-    "pre": "npm run pl && hexo g && hexo s",
+    "pre": "npm run trv && hexo g && hexo s",
     "cpre": "hexo clean && npm run pre",
-    "dep": "npm run pl && hexo g && npm run mdm"
+    "dep": "npm run trv && hexo g && npm run mdm"
   },
   "hexo": {
     "version": "6.3.0"

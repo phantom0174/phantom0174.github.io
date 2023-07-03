@@ -1,3 +1,9 @@
+"""
+
+寫中文文章時用來把前面兩個全形空格換成 html 專用的語法
+
+"""
+
 from io import TextIOWrapper
 from traverser import Response
 
