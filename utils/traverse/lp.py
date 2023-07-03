@@ -2,7 +2,6 @@ from io import TextIOWrapper
 from traverser import Response
 
 from latex_protector.subtasks import *
-
 from latex_protector.subtasks import status_code_translator as sct
 
 
@@ -18,7 +17,7 @@ def lp(file_path: str, file: TextIOWrapper, responser: Response):
 
     response = ignore_eigeninfo(response["payload"])
     if response["status"] > 2:
-        return responser.add(f"e/{sct[response['status']]}", {
+        return responser.add(f"e/{sct[str(response['status'])]}", {
             "path": file_path,
             "msg": response["msg"]
         })
@@ -27,14 +26,14 @@ def lp(file_path: str, file: TextIOWrapper, responser: Response):
 
     response = check_eigen_info(eigen_info)
     if response["status"] > 2:
-        return responser.add(f"e/{sct[response['status']]}", {
+        return responser.add(f"e/{sct[str(response['status'])]}", {
             "path": file_path,
             "msg": response["msg"]
         })
     
     response = check_eigen_block(eigen_info)
     if response["status"] > 2:
-        return responser.add(f"e/{sct[response['status']]}", {
+        return responser.add(f"e/{sct[str(response['status'])]}", {
             "path": file_path,
             "msg": response["msg"]
         })
@@ -48,7 +47,9 @@ def lp(file_path: str, file: TextIOWrapper, responser: Response):
     for cmd in response["payload"]:
         contents.insert(cmd[0], cmd[1])
     
+    file.seek(0)
     file.write('\n'.join(contents))
+    file.truncate()
     # ---
 
     return responser.add(f"s/{sct['0']}", {

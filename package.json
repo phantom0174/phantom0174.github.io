@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "pl": "python ./utils/latex_protector.py",
+    "trv": "python ./utils/traverse/main.py",
     "mdm": "python ./utils/dep_msg_customizer.py",
     "g": "npm run pl && hexo g",
     "cg": "hexo clean && npm run g",

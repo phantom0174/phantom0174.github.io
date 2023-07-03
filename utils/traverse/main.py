@@ -2,16 +2,15 @@ import asyncio
 
 from traverser import Traverser
 
-from custom1 import custom1
+from emsp_replacer import replace
 from lp import lp
 
 traversers = [
     Traverser(
         name="Custom 1",
-        workflow_func=custom1,
+        workflow_func=replace,
         target_folder_root=[
-            "./source/_posts/",
-            "./source/about/"
+            "./source/_posts/2023/06/",
         ]
     ),
     Traverser(
@@ -27,7 +26,6 @@ traversers = [
 async def main():
     for traverser in traversers:
         await traverser.run()
-        # print(traverser.workflow_function)
 
 if __name__ == "__main__":
     asyncio.run(main())
