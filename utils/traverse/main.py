@@ -10,7 +10,8 @@ traversers = [
         name="Custom 1",
         workflow_func=replace,
         target_folder_root=[
-            "./source/_posts/2023/06/",
+            "./source/_posts/",
+            "./source/about/"
         ]
     ),
     Traverser(
