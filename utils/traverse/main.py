@@ -1,14 +1,14 @@
 import asyncio
 
-from traverser import Traverser
+from file_traverser import Traverser
 
-from emsp_replacer import replace
-from lp import lp
+import emsp_replacer, lp
+
 
 traversers = [
     Traverser(
-        name="Custom 1",
-        workflow_func=replace,
+        name="EMSP Replacer",
+        workflow_func=emsp_replacer.workflow,
         target_folder_root=[
             "./source/_posts/",
             "./source/about/"
@@ -16,7 +16,7 @@ traversers = [
     ),
     Traverser(
         name="Latex Protector",
-        workflow_func=lp,
+        workflow_func=lp.workflow,
         target_folder_root=[
             "./source/_posts/",
             "./source/about/"

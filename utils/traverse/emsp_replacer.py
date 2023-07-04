@@ -5,10 +5,10 @@
 """
 
 from io import TextIOWrapper
-from traverser import Response
+from file_traverser import Response
 
 
-def replace(file_path: str, file: TextIOWrapper, responser: Response):
+def workflow(file_path: str, file: TextIOWrapper, responser: Response):
     content = file.read().split("\n")
 
     has_esmp = False

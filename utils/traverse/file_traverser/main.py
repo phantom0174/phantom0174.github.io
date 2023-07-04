@@ -10,7 +10,7 @@ class Traverser:
     async_tasks = []
     resp_handler = Response()
     workflow_function = None
-    target_folder_root = []
+    target_folder_root: list[str] = []
 
     def __init__(self, name: str, workflow_func, target_folder_root: list) -> None:
         """
@@ -49,7 +49,7 @@ class Traverser:
     async def __parallel_process(self):
         timer = Timer()
 
-        print(f'{Colors.OKGREEN}[{self.name}] Start processing...{Colors.ENDC}\n')
+        print(f'{Colors.OKGREEN}[{self.name}] Process started{Colors.ENDC}\n')
 
         timer.toggle()
         await asyncio.gather(*self.async_tasks)

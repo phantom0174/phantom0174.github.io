@@ -7,13 +7,13 @@ https://phantom0174.github.io/2023/01/latex-protector/
 """
 
 from io import TextIOWrapper
-from traverser import Response
+from file_traverser import Response
 
 from latex_protector.subtasks import *
 from latex_protector.subtasks import status_code_translator as sct
 
 
-def lp(file_path: str, file: TextIOWrapper, responser: Response):
+def workflow(file_path: str, file: TextIOWrapper, responser: Response):
     contents = file.read().split("\n")
 
     # ---

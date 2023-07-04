@@ -1,0 +1,101 @@
+from .color import Colors
+
+
+LEVEL_MSG_PREFIX = {
+    "s": f"{Colors.OKBLUE}==== Success ====",
+    "i": f"{Colors.INFO}==== Infos ====",
+    "e": f"{Colors.FAIL}==== Errors ===="
+}
+
+
+class Response:
+    """
+    pool: {
+        "s/i/e": { -> level
+            "status": [
+                { -> responses
+                    path: file_path,
+                    msg: message
+                },
+            ],
+        },
+    }
+    """
+
+    pool = {"s": {}, "i": {}, "e": {}}
+
+    def clear(self):
+        self.pool = {"s": {}, "i": {}, "e": {}}
+
+    def add(self, result: str, payload: dict):
+        """
+        result:
+            - type: str
+            - format: "<pool type(s/i/e)>/status" (s: success, i: info, e: error)
+        
+        payload: {
+            path: ...,
+            msg: ...
+        }
+        """
+
+        result = result.split("/")
+
+        if len(result) > 2:
+            raise Exception(
+                f"Result added has a invalid length!\nresult: {result}"
+            )
+        
+        level = result[0]
+        status = result[1]
+
+        if status not in self.pool[level]:
+            self.pool[level][status] = []
+
+        self.pool[level][status].append(payload)
+
+    def __level_output(self, lvl: str, responses: list):
+        """
+        By default, the message of successful responses won't be outputted.
+        """
+
+        if lvl == "s":
+            responses = list(map(lambda r: r["path"], responses))
+
+            if len(responses) > 5:
+                result = '\n'.join(responses[:5]) + f"\nand {len(responses) - 5} other files...\n"
+            else:
+                result = '\n'.join(responses) + '\n'
+
+            print(result)
+        
+        elif lvl in ["i", "e"]:
+            for resp in responses:
+                """
+                transforming:
+                a
+                b
+                into:
+                    a
+                    b
+                """
+
+                indented_lines = list(map(lambda line: "    " + line, resp["msg"].split("\n")))
+                indented_lines = "\n".join(indented_lines)
+
+                print(f"{resp['path']} ->\n{indented_lines}\n")
+
+    def output_result(self):
+        for (level, level_statuses) in self.pool.items():
+
+            if not level_statuses:
+                continue
+
+            print(LEVEL_MSG_PREFIX[level])
+
+            for (status, responses) in level_statuses.items():
+                print(f"< {status} >")
+                self.__level_output(level, responses)
+
+            print(Colors.ENDC)
+
