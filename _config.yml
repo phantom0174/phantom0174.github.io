@@ -141,3 +141,10 @@ neat_js:
 
 sitemap:
   path: sitemap.xml
+
+
+plugins:
+  - hexo-spoiler
+
+spoiler:
+  style: blur

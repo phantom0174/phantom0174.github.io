@@ -79,3 +79,14 @@ const yt_tag = `
 `;
 
 hexo.extend.injector.register('head_begin', yt_tag, 'post');
+
+
+const spoiler = `
+<style>
+    .spoiler {
+        margin-bottom: 16px;
+    }
+</style>
+`;
+
+hexo.extend.injector.register('head_begin', spoiler, 'post');

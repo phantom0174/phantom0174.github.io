@@ -2,7 +2,7 @@ import asyncio
 
 from file_traverser import Traverser
 
-import emsp_replacer, lp
+import emsp_replacer, lp, spoiler_replacer
 
 
 traversers = [
@@ -17,6 +17,14 @@ traversers = [
     Traverser(
         name="Latex Protector",
         workflow_func=lp.workflow,
+        target_folder_root=[
+            "./source/_posts/",
+            "./source/about/"
+        ]
+    ),
+    Traverser(
+        name="Spoiler Replacer",
+        workflow_func=spoiler_replacer.workflow,
         target_folder_root=[
             "./source/_posts/",
             "./source/about/"

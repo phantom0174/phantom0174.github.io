@@ -17,7 +17,11 @@ keywords:
 <!--@lp:skip-all-->
 <!--@lp:skip-some-->
 
-<!-- Literary post writing: Replace 全形雙空格 with &emsp;&emsp; -->
+<!-- EMSP Replacer: Auto replacement of double full-width white-space with &emsp;&emsp; -->
+
+<!-- Spoiler Replacer: Replace ||text||  with {% spoiler text %} -->
+
+<!--@sprp:skip-all-->
 
 ## 前言
 
