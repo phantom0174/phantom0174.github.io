@@ -27,7 +27,7 @@ class Response:
     def clear(self):
         self.pool = {"s": {}, "i": {}, "e": {}}
 
-    def add(self, result: str, payload: dict):
+    def add(self, result: str, payload: dict) -> None:
         """
         result:
             - type: str
@@ -54,7 +54,21 @@ class Response:
 
         self.pool[level][status].append(payload)
 
-    def __level_output(self, lvl: str, responses: list):
+    def __indent_lines(self, content: str) -> str:
+        """
+        transforming:
+        a
+        b
+        into:
+            a
+            b
+        """
+
+        indented = list(map(lambda line: "    " + line, content.split("\n")))
+        indented = "\n".join(indented)
+        return indented
+
+    def __level_output(self, lvl: str, responses: list) -> None:
         """
         By default, the message of successful responses won't be outputted.
         """
@@ -71,21 +85,10 @@ class Response:
         
         elif lvl in ["i", "e"]:
             for resp in responses:
-                """
-                transforming:
-                a
-                b
-                into:
-                    a
-                    b
-                """
-
-                indented_lines = list(map(lambda line: "    " + line, resp["msg"].split("\n")))
-                indented_lines = "\n".join(indented_lines)
-
+                indented_lines = self.__indent_lines(resp['msg'])
                 print(f"{resp['path']} ->\n{indented_lines}\n")
 
-    def output_result(self):
+    def output_result(self) -> None:
         for (level, level_statuses) in self.pool.items():
 
             if not level_statuses:

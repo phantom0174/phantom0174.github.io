@@ -5,6 +5,7 @@ from .timer import Timer
 from .color import Colors
 from .response import Response
 
+
 class Traverser:
     name = ""
     async_tasks = []
