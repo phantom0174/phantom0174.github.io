@@ -1,7 +1,7 @@
 # status code translator
 
 class STL:
-    status_codes = {}
+    status_codes = None
 
     def __init__(self, status_codes: dict) -> None:
         self.status_codes = status_codes
