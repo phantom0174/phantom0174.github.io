@@ -1,17 +1,18 @@
 from io import TextIOWrapper
 from file_traverser import Response
 
+from STL import STL
 
 SKIP_ALL_SYNTAX = "<!--sprp:skip-all-->"
 
-status_translator = {
+stl = STL({
     # success
     "0": "No need of replacement",
     "1": "Replacement successful",
     
     # info
     "2": "Syntax count parity" # if the count of spoiler syntax is odd
-}
+})
 
 replace_state_output = {
     "0": "{% spoiler ",
@@ -41,22 +42,25 @@ def workflow(file_path: str, file: TextIOWrapper, responser: Response):
     odd_count_lines_num : list[str] = []
     for (line_num, line) in enumerate(content):
         if line.startswith(SKIP_ALL_SYNTAX):
-            return responser.add(f"s/{status_translator['0']}", {
+            return responser.add(f"s/{stl.get(0)}", {
                 "path": file_path
             })
+        
+        if line.startswith("<!--"):
+            continue
         
         if "||" not in line:
             continue
         
         if line.count("||") % 2 != 0:
-            odd_count_lines_num.append(str(line_num))
+            odd_count_lines_num.append(str(line_num + 1))
             continue
 
-        content[line_num] = replace_syntax(line)
         has_replaced = True
+        content[line_num] = replace_syntax(line)
     
     if odd_count_lines_num:
-        responser.add(f"i/{status_translator['2']}", {
+        responser.add(f"i/{stl.get(2)}", {
             "path": file_path,
             "msg": f"File has a odd number of spoiler syntax on line {', '.join(odd_count_lines_num)},\n" \
                  + f"consider using <!--sprp:skip-all--> ?"
@@ -67,10 +71,10 @@ def workflow(file_path: str, file: TextIOWrapper, responser: Response):
         file.write("\n".join(content))
         file.truncate()
 
-        responser.add(f"s/{status_translator['1']}", {
+        responser.add(f"s/{stl.get(1)}", {
             "path": file_path
         })
     else:
-        responser.add(f"s/{status_translator['0']}", {
+        responser.add(f"s/{stl.get(0)}", {
             "path": file_path
         })

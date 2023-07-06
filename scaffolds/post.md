@@ -23,6 +23,10 @@ keywords:
 
 <!--@sprp:skip-all-->
 
+<!-- Hint usage: _!text|hint-line1\nhint-line2\n..._! -->
+
+<!--@ht:skip-all-->
+
 ## 前言
 
 ## 正文
