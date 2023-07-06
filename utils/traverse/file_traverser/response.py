@@ -39,15 +39,15 @@ class Response:
         }
         """
 
-        result = result.split("/")
+        result_info = result.split("/")
 
-        if len(result) > 2:
+        if len(result_info) > 2:
             raise Exception(
                 f"Result added has a invalid length!\nresult: {result}"
             )
         
-        level = result[0]
-        status = result[1]
+        level = result_info[0]
+        status = result_info[1]
 
         if status not in self.pool[level]:
             self.pool[level][status] = []
@@ -98,7 +98,13 @@ class Response:
 
             for (status, responses) in level_statuses.items():
                 print(f"< {status} >")
-                self.__level_output(level, responses)
+                
+                try:
+                    self.__level_output(level, responses)
+                except:
+                    # setting the color back to white when outputting errors
+                    print(Colors.ENDC)
+                    raise
 
             print(Colors.ENDC)
 

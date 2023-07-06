@@ -5,12 +5,15 @@ from .timer import Timer
 from .color import Colors
 from .response import Response
 
+from typing import Callable
+from io import TextIOWrapper
+
 
 class Traverser:
     name = ""
     async_tasks = []
     resp_handler = Response()
-    workflow_function = None
+    workflow_function: Callable[[str, TextIOWrapper, Response], None] | None = None
     target_folder_root: list[str] = []
 
     def __init__(self, name: str, workflow_func, target_folder_root: list) -> None:
@@ -44,6 +47,9 @@ class Traverser:
 
     async def __main_process(self, file_path) -> None:
         with open(file_path, 'r+', encoding='utf-8') as file:
+            if not self.workflow_function:
+                raise Exception(f"Workflow function of traverser {self.name} is None!")
+
             self.workflow_function(file_path, file, self.resp_handler)
 
 

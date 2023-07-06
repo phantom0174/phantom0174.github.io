@@ -259,7 +259,7 @@ def check_eigen_block(eigen_info: list[list]) -> dict:
     }
 
 
-def get_insertion_cmd(contents: list[str], eigen_info: list[list]) -> list[list]:
+def get_insertion_cmd(contents: list[str], eigen_info: list[list]) -> dict:
     """
     The final step of protection.
     

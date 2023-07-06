@@ -24,31 +24,31 @@ suffix = "%}"
 def replace_unit(s: str) -> str:
     # <text>|<hint-line1\nhint-line2\n...>
     
-    s = s.split("|")
+    s_info = s.split("|")
 
-    if len(s) != 2:
+    if len(s_info) != 2:
         raise Exception("3")
 
-    text = s[0]
-    hints = s[1].split("\\n")
+    text = s_info[0]
+    hints = s_info[1].split("\\n")
     
-    hints = list(map(lambda s: f"\'{s}\'", hints))
+    hints = list(map(lambda h: f"\'{h}\'", hints))
     hints = ' '.join(hints)
     
     return f"{prefix} \'{text}\' {hints} {suffix}"
 
 
 def replace_syntax_in_line(line: str) -> str:
-    line = line.split(syntax)
+    line_units = line.split(syntax)
     
-    for (ind, s) in enumerate(line):
+    for (ind, s) in enumerate(line_units):
         # even -> content, no modification
         # odd -> hint items, replacement
 
         if ind % 2 != 0:
-            line[ind] = replace_unit(s)
+            line_units[ind] = replace_unit(s)
     
-    return ''.join(line)
+    return ''.join(line_units)
 
 
 def workflow(file_path: str, file: TextIOWrapper, responser: Response):

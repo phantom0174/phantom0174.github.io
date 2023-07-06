@@ -9,7 +9,7 @@ config_file_path = "./_config.yml"
 
 yaml = ruamel.yaml.YAML()
 yaml.indent = 2
-yaml.preserve_quotes = True
+yaml.preserve_quotes = True # type: ignore
 
 def load_file():
     global config_file
