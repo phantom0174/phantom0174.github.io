@@ -1,7 +1,7 @@
 import asyncio
 
 from traverse import (
-    Traverser, emsp_replacer, lp, spoiler_replacer, hint_replacer
+    Traverser, emsp_replacer, lp, spoiler_replacer
 )
 
 traversers = [
@@ -24,14 +24,6 @@ traversers = [
     Traverser(
         name="Spoiler Replacer",
         workflow_func=spoiler_replacer.workflow,
-        target_folder_root=[
-            "./source/_posts/",
-            "./source/about/"
-        ]
-    ),
-    Traverser(
-        name="Hint Replacer",
-        workflow_func=hint_replacer.workflow,
         target_folder_root=[
             "./source/_posts/",
             "./source/about/"
