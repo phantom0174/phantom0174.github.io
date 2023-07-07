@@ -13,7 +13,7 @@ class Traverser:
     name = ""
     async_tasks = []
     resp_handler = Response()
-    workflow_function: Callable[[str, TextIOWrapper, Response], None] | None = None
+    workflow_function: Callable[[str, TextIOWrapper, Response], None]
     target_folder_root: list[str] = []
 
     def __init__(self, name: str, workflow_func, target_folder_root: list) -> None:
@@ -47,10 +47,11 @@ class Traverser:
 
     async def __main_process(self, file_path) -> None:
         with open(file_path, 'r+', encoding='utf-8') as file:
-            if not self.workflow_function:
-                raise Exception(f"Workflow function of traverser {self.name} is None!")
-
-            self.workflow_function(file_path, file, self.resp_handler)
+            try:
+                self.workflow_function(file_path, file, self.resp_handler)
+            except:
+                print(f"Error occurred when traverser [{self.name}] is traversing:")
+                raise
 
 
     async def __parallel_process(self):
@@ -62,7 +63,11 @@ class Traverser:
         await asyncio.gather(*self.async_tasks)
         time_needed = timer.toggle()
         
-        self.resp_handler.output_result()
+        try:
+            self.resp_handler.output_result()
+        except:
+            print(f"Error occurred when traverser [{self.name}] is outputting result:")
+            raise
         
         print(f'{Colors.OKGREEN}[{self.name}] Process completed in {time_needed:.3f}ms{Colors.ENDC}\n')
 
