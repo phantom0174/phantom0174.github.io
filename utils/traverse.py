@@ -1,9 +1,8 @@
 import asyncio
 
-from file_traverser import Traverser
-
-import emsp_replacer, lp, spoiler_replacer, hint_replacer
-
+from traverse import (
+    Traverser, emsp_replacer, lp, spoiler_replacer, hint_replacer
+)
 
 traversers = [
     Traverser(

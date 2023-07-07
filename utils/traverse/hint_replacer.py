@@ -1,7 +1,7 @@
 from io import TextIOWrapper
-from file_traverser import Response
+from .file_traverser import Response
 
-from STL import STL
+from .STL import STL
 
 
 SKIP_ALL_SYNTAX = "<!--ht:skip-all-->"

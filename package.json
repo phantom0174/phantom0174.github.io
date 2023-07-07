@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "trv": "python ./utils/traverse/main.py",
+    "trv": "python ./utils/traverse.py",
     "mdm": "python ./utils/dep_msg_customizer.py",
     "g": "npm run trv && hexo g",
     "cg": "hexo clean && npm run g",
