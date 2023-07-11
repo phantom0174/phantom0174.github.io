@@ -22,9 +22,8 @@ hexo.extend.filter.register('new_post_path', function (data, replace) {
     const new_paths = getYearMonth();
     data.push(...new_paths);
     createDirIfNotExists(data.join('\\'));
-
-    data.push(file_name);
-    data = data.join('\\');
     
-    return data;
+    data.push(file_name);
+    
+    return data.join('\\');;
 });

@@ -89,4 +89,4 @@ const spoiler = `
 </style>
 `;
 
-hexo.extend.injector.register('head_begin', spoiler, 'post');
+// hexo.extend.injector.register('head_begin', spoiler, 'post');
