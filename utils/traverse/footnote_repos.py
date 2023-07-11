@@ -161,8 +161,9 @@ def workflow(file_path: str, file: TextIOWrapper, responser: Response):
     if not is_list_equal(inline_order, iso_order):
         return responser.add(f"e/{stl.get(3)}", {
             "path": file_path,
-            "msg": f"Order of inline-FTs is {inline_order.sort()}\n" + \
-                    f"While order of iso-FTs is {iso_order.sort()}"
+            "msg": f"Order of inline-FTs is {list(sorted(inline_order))},\n" + \
+                    f"while order of iso-FTs is {list(sorted(iso_order))}.\n" + \
+                    f"Consider commenting out unused lines?"
         })
     
     is_inline_ordered = True
