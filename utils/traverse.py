@@ -1,7 +1,7 @@
 import asyncio
 
 from traverse import (
-    Traverser, emsp_replacer, lp, spoiler_replacer, footnote
+    Traverser, emsp_replacer, lp, spoiler_replacer, footnote_repos
 )
 
 traversers = [
@@ -30,8 +30,8 @@ traversers = [
         ]
     ),
     Traverser(
-        name="Footnote Repositioner",
-        workflow_func=footnote.workflow,
+        name="Footnote Reposer",
+        workflow_func=footnote_repos.workflow,
         target_folder_root=[
             "./source/_posts/",
             "./source/about/"

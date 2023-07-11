@@ -21,7 +21,7 @@ keywords:
 <!-- Spoiler Replacer: Replace ||text||  with {% spoiler text %} -->
 <!--@sprp:skip-all-->
 
-<!-- Footnote Repositioner: Auto repositioning of all the footnotes in post -->
+<!-- Footnote Reposer: Auto repositioning of all the footnotes in post -->
 <!--@ft:skip-all-->
 
 
