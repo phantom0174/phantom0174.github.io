@@ -13,15 +13,16 @@ keywords:
 ---
 
 <!-- Latex Protector: Remove "@" before use -->
-
 <!--@lp:skip-all-->
 <!--@lp:skip-some-->
 
 <!-- EMSP Replacer: Auto replacement of double full-width white-space with &emsp;&emsp; -->
 
 <!-- Spoiler Replacer: Replace ||text||  with {% spoiler text %} -->
-
 <!--@sprp:skip-all-->
+
+<!-- Footnote Repositioner: Auto repositioning of all the footnotes in post -->
+<!--@ft:skip-all-->
 
 
 ## 前言
