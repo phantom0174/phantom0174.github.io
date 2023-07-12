@@ -11,11 +11,12 @@
 
 """
 
+import re
 from io import TextIOWrapper
+
 from .file_traverser import Response
 from .STL import STL
 
-import re
 
 SKIP_ALL_SYNTAX = "<!--ft:skip-all-->"
 
@@ -26,7 +27,7 @@ stl = STL({
     
     # error
     "2": "End-content footnote error", # multiple occurrence of iso-FT in one line
-    "3": "Footnote in-bijection error" # bijection does not relate between inline-FTs and iso-FTs
+    "3": "Footnote bijection error" # bijection does not relate between inline-FTs and iso-FTs
 })
 
 isolated = r"\[\^[0-9]+\]\:"
@@ -50,13 +51,8 @@ def is_list_equal(a: list, b: list) -> bool:
 
 
 def extract_iso_ft(line: str) -> str:
-    FT = re.search(isolated, line)
-    if FT:
-        FT = FT.group()
-    if not FT:
-        FT = ""
-
-    return FT[:-1]
+    ft = re.findall(isolated, line)[0]
+    return ft[:-1]
 
 
 def repositioning(content: list[str], inline_order: list[int], iso_order_index: list[int]) -> list[str]:
@@ -85,10 +81,10 @@ def repositioning(content: list[str], inline_order: list[int], iso_order_index: 
     
     """
     
-    ini_core = iso_order_index[0]
-    end_core = iso_order_index[-1]
+    core_ini = iso_order_index[0]
+    core_end = iso_order_index[-1]
 
-    repos_core = content[ini_core:end_core + 1]
+    repos_core = content[core_ini:core_end + 1]
     repos_core = list(filter(lambda x: x.strip(), repos_core)) # remove empty lines
 
     for (i, line) in enumerate(repos_core):
@@ -96,9 +92,12 @@ def repositioning(content: list[str], inline_order: list[int], iso_order_index: 
         new_footnote_num = inline_order.index(get_ft_num(ft)) + 1
         repos_core[i] = repos_core[i].replace(ft, f"{create_ft_str(new_footnote_num)}")
 
-    repos_core = list(sorted(repos_core, key=lambda x: get_ft_num(extract_iso_ft(x))))
+    repos_core = list(sorted(
+        repos_core,
+        key=lambda x: get_ft_num(extract_iso_ft(x))
+    ))
 
-    content = content[:ini_core] + repos_core + content[end_core + 1:]
+    content = content[:core_ini] + repos_core + content[core_end + 1:]
     return content
 
 # main workflow
@@ -108,6 +107,56 @@ temp_syntax = "(^TEMP)"
 def workflow(file_path: str, file: TextIOWrapper, responser: Response):
     content: list[str] = file.read().split("\n")
 
+    (inline_order, iso_order, iso_order_index, abort) = parse_content(
+        content, responser, file_path
+    )
+    
+    # does not have any FTs
+    if not inline_order:
+        return responser.add(f"s/{stl.get(0)}", {
+            "path": file_path
+        })
+
+    if abort:
+        return
+
+    # testing for bijection
+    if not is_list_equal(inline_order, iso_order):
+        return responser.add(f"e/{stl.get(3)}", {
+            "path": file_path,
+            "msg": f"Order of inline-FTs is {list(sorted(inline_order))},\n" + \
+                    f"while order of iso-FTs is {list(sorted(iso_order))}.\n" + \
+                    f"Consider commenting out unused lines?"
+        })
+    
+    is_inline_ordered = True
+    same_order = True
+    for (ind, num) in enumerate(inline_order):
+        if num != ind + 1:
+            is_inline_ordered = False
+            break
+
+        if num != iso_order[ind]:
+            same_order = False
+            break
+
+    if is_inline_ordered and same_order:
+        return responser.add(f"s/{stl.get(0)}", {
+            "path": file_path
+        })
+
+    # repositioning and renaming of end-content footnotes
+    content = repositioning(content, inline_order, iso_order_index)
+
+    file.seek(0)
+    file.write("\n".join(content))
+    file.truncate()
+
+    responser.add(f"s/{stl.get(1)}", {
+        "path": file_path
+    })
+
+def parse_content(content: list[str], responser: Response, file_path: str) -> tuple[list[int], list[int], list[int], bool]:
     inline_order: list[int] = [] # the order of inline-FT appearance in the post
     iso_order: list[int] = [] # the order of isolated-FT appearance in the post
     iso_order_index: list[int] = [] # the line-index of the FTs in iso_order
@@ -117,9 +166,7 @@ def workflow(file_path: str, file: TextIOWrapper, responser: Response):
     footnote_counter = 1
     for (index, line) in enumerate(content):
         if line.startswith(SKIP_ALL_SYNTAX):
-            return responser.add(f"s/{stl.get(0)}", {
-                "path": file_path
-            })
+            return ([], [], [], True)
         
         if line.startswith("<!--"):
             continue
@@ -147,47 +194,5 @@ def workflow(file_path: str, file: TextIOWrapper, responser: Response):
 
             # transforming the temp-FTs back to inline-FTs
             content[index] = "".join(content[index].split(temp_syntax))
-    
-    # does not have any FTs
-    if not inline_order:
-        return responser.add(f"s/{stl.get(0)}", {
-            "path": file_path
-        })
 
-    if abort:
-        return
-
-    # testing for bijection
-    if not is_list_equal(inline_order, iso_order):
-        return responser.add(f"e/{stl.get(3)}", {
-            "path": file_path,
-            "msg": f"Order of inline-FTs is {list(sorted(inline_order))},\n" + \
-                    f"while order of iso-FTs is {list(sorted(iso_order))}.\n" + \
-                    f"Consider commenting out unused lines?"
-        })
-    
-    is_inline_ordered = True
-    for (ind, num) in enumerate(inline_order):
-        if num != ind + 1:
-            is_inline_ordered = False
-
-    same_order = True
-    for (ft_num1, ft_num2) in zip(inline_order, iso_order):
-        if ft_num1 != ft_num2:
-            same_order = False
-
-    if is_inline_ordered and same_order:
-        return responser.add(f"s/{stl.get(0)}", {
-            "path": file_path
-        })
-
-    # repositioning and renaming of end-content footnotes
-    content = repositioning(content, inline_order, iso_order_index)
-
-    file.seek(0)
-    file.write("\n".join(content))
-    file.truncate()
-
-    responser.add(f"s/{stl.get(1)}", {
-        "path": file_path
-    })
+    return (inline_order, iso_order, iso_order_index, abort)
