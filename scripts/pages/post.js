@@ -14,13 +14,7 @@ const toc_style = `
 <style>
     .toc-title {
         font-weight: bold !important;
-        font-size: calc(17px * 1.5);
-    }
-
-    @media (max-width: 575px) {
-        .toc-title {
-            font-size: calc(16px * 1.5) !important;
-        }
+        font-size: 1.7em;
     }
 
     .toc {
@@ -28,15 +22,33 @@ const toc_style = `
     }
 
     .toc-level-1 {
-        font-size: 21px;
+        font-size: 1.3rem;
     }
 
     .toc-level-2 {
-        font-size: 19px;
+        font-size: 1.2rem;
     }
 
     .toc-level-3 {
-        font-size: 17px;
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: 575px) {
+        .toc-title {
+            font-size: calc(1.7em * (16/17));
+        }
+
+        .toc-level-1 {
+            font-size: calc(1.3rem * (16/17));
+        }
+
+        .toc-level-2 {
+            font-size: calc(1.2rem * (16/17));
+        }
+
+        .toc-level-3 {
+            font-size: calc(1.1rem * (16/17));
+        }
     }
 </style>
 `;
