@@ -10,7 +10,6 @@ traversers = [
         workflow_func=emsp_replacer.workflow,
         target_folder_root=[
             "./source/_posts/",
-            "./source/about/"
         ]
     ),
     Traverser(
@@ -26,7 +25,6 @@ traversers = [
         workflow_func=spoiler_replacer.workflow,
         target_folder_root=[
             "./source/_posts/",
-            "./source/about/"
         ]
     ),
     Traverser(
@@ -34,7 +32,6 @@ traversers = [
         workflow_func=footnote_repos.workflow,
         target_folder_root=[
             "./source/_posts/",
-            "./source/about/"
         ]
     )
 ]
