@@ -17,9 +17,9 @@ if (device_width > 600) {
         max_point_speed: 1.5,
         zIndex: -1,
         canvas_opacity: 1,
-        render_rate: 45,
+        render_rate: 30,
         chunk_capacity: 15,
-        chunk_size_constant: 0.9,
+        chunk_size_constant: 1,
         pointer_inter_type: -1
     });
 }

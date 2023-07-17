@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://phantom0174.github.io/2023/01/mafs-mixture/</loc>
+    <loc>https://phantom0174.github.io/2023/02/about-chinese-remainder-theorem/</loc>
     
     <lastmod>2023-07-05</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://phantom0174.github.io/2023/02/about-chinese-remainder-theorem/</loc>
+    <loc>https://phantom0174.github.io/2023/01/mafs-mixture/</loc>
     
     <lastmod>2023-07-05</lastmod>
     
@@ -128,13 +128,6 @@
 
   
   <url>
-    <loc>https://phantom0174.github.io/tags/mafs/</loc>
-    <lastmod>2023-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://phantom0174.github.io/tags/program/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -143,6 +136,13 @@
   
   <url>
     <loc>https://phantom0174.github.io/tags/hexo/</loc>
+    <lastmod>2023-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://phantom0174.github.io/tags/mafs/</loc>
     <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
