@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'update bg-animation config'
+  message: 'update post content'
 
 # protect content inside html tags
 markdown:
