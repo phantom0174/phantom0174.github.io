@@ -1,5 +1,5 @@
 from io import TextIOWrapper
-from .file_traverser import Response
+from .async_traverser import Response
 
 from .STL import STL
 

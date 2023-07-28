@@ -1,3 +1,3 @@
-from .file_traverser import Traverser, Response
+from .async_traverser import Traverser, Response
 
 from . import *

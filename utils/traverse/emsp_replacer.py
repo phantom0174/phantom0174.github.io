@@ -5,7 +5,7 @@
 """
 
 from io import TextIOWrapper
-from .file_traverser import Response
+from .async_traverser import Response
 
 
 def workflow(file_path: str, file: TextIOWrapper, responser: Response):
