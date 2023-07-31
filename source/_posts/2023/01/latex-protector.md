@@ -4,7 +4,7 @@ excerpt: '功能更加齊全的解析器套件，協助你在 hexo 上渲染輕�
 date: 2023-01-28 16:38:53
 updated: 2023-1-30 02:06:00
 index_img: /assets/cover/latex-protector-cover.webp
-banner_img: /assets/banner/latex-protector-banner.webp
+banner_img: /assets/banner/latex-protector.avif
 tags:
     - program
     - hexo

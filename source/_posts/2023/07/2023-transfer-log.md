@@ -1,8 +1,8 @@
 ---
 title: '2023 台聯大轉學考 - 記錄檔'
 excerpt: '筆者自己的轉學考心得與過程'
-index_img: /assets/cover/2023-transfer-log.webp
-banner_img: /assets/banner/2023-transfer-log.jpg
+index_img: /assets/cover/2023-transfer-log.avif
+banner_img: /assets/banner/2023-transfer-log.avif
 tags:
   - life
 date: 2023-07-11 14:11:00
@@ -159,7 +159,7 @@ sticky: 5
 
 &emsp;&emsp;上學期的寒假，把微積分的進度重新撿回來，將雙重積分之後的所有章節用 6 天的時間讀完[^7]。順便提個有趣的小統計：讀完這本微積分藍色磚頭書總共用了 200多張B5 + 22張A4 的計算紙，以下是筆者讀完之後和它的合照 owo：
 
-![寫完啦！](/assets/contents/2023-transfer-log/cal_fin.webp)
+![寫完啦！](/assets/contents/2023-transfer-log/cal_fin.avif)
 
 &emsp;&emsp;差不多在寒假結束前一個禮拜開始看計概的書；因為感覺已經有點來不及了，所以這次目標是訂在期初考前就把所有進度看完（最後也是差不多那個時間簡略掃完）。在開學後買了英文的唯一一本參考書，開始慢慢刷考古，發現果然基本上都是單字的問題，並無大礙。
 
@@ -195,9 +195,9 @@ Accommodation info: {
 &emsp;&emsp;這邊就容筆者偷懶不細說考前前一天場勘流程 owo，附上幾張當天拍的旅店內部：
 
 {% gi 3 1-2 %}
-    ![房間內景1](/assets/contents/2023-transfer-log/hotel_1.webp)
-    ![房間內景2](/assets/contents/2023-transfer-log/hotel_2.webp)
-    ![房間內景3](/assets/contents/2023-transfer-log/hotel_3.webp)
+    ![房間內景1](/assets/contents/2023-transfer-log/hotel_1.avif)
+    ![房間內景2](/assets/contents/2023-transfer-log/hotel_2.avif)
+    ![房間內景3](/assets/contents/2023-transfer-log/hotel_3.avif)
 {% endgi %}
 
 &emsp;&emsp;最後小小拉回來一下，筆者基本上各科考古都只有刷台聯大近10年內，計概有刷到一點台綜的題目，但台綜出題方向真的跟台聯大相差太多了，所以到後期就沒有再寫了。微積分在後期時也有寫了 111、109 的台大C卷，但一份的量真的太多（差不多等於 2.5 ~ 3 份台聯大的題目）；那時候的目的也只是複習，筆者決定寫完這兩份就先停止，不要把時間耗在這上面。
@@ -208,7 +208,7 @@ Accommodation info: {
 
 &emsp;&emsp;考試當天 6:49 就從旅店出來，剛好趕上 6:50 的 182，搭到光復中學站去對面的全家吃早餐 + 預先買好午餐[^14]，吃完之後順著機車塔旁小徑一直直走，到盡頭時右轉再直走就是考場 - 台達館[^15]。
 
-![路線圖](/assets/contents/2023-transfer-log/test_route.webp)
+![路線圖](/assets/contents/2023-transfer-log/test_route.avif)
 
 &emsp;&emsp;順帶一提，當天天氣是典型的夏天，熱到走幾步路就會直接飆汗的那種。筆者考場在二樓，上二樓之後發現幾乎所有人都在看書，但筆者卻優閒的逛了一圈之後再回來，順便確認洗手間位置（場勘時忘記先看大樓內部了）。筆者稍微再看了一下幾個常常忘記的級數展開，就進去考試了。
 

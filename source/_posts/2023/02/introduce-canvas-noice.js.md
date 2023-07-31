@@ -2,7 +2,7 @@
 title: '【更新】隆重介紹 canvas-noice.js'
 excerpt: '對 canvas-nest.js 進行算法優化，增快將近 46.7 FPS！'
 index_img: /assets/cover/canvas-noice.js.webp
-banner_img: /assets/banner/canvas-noice.js.webp
+banner_img: /assets/banner/canvas-noice.js.avif
 date: 2023-02-21 21:37:00
 updated: 2023-03-03 21:23:00
 tags:
@@ -43,11 +43,11 @@ keywords: canvas-nest.js, 優化, 演算法, 渲染, 空間分割資料型態, �
 
 在同樣設定下（1000 個點；互動半徑 77.46 像素；不模擬重力），`canvas-nest` 跑出來的成績只有 13.8 FPS，如下圖：
 
-![canvas-nest performance](/assets/contents/canvas-noice.js/nest.jpg)
+![canvas-nest performance](/assets/contents/canvas-noice.js/nest.avif)
 
 而在同樣設定下，使用筆者優化過後的演算法與資料型態建構出的新套件 `canvas-noice.js`，則是把 60 FPS 跑好跑滿。
 
-![canvas-noice performance](/assets/contents/canvas-noice.js/noice.jpg)
+![canvas-noice performance](/assets/contents/canvas-noice.js/noice.avif)
 
 為什麼會有如此巨大的差別？原因在於兩個重大的優化 - `chunks` 與 `draw buffer`。
 
