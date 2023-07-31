@@ -102,3 +102,15 @@ const spoiler = `
 `;
 
 // hexo.extend.injector.register('head_begin', spoiler, 'post');
+
+const smooth_scroll = `
+<style>
+    html, body {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+`;
+
+hexo.extend.injector.register('head_begin', smooth_scroll, 'post');

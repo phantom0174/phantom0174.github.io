@@ -33,3 +33,9 @@ hexo.extend.injector.register('head_end', img_enlarge_anima, 'home');
 // `;
 
 // hexo.extend.injector.register('head_end', alternating_flex_direction, 'home');
+
+const smooth_scroll = `
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+`;
+
+hexo.extend.injector.register('head_begin', smooth_scroll, 'home');
