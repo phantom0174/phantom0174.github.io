@@ -1,14 +1,14 @@
 ---
 title: 'Async Traverser 小介紹'
 excerpt: '解放筆者寫文章的雙手！'
-index_img: /assets/cover/
-banner_img: /assets/banner/
+index_img:
+banner_img:
 tags:
   - program
   - hexo
 date: 2023-07-19 22:57:41
+updated: 2023-07-31 22:30:00
 keywords: tool, program, python
-hide: true
 ---
 
 <!-- Latex Protector: Remove "@" before use -->
@@ -23,10 +23,15 @@ hide: true
 <!-- Footnote Reposer: Auto repositioning of all the footnotes in post -->
 <!--ft:skip-all-->
 
+{% note info %}
+此文章待潤色
+{% endnote %}
 
 ## 前言
 
 &emsp;&emsp;繼上次的 `latex-protector` 之後，因為筆者又多了一些需要針對每篇文章的原始 `.md` 檔自動修正的程序；所以該脆直接把這個過程模組化，做成高階的 `async-traverser`，只需要專注在撰寫處理檔案內容的程式碼與狀態回應的部分上即可。
+
+[**程式碼點我**][async_traverser_url]
 
 ## 正文
 
@@ -74,3 +79,5 @@ def workflow(file_path: str, file: TextIOWrapper, responser: Response):
 之後肯定會再出現一些有趣的功能，敬請期待 owo。
 
 那麼，就先醬。
+
+[async_traverser_url]: https://github.com/phantom0174/phantom0174.github.io/tree/master/utils/traverse/async_traverser

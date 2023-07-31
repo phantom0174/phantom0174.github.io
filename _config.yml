@@ -93,7 +93,7 @@ updated_option: mtime
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 6
+per_page: 0
 pagination_dir: page
 
 # Include / Exclude file(s)
@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'add notif'
+  message: 'new post'
 
 # protect content inside html tags
 markdown:
