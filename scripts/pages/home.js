@@ -39,3 +39,15 @@ const smooth_scroll = `
 `;
 
 hexo.extend.injector.register('head_begin', smooth_scroll, 'home');
+
+
+const remove_blurred_navbar_effect = `
+<style>
+    .navbar .dropdown-collapse, .navbar-col-show, .top-nav-collapse {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+</style>
+`;
+
+hexo.extend.injector.register('head_begin', remove_blurred_navbar_effect, 'home');
