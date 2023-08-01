@@ -1,11 +1,13 @@
-## File Size
+## Assets
 
-banner: <= 100 KB
+### File Size
+
+banner: <= 120 KB
 cover: <= 50 KB
 
 content: <= 100 KB
 
-## File Format
+### File Format
 
 - large file
     AVIF > JPG > WEBP > PNG

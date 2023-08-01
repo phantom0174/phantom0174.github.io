@@ -1,14 +1,14 @@
 ---
 title: 'Async Traverser 小介紹'
 excerpt: '解放筆者寫文章的雙手！'
-index_img:
-banner_img:
+index_img: /assets/banner/async-traverser.avif
+banner_img: /assets/banner/async-traverser.avif
 tags:
   - program
   - hexo
 date: 2023-07-19 22:57:41
 updated: 2023-07-31 22:30:00
-keywords: tool, program, python
+keywords: tool, program, python, hexo
 ---
 
 <!-- Latex Protector: Remove "@" before use -->
@@ -80,4 +80,11 @@ def workflow(file_path: str, file: TextIOWrapper, responser: Response):
 
 那麼，就先醬。
 
+---
+
+Photo by [Hunter Harritt][hunter_harritt] on [Unsplash][unsplash].
+
+
 [async_traverser_url]: https://github.com/phantom0174/phantom0174.github.io/tree/master/utils/traverse/async_traverser
+[hunter_harritt]: https://unsplash.com/@hharritt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+[unsplash]: https://unsplash.com/photos/Ype9sdOPdYc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText

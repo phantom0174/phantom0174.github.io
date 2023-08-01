@@ -100,6 +100,7 @@ pagination_dir: page
 ## include:/exclude: options only apply to the 'source/' folder
 include:
 exclude:
+- /assets/RULES.md
 ignore:
 
 # Extensions
@@ -113,7 +114,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'introduce .avif'
+  message: 'beautify async-traverser'
 
 # protect content inside html tags
 markdown:
