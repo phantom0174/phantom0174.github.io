@@ -114,7 +114,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'beautify async-traverser'
+  message: 'fix typo'
 
 # protect content inside html tags
 markdown:

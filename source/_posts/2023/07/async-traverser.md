@@ -1,7 +1,7 @@
 ---
 title: 'Async Traverser 小介紹'
 excerpt: '解放筆者寫文章的雙手！'
-index_img: /assets/banner/async-traverser.avif
+index_img: /assets/cover/async-traverser.avif
 banner_img: /assets/banner/async-traverser.avif
 tags:
   - program
