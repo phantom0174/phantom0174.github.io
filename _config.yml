@@ -114,7 +114,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'add ground glass effect'
+  message: 'update post'
 
 # protect content inside html tags
 markdown:
