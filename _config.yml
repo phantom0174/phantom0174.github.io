@@ -114,7 +114,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'update post'
+  message: 'update post content'
 
 # protect content inside html tags
 markdown:
@@ -146,6 +146,12 @@ sitemap:
 
 plugins:
 - hexo-spoiler
+- hexo-tag-collapse-spoiler
 
 spoiler:
   style: blur
+
+collapse:
+  border: false  # Whether to enable borders for content hidden using 'collapsebtn' and 'collapselink' / 是否开启按钮和链接样式的边框
+  hint_show: Show # Default text for 'Show' operation / 展开默认提示文字
+  hint_hide: Hide # Default text for 'Hide' operation / 收起默认提示文字
