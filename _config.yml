@@ -145,13 +145,7 @@ sitemap:
 
 
 plugins:
-- hexo-spoiler
-- hexo-tag-collapse-spoiler
+  - hexo-spoiler
 
 spoiler:
   style: blur
-
-collapse:
-  border: false  # Whether to enable borders for content hidden using 'collapsebtn' and 'collapselink' / 是否开启按钮和链接样式的边框
-  hint_show: Show # Default text for 'Show' operation / 展开默认提示文字
-  hint_hide: Hide # Default text for 'Hide' operation / 收起默认提示文字
