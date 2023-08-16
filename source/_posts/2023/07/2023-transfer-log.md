@@ -6,7 +6,7 @@ banner_img: /assets/banner/2023-transfer-log.avif
 tags:
   - life
 date: 2023-07-11 14:11:00
-updated: 2023-08-04 19:30:00
+updated: 2023-08-16 11:40:00
 keywords: 台聯大, 轉學考, 資工系, 心得, 紀錄
 sticky: 5
 ---
@@ -246,6 +246,7 @@ Accommodation info: {
 
 {% note success %}
 贈書活動已結束，謝謝各位！
+收信用 Google 帳號已於 2023/08/16 11:39 AM 進行刪除。
 {% endnote %}
 
 &emsp;&emsp;因為筆者已經不會再用到參考書們了，與其留在家裡還不如拿出來送有需要的人！
