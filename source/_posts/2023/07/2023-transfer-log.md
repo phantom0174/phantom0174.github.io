@@ -8,7 +8,6 @@ tags:
 date: 2023-07-11 14:11:00
 updated: 2023-08-16 11:40:00
 keywords: 台聯大, 轉學考, 資工系, 心得, 紀錄
-sticky: 5
 ---
 
 <!-- Latex Protector: Remove "@" before use -->
