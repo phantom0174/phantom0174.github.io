@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://phantom0174.github.io/2023/08/pursuit-curve/</loc>
+    
+    <lastmod>2023-08-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://phantom0174.github.io/2023/07/2023-transfer-log/</loc>
     
     <lastmod>2023-08-16</lastmod>
@@ -139,7 +148,7 @@
 
   <url>
     <loc>https://phantom0174.github.io/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-08-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -147,28 +156,28 @@
   
   <url>
     <loc>https://phantom0174.github.io/tags/mafs/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://phantom0174.github.io/tags/program/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://phantom0174.github.io/tags/hexo/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://phantom0174.github.io/tags/life/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
