@@ -8,3 +8,4 @@ public/
 _multiconfig.yml
 .github/
 .vscode/
+_config.fluid.yml
