@@ -376,6 +376,12 @@ footer:
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
   '
 
+  statistics:
+    enable: true
+    source: "busuanzi"
+    pv_format: "訪問量 {} 次"
+    uv_format: "訪客數 {} 人"
+
 
 #---------------------------
 # 首页
@@ -479,7 +485,7 @@ post:
     # 浏览量计数
     # Number of visits
     views:
-      enable: false
+      enable: true
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud
@@ -814,7 +820,7 @@ static_prefix:
 
   # katex: https://lib.baomitu.com/KaTeX/0.16.2/
 
-  # busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
+  busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
 
   # clipboard: https://lib.baomitu.com/clipboard.js/2.0.11/
   clipboard: https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/
