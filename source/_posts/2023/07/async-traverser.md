@@ -82,9 +82,9 @@ def workflow(file_path: str, file: TextIOWrapper, responser: Response):
 
 ---
 
-Photo by [Hunter Harritt][hunter_harritt] on [Unsplash][unsplash].
+Photo by [Osman Rana][Osman_Rana] on [Unsplash][unsplash].
 
 
 [async_traverser_url]: https://github.com/phantom0174/phantom0174.github.io/tree/master/utils/traverse/async_traverser
-[hunter_harritt]: https://unsplash.com/@hharritt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-[unsplash]: https://unsplash.com/photos/Ype9sdOPdYc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+[Osman_Rana]: https://unsplash.com/@osmanrana?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+[unsplash]: https://unsplash.com/photos/G7VN8NadjO0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
