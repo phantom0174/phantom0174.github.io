@@ -7,8 +7,8 @@ tags:
   - mafs
   - life
 date: 2023-08-27 00:00:00
-updated: 2023-08-27 17:20:00
-keywords: 追蹤曲線, pursuit curve, radiodrome, differential equation, laplace transform, terraria, wall of flesh
+updated: 2023-09-09 19:30:00
+keywords: 追蹤曲線, pursuit curve, radiodrome, differential equation, euler method, rk4 method, laplace transform, terraria, wall of flesh
 ---
 
 <!-- Latex Protector: Remove "@" before use -->
@@ -92,9 +92,51 @@ $$
 
 &emsp;&emsp;所以，筆者又自己在 Desmos 中建了一個 [Simulator of general-form pursuit curve 的模型][desmos_version_2]，有興趣的人也歡迎去玩玩看！（還支持軌跡功能呦 ^~^）
 
+---
+
+### 2023/9/9 更新：模擬方式
+
+&emsp;&emsp;筆者一開始進行模擬時（也就是用數值法求解 DE）是用 Euler method，今天在看這個影片時候學到了名為 **RK4** 的新方法！
+
+<!-- Building a Physics Engine with C++ and Simulating Machines -->
+{% youtube TtgS-b191V0 %}
+
+普通的 Euler method 在逼近時只用了一步，但 RK4 代表在逼近時前前後後用了總共 4 步，最後再取平均來獲得更精確的估計值。而 total accumulated error 的複雜度會是 $O(\text{dt}^p)$，其中 $p$ 為更新步數，$\text{dt}$ 為更新時間差。
+
+所以 RK4 會比 Euler method 還要再更精確許多，如上影片中 3:32 左右講述的：使用 Euler method 要求出不發散的解需要以 600KHz 進行模擬；但使用 RK4 只需要 300Hz 就可得出穩定解。
+
+筆者去找了些 RK4 的教學影片後，也嘗試利用看看在暑假學了一些的 Unity 去寫了 pursuit-curve 的模擬器，並在裡面實現 Vector DE 版本的 RK4 更新，如下：
+
+```c#
+void RK4UpdatePos()
+{
+    Vector3 k1 = dP(targetClass.T_total, trans.position),
+        k2 = dP(targetClass.T_total + dt / 2, trans.position + dt / 2 * k1),
+        k3 = dP(targetClass.T_total + dt / 2, trans.position + dt / 2 * k2),
+        k4 = dP(targetClass.T_total + dt, trans.position + dt * k3);
+
+    Vector3 avr = (k1 + 2 * k2 + 2 * k3 + k4) / 6;
+    trans.position += dt * avr;
+}
+
+Vector3 dP(float t, Vector3 p)
+{
+    return moveSpeed * (targetClass.PathPos(t) - p).normalized;
+}
+```
+
+也放上一張模擬的結果owo：
+
+![T(t) = (cos(t), cos(t)^3)](/assets/contents/pursuit-curve/simu0.avif)
+
+總地來說，Desmos 和 Unity 在效能上真的差超多；但或許是因為追蹤曲線的 DE 過於簡單，Euler & RK4 之間的模擬只有在 Target path 非常極端的狀況下才會有微小差異。
+
+反正學到新東西就是爽爽的uwu。
+
 ## 後記
 
 在這邊特別感謝那位台大物理朋朋，被我硬塞了一堆奇怪的東東 owo。
+> 也要感謝新室友，也被我塞了一堆奇怪的東東 uwu。
 
 總之，就是一個寫紀錄文寫到一半時突然想起某個氣死人的事情並對其狂酸的筆者。
 
