@@ -163,7 +163,7 @@ $$
 $$
 </p>
 
-但要用 RK4 解這組向量微分方程組的話，就必須要把這個方程組合併，並鑲入 $\mathbb{R}^4$ 中（在 Unity 裡實作時其實是 $\mathbb{R}^6$），如下：
+但要用 RK4 解這組向量微分方程組的話，就必須要把這個方程組合併，並鑲入 $\mathbb{R}^5$ 中（在 Unity 裡實作時其實是 $\mathbb{R}^7$），如下：
 
 <p>
 $$
@@ -238,7 +238,7 @@ $A(k)$ 是角度範圍修正量。
 
 ![$V_T/V_P = 0.9$](/assets/contents/pursuit-curve/too_slow.avif)
 
-從上面模解結果可知：跑的時候不要亂擺來擺去，跑直線最好 owo。
+從上面模擬結果可知：跑的時候不要亂擺來擺去，跑直線最好 owo。
 
 <!-- Simulation of Tag game model -->
 {% youtube pIOTvZjVlv0 %}
