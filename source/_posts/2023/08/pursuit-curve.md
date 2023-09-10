@@ -239,6 +239,9 @@ $A(k)$ 是角度範圍修正量。
 
 從上面模解結果可知：跑的時候不要亂擺來擺去，跑直線最好 owo。
 
+<!-- Simulation of Tag game model -->
+{% youtube pIOTvZjVlv0 %}
+
 ## 後記
 
 在這邊特別感謝那位台大物理朋朋，被我硬塞了一堆奇怪的東東 owo。
