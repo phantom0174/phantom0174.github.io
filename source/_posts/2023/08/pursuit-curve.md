@@ -6,6 +6,7 @@ banner_img: /assets/banner/pursuit-curve.avif
 tags:
   - mafs
   - life
+  - program
 date: 2023-08-27 00:00:00
 updated: 2023-09-10 11:20:00
 keywords: 追蹤曲線, pursuit curve, radiodrome, differential equation, euler method, rk4 method, laplace transform, terraria, wall of flesh
@@ -18,7 +19,7 @@ keywords: 追蹤曲線, pursuit curve, radiodrome, differential equation, euler 
 <!-- EMSP Replacer: Auto replacement of double full-width white-space with &emsp;&emsp; -->
 
 <!-- Spoiler Replacer: Replace ||text||  with {% spoiler text %} -->
-<!--@sprp:skip-all-->
+<!--sprp:skip-all-->
 
 <!-- Footnote Reposer: Auto repositioning of all the footnotes in post -->
 <!--@ft:skip-all-->
@@ -107,7 +108,7 @@ $$
 
 筆者去找了些 RK4 的教學影片後，也嘗試利用看看在暑假學了一些的 Unity 去寫了 pursuit-curve 的模擬器，並在裡面實現 Vector DE 版本的 RK4 更新，如下：
 
-```c#
+```csharp
 void RK4UpdatePos()
 {
     Vector3 k1 = dP(targetClass.T_total, trans.position),
@@ -177,7 +178,7 @@ $$
 
 $S$ 代表 System，描述整個系統。而有了這個複合向量之後，我們就可以用 RK4 去模擬這個問題了！以下為核心 code：
 
-```c#
+```csharp
 private void UpdatePos()
 {
     if (pTrans == null || tTrans == null) return;
