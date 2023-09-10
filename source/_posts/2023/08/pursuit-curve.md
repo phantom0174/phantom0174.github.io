@@ -7,7 +7,7 @@ tags:
   - mafs
   - life
 date: 2023-08-27 00:00:00
-updated: 2023-09-09 19:30:00
+updated: 2023-09-10 11:20:00
 keywords: 追蹤曲線, pursuit curve, radiodrome, differential equation, euler method, rk4 method, laplace transform, terraria, wall of flesh
 ---
 
@@ -55,7 +55,7 @@ $$
 
 其中 H 是玩家（human）；W 是 WoF； $\textbf{H}$ 是玩家的位置向量；$\textbf{W}$ 是 WoF 的位置向量；$v_i$ 就代表各自的移動速度。
 
-&emsp;&emsp;筆者一開始想要從這個微分方程解 time-dependent path，結果發現怎麼解都解不出來，把那條向量微分方程式換元也只能得掉一條裡面有 unit vector 的 DE。筆者還特地去問了台大物理系的朋朋，結果他也不知道要怎麼處理那個鬼東西 qq。
+&emsp;&emsp;筆者一開始想要從這個微分方程解 time-dependent path，結果發現怎麼解都解不出來，把那條向量微分方程式換元也只能得到一條裡面有 unit vector 的 DE。筆者還特地去問了台大物理系的朋朋，結果他也不知道要怎麼處理那個鬼東西 qq。
 
 &emsp;&emsp;最後翻到 radiodrome 的 wiki page 時才發現這個東西根本沒辦法解 time-dependent，光解 x-y functional relation 的步驟就夠難了。
 
@@ -127,11 +127,117 @@ Vector3 dP(float t, Vector3 p)
 
 也放上一張模擬的結果owo：
 
-![T(t) = (cos(t), cos(t)^3)](/assets/contents/pursuit-curve/simu0.avif)
+![$T(t) = (\cos(t), \cos(t)^3)$](/assets/contents/pursuit-curve/simu0.avif)
 
 總地來說，Desmos 和 Unity 在效能上真的差超多；但或許是因為追蹤曲線的 DE 過於簡單，Euler & RK4 之間的模擬只有在 Target path 非常極端的狀況下才會有微小差異。
 
 反正學到新東西就是爽爽的uwu。
+
+---
+
+### 2023/9/10 更新：鬼抓人模型模擬
+
+&emsp;&emsp;繼昨天的模擬之後，筆者在晚上時突然想到了可以把鬼抓人的行為描述成微分方程，如下：
+
+<p>
+$$
+\left\{\begin{matrix}
+    \begin{align*}
+        \frac{dP}{dt} &= V_P \cdot \Lambda (T-P)\\
+        \frac{dT}{dt} &= V_T \cdot \Lambda \left[\Lambda (T-P)(1-\alpha)+R_{\theta}\,\hat{\tau}(t)\alpha \right]
+    \end{align*}
+\end{matrix}\right.
+$$
+</p>
+
+其中 $P$ 擔任鬼的角色；$T$ 就是人。$\Lambda(v)$ 代表 $\hat{v}$ {% spoiler 因為對於很長的 $v$ 來說只有個小 hat 太不明顯了，所以寫成 function 型態 %}。
+
+也順便解釋一下各個式子的意義：$P_t$ 沒甚麼好講，跟 pursuit curve 的狀況一樣；$T_t$ 的意思是：人除了會往反方向逃離（$\Lambda (T-P)$），同時也會受想要逃離鬼的心理作祟，亦或者是受場地大小限制而拐彎（$R_{\theta}\,\hat{\tau}(t)$）。而 $\alpha$ 就是作為這兩者心理因素的加權平均值，最後再將向量合 normalize 之後乘上 $V_T$ 即為人的逃跑微分方程。
+
+其中 $R_{\theta}$ 是用來修正坐標系的旋轉矩陣，$\theta$ 是以下函數：
+
+<p>
+$$
+\theta=\text{atan2}\left(T-P\right)
+$$
+</p>
+
+但要用 RK4 解這組向量微分方程組的話，就必須要把這個方程組合併，並鑲入 $\mathbb{R}^4$ 中（在 Unity 裡實作時其實是 $\mathbb{R}^6$），如下：
+
+<p>
+$$
+\begin{align*}
+    S &= (P,T)\\
+    S_t &= (P_t,T_t)\\
+        &= (f_1(t,P,T),\ f_2(t,P,T))\\
+        &= (f_1(t,S),\ f_2(t,S))
+\end{align*}
+$$
+</p>
+
+$S$ 代表 System，描述整個系統。而有了這個複合向量之後，我們就可以用 RK4 去模擬這個問題了！以下為核心 code：
+
+```c#
+private void UpdatePos()
+{
+    if (pTrans == null || tTrans == null) return;
+
+    Sys delta = RK4DESolver(new Sys(pTrans.position, tTrans.position));
+    pTrans.position += delta.P;
+    tTrans.position += delta.T;
+}
+
+private Sys RK4DESolver(Sys s)
+{
+    Sys k1 = dS(tTotal, s),
+        k2 = dS(tTotal + dt / 2, s + k1 * (dt / 2)),
+        k3 = dS(tTotal + dt / 2, s + k2 * (dt / 2)),
+        k4 = dS(tTotal + dt, s + k3 * dt);
+
+    Sys avr = (k1 + (2 * k2) + (2 * k3) + k4) / 6;
+
+    return avr * dt;
+}
+
+private Sys dS(float t, Sys s)
+{
+    Vector3 dirVec = (s.T - s.P).normalized;
+    return new Sys(
+        vP * dirVec,
+        vT * (
+            dirVec * (1-alpha) + XYRotation(tiltVector(t), Mathf.Atan2(dirVec.y, dirVec.x)) * alpha
+        ).normalized
+    );
+}
+```
+
+> 其中 Sys 實作是利用 struct + operator overload。
+
+說了一堆奇怪的數學術語，是時候來看一些模擬圖了！
+
+> 參數使用：
+
+<p>
+$$
+\begin{align*}
+    A(k) &= \frac{k\pi}{180}\\
+    \hat{\tau}(t,k) &= \left(\cos(x), \sin(x)\right),\ x = \cos(t)A(k)
+\end{align*}
+$$
+</p>
+
+$A(k)$ 是角度範圍修正量。
+
+> 紅色是人，藍色是鬼
+
+![$\hat{\tau}(t, 45)$](/assets/contents/pursuit-curve/simu45.avif)
+![$\hat{\tau}(t, 30)$](/assets/contents/pursuit-curve/simu30.avif)
+
+人稍微跑慢一點就變醬了qq：
+
+![$V_T/V_P = 0.9$](/assets/contents/pursuit-curve/too_slow.avif)
+
+從上面模解結果可知：跑的時候不要亂擺來擺去，跑直線最好 owo。
 
 ## 後記
 

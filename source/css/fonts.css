@@ -9,9 +9,10 @@ body,
     font-display: swap;
 }
 
-@media (max-width: 575px) {
+/* font-size is too small on portable device */
+/* @media (max-width: 575px) {
     body,
     .markdown-body {
         font-size: 16px !important;
     }
-}
+} */
