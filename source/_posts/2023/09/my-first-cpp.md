@@ -193,10 +193,10 @@ int main() {
 
 using namespace std;
 
-short n[2 * MAX];
+short n[MAX];
 
-// sel: to back; re: last k sort
-priority_queue<short, vector<short>, greater<short>> re, sel;
+// to back
+priority_queue<short, vector<short>, greater<short>> sel;
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -222,13 +222,12 @@ int main() {
         }
         scanf("%d", &k);
         k = min(cur_pos, k);
-        int stable_count = cur_pos - k;
 
         int l, r = 1;
         while (k) {
             // climb terrain until descend found
-            while (r != cur_pos && n[r - 1] <= n[r]) r++;
-            if (r == cur_pos) break;
+            while (r <= cur_pos && n[r - 1] <= n[r]) r++;
+            if (r > cur_pos) break;
 
             for (l = r - 1; l >= 0; l--) {
                 if (n[l] < 0) {  // hop across gaps
@@ -239,32 +238,20 @@ int main() {
 
                 sel.push(n[l]);
                 n[l] = -1;
+                n[cur_pos] = sel.top();
                 if (!(--k)) break;
             }
             // indicates gap width
             n[r - 1] = l - (r - 1);
-
-            while (!sel.empty()) {
-                n[cur_pos] = sel.top();
-                sel.pop();
-                cur_pos++;
-            }
         }
 
         for (int i = 0; i < cur_pos; i++) {
-            if (n[i] < 1) continue;
-
-            if (stable_count > 0) {
-                printf("%d", n[i]);
-                stable_count--;
-            } else {
-                re.push(n[i]);
-            }
+            if (n[i] > 0) printf("%d", n[i]);
         }
 
-        while (!re.empty()) {
-            printf("%d", re.top());
-            re.pop();
+        while (!sel.empty()) {
+            printf("%d", sel.top());
+            sel.pop();
         }
         printf("\n");
     }
