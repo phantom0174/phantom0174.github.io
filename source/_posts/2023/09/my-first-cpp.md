@@ -7,6 +7,7 @@ tags:
   - program
   - life
 date: 2023-09-24 00:00:00
+updated: 2023-09-24 14:00:00
 keywords: 清大, nthu, 競程, competitive programming
 ---
 
@@ -43,13 +44,128 @@ keywords: 清大, nthu, 競程, competitive programming
 
 &emsp;&emsp;是個簡單版的 1A2B，應該是沒問題。
 
+```cpp
+#include <iostream>
+
+using namespace std;
+
+#define SIZE 4
+
+int main() {
+    int a[SIZE], b[SIZE];
+
+    for (int i = 0; i < 4; i++) cin >> a[i];
+    for (int i = 0; i < 4; i++) cin >> b[i];
+
+    int A = 0, B = 0;
+
+    for (int i = 0; i < 4; i++) {
+        if (a[i] == b[i]) A++;
+        else {
+            for (int j = 0; j < 4; j++) {
+                if (i == j) continue;
+                if (a[i] != b[j]) continue;
+                
+                B++;
+                break;
+            }
+        }
+    }
+
+    cout << A << "A" << B << "B" << endl;
+}
+```
+
 ### p2
 
 &emsp;&emsp;筆者一開始就把這題想太難了，直接把黑白灰編碼成 `1, -1, 0` 然後開始用數學的角度來看，事後發現其實只要把灰視為黑白都是就好了。到這邊心情已經`--`。
 
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+
+    int M, N;
+    cin >> M >> N;
+
+    char c;
+    int wseq = 0, bseq = 0;
+    bool null;
+    for (int i = 0; i < M; i++) {
+        bool wfound = 0, bfound = 0;
+        for (int j = 0; j < N; j++) {
+            cin >> c;
+
+            if (c == 'W' || c == 'G') wfound = 1;
+            if (c == 'B' || c == 'G') bfound = 1;
+            null = (c == '.');
+
+            if (wfound && (c == 'B' || null)) {
+                wfound = 0;
+                wseq++;
+            }
+
+            if (bfound && (c == 'W' || null)) {
+                bfound = 0;
+                bseq++;
+            }
+        }
+        if (wfound) wseq++;
+        if (bfound) bseq++;
+    }
+
+    cout << wseq << " " << bseq;
+}
+```
+
 ### p3
 
 &emsp;&emsp;這題筆者心態完全炸掉，起初寫了個 `3` 維 dp，果不其然 TLE。後來隔了一天多才抓到可能的降維方式重點，但全觀來看還是沒對。後來是室友直接教筆者這題的 2 維 dp 要怎麼分才過（筆者自己的 2 維 dp 定義爛了，所以做不出來）。室友自己是寫了個 1 維 dp，簡直是鬼，筆者到現在都還沒去想那個 1 維 dp 要怎麼定義。
+
+```cpp
+#include <iostream>
+
+#define MOD (int)(1e9 + 7)
+#define size 3000 + 1
+
+using namespace std;
+
+int S, M;  // sum & max
+
+int dp[size][size];
+
+int run_dp(int m, int n) {
+    if (m < 0) return 0;
+    if (m < n) return run_dp(m, m);
+
+    if (dp[m][n] == -1) {
+        dp[m][n] = ((run_dp(m - n, n) % MOD) + (run_dp(m, n - 1) % MOD)) % MOD;
+    }
+    return dp[m][n];
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+
+    cin >> S >> M;
+
+    for (int i = 0; i <= S; i++) {
+        for (int j = 0; j <= M; j++) {
+            dp[i][j] = -1;
+        }
+    }
+
+    dp[0][0] = 1;
+    for (int i = 1; i <= S; i++) dp[i][0] = 0;
+
+    cout << run_dp(S, M) << "\n";
+}
+```
 
 ### p4 part.1
 
@@ -67,17 +183,162 @@ keywords: 清大, nthu, 競程, competitive programming
 
 > 寫出這題的成就感比前幾題大多了，但實作不出來的感覺還是很躁 ##。
 
+```cpp
+#include <stdio.h>
+
+#include <iostream>
+#include <queue>
+
+#define MAX (int)(1e5 + 1)
+
+using namespace std;
+
+short n[2 * MAX];
+
+// sel: to back; re: last k sort
+priority_queue<short, vector<short>, greater<short>> re, sel;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+
+    int T;
+    scanf("%d", &T);
+
+    while (T--) {
+        int k;  // ops can do
+        char c;
+        int cur_pos = 0;
+        while (true) {
+            c = getchar();
+
+            if (c == ' ')
+                break;
+            else if (c == '\n')
+                continue;
+
+            n[cur_pos] = c - 48;
+            cur_pos++;
+        }
+        scanf("%d", &k);
+        k = min(cur_pos, k);
+        int stable_count = cur_pos - k;
+
+        int l, r = 1;
+        while (k) {
+            // climb terrain until descend found
+            while (r != cur_pos && n[r - 1] <= n[r]) r++;
+            if (r == cur_pos) break;
+
+            for (l = r - 1; l >= 0; l--) {
+                if (n[l] < 0) {  // hop across gaps
+                    l += n[l];
+                    if (l < 0) break;
+                }
+                if (n[l] <= n[r]) break;
+
+                sel.push(n[l]);
+                n[l] = -1;
+                if (!(--k)) break;
+            }
+            // indicates gap width
+            n[r - 1] = l - (r - 1);
+
+            while (!sel.empty()) {
+                n[cur_pos] = sel.top();
+                sel.pop();
+                cur_pos++;
+            }
+        }
+
+        for (int i = 0; i < cur_pos; i++) {
+            if (n[i] < 1) continue;
+
+            if (stable_count > 0) {
+                printf("%d", n[i]);
+                stable_count--;
+            } else {
+                re.push(n[i]);
+            }
+        }
+
+        while (!re.empty()) {
+            printf("%d", re.top());
+            re.pop();
+        }
+        printf("\n");
+    }
+}
+```
+
 ### p4 part.2
 
 &emsp;&emsp;筆者寫完 p5 的隔天才來想這題，但用錯了想法，只想到一個更爛的 $O(N^2\log N)$ 的演算法。雖然感覺可以用線段樹做，但因為筆者完全沒能力用它所以就先算了。後來室友也跟筆者說了可能的另外一個想法：把能攻擊的 ll 和沒辦法攻擊的 ll 分開看，直接把複雜度壓到 $O(N\log N)$。筆者想了一下之後把其中一些步驟優化變成線性複雜度，但整體來說還是讚讚的 $O(N\log N)$。順利 AC。
 
-&emsp;&emsp;唯獨筆者室友那邊 p4 還是 TLE，後來筆者發現只是 I/O 優化的問題，傳給他筆者之前看 CPP 朋友常用的兩行神奇程式碼就過了，他超氣 w。 
+&emsp;&emsp;唯獨筆者室友那邊 p4 還是 TLE，後來筆者發現只是 I/O 優化的問題，傳給他筆者之前看 CPP 朋友常用的兩行神奇程式碼就過了，他超氣 w。
+
+```cpp
+#include <bits/stdc++.h>
+
+#define MAX (int)(1e6 + 1)
+#define pii pair<int, int>
+
+using namespace std;
+
+class Compare {
+   public:
+    bool operator()(pii a, pii b) const { return a.first < b.first; }
+};
+
+pii ll_waiting[MAX];
+priority_queue<pii, vector<pii>, Compare> mana;
+
+bool cmp_courage(pii a, pii b) {
+    return a.second > b.second;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+
+    int N, M;
+    cin >> N >> M;
+
+    int m, c;
+    for (int i = 0; i < N; i++) {
+        cin >> m >> c;
+        ll_waiting[i] = { m, c };
+    }
+    sort(ll_waiting, ll_waiting + N, cmp_courage);
+
+    int avail_pos = 0, ll_counter = 0;
+    while (M > 0) {
+        while (avail_pos < N && ll_waiting[avail_pos].second >= M) {
+            mana.push(ll_waiting[avail_pos]);
+            avail_pos++;
+        }
+
+        if (mana.empty()) break;  // no ll avail
+
+        M -= mana.top().first;
+        mana.pop();
+        ll_counter++;
+    }
+
+    if (M > 0)
+        cout << -1;
+    else
+        cout << ll_counter;
+}
+```
 
 ## 後記
 
 &emsp;&emsp;總之，筆者人生第一次 5 題都解出來了[^2]，在這邊大感謝室友 & TW54，被我問了一堆問題。反正筆者最後還是會去資安小組，這次的 CPP 小旅程也差不多就到這邊 uwu。
 
 那麼，就醬。
+
+![](/assets/contents/my-first-cpp/fin.avif)
 
 ## 參考
 [^1]: 沒錯，筆者甚至有閒情逸致幫演算法取名稱。
