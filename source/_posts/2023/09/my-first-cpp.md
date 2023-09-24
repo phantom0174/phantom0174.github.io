@@ -184,19 +184,13 @@ int main() {
 > 寫出這題的成就感比前幾題大多了，但實作不出來的感覺還是很躁 ##。
 
 ```cpp
-#include <stdio.h>
-
-#include <iostream>
-#include <queue>
+#include <bits/stdc++.h>
 
 #define MAX (int)(1e5 + 1)
 
 using namespace std;
 
 short n[MAX];
-
-// to back
-priority_queue<short, vector<short>, greater<short>> sel;
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -206,9 +200,9 @@ int main() {
     scanf("%d", &T);
 
     while (T--) {
-        int k;  // ops can do
         char c;
         int cur_pos = 0;
+        queue<int> desc;
         while (true) {
             c = getchar();
 
@@ -218,16 +212,24 @@ int main() {
                 continue;
 
             n[cur_pos] = c - 48;
+            if (cur_pos > 0 && n[cur_pos - 1] > n[cur_pos])
+                desc.push(cur_pos);
+
             cur_pos++;
         }
+        desc.push(cur_pos);
+        n[cur_pos] = 10;
+
+        int k;  // ops can do
         scanf("%d", &k);
         k = min(cur_pos, k);
 
-        int l, r = 1;
-        while (k) {
-            // climb terrain until descend found
-            while (r <= cur_pos && n[r - 1] <= n[r]) r++;
-            if (r > cur_pos) break;
+        int sel[10] = { 0 };
+
+        int l, r;
+        while (!desc.empty() && k) {
+            r = desc.front();
+            desc.pop();
 
             for (l = r - 1; l >= 0; l--) {
                 if (n[l] < 0) {  // hop across gaps
@@ -236,26 +238,29 @@ int main() {
                 }
                 if (n[l] <= n[r]) break;
 
-                sel.push(n[l]);
+                sel[n[l]]++;
+
+                if (n[l] < n[cur_pos])
+                    n[cur_pos] = n[l];
+
                 n[l] = -1;
-                n[cur_pos] = sel.top();
                 if (!(--k)) break;
             }
             // indicates gap width
-            n[r - 1] = l - (r - 1);
+            if (l != r - 1) n[r - 1] = l - (r - 1);
         }
 
         for (int i = 0; i < cur_pos; i++) {
             if (n[i] > 0) printf("%d", n[i]);
         }
 
-        while (!sel.empty()) {
-            printf("%d", sel.top());
-            sel.pop();
+        for (int i = 1; i < 10; i++) {
+            for (int j = 0; j < sel[i]; j++) printf("%d", i);
         }
         printf("\n");
     }
 }
+
 ```
 
 ### p4 part.2
