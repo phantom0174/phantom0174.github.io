@@ -114,3 +114,30 @@ const smooth_scroll = `
 `;
 
 hexo.extend.injector.register('head_begin', smooth_scroll, 'post');
+
+const adjust_image_preview_size = `
+<style>
+    .group-image-wrap {
+        align-items: center;
+    }
+
+    .group-image-wrap .fancybox {
+        width: -webkit-fill-available;
+        width: -moz-fill-available;
+        width: -moz-available;
+        width: fill-available;
+    }
+
+    .group-image-container img {
+        width: -webkit-fill-available;
+        width: -moz-fill-available;
+        width: -moz-available;
+        width: fill-available;
+    }
+
+    .post-content img {
+        max-height: 350px;
+    }
+</style>
+`;
+hexo.extend.injector.register('head_begin', adjust_image_preview_size, 'post');

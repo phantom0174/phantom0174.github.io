@@ -18,7 +18,7 @@ keywords: 清大, nthu, 競程, competitive programming
 <!-- EMSP Replacer: Auto replacement of double full-width white-space with &emsp;&emsp; -->
 
 <!-- Spoiler Replacer: Replace ||text||  with {% spoiler text %} -->
-<!--@sprp:skip-all-->
+<!-- sprp:skip-all -->
 
 <!-- Footnote Reposer: Auto repositioning of all the footnotes in post -->
 <!--@ft:skip-all-->

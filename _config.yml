@@ -114,7 +114,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'change default banner'
+  message: 'new post'
 
 # protect content inside html tags
 markdown:
