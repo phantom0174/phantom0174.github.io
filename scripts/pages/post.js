@@ -33,27 +33,29 @@ const toc_style = `
         font-size: 1.1rem;
     }
 
-    @media (max-width: 575px) {
-        .toc-title {
-            font-size: calc(1.7em * (16/17));
-        }
-
-        .toc-level-1 {
-            font-size: calc(1.3rem * (16/17));
-        }
-
-        .toc-level-2 {
-            font-size: calc(1.2rem * (16/17));
-        }
-
-        .toc-level-3 {
-            font-size: calc(1.1rem * (16/17));
-        }
-    }
-</style>
+    </style>
 `;
 hexo.extend.injector.register('head_end', toc_style, 'post');
 
+/*
+@media (max-width: 575px) {
+    .toc-title {
+        font-size: calc(1.7em * (16/17));
+    }
+
+    .toc-level-1 {
+        font-size: calc(1.3rem * (16/17));
+    }
+
+    .toc-level-2 {
+        font-size: calc(1.2rem * (16/17));
+    }
+
+    .toc-level-3 {
+        font-size: calc(1.1rem * (16/17));
+    }
+}
+*/
 
 const code_fonts = `
 <style>

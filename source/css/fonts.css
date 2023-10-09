@@ -9,10 +9,10 @@ body,
     font-display: swap;
 }
 
-/* font-size is too small on portable device */
-/* @media (max-width: 575px) {
-    body,
-    .markdown-body {
-        font-size: 16px !important;
-    }
-} */
+[class^="icomoon-"] {
+    margin: 2px;
+}
+
+.icomoon-spotify {
+    font-size: 1.25rem !important;
+}

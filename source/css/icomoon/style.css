@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?no77ee') format('truetype'),
-    url('fonts/icomoon.woff?no77ee') format('woff'),
-    url('fonts/icomoon.svg?no77ee#icomoon') format('svg');
+    url('fonts/icomoon.ttf?z5wsno') format('truetype'),
+    url('fonts/icomoon.woff?z5wsno') format('woff'),
+    url('fonts/icomoon.svg?z5wsno#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-i {
+[class^="icomoon-"], [class*=" icomoon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -24,6 +24,12 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-spotify:before {
-  content: "\e900";
+.icomoon-user:before {
+  content: "\e971";
+}
+.icomoon-eye:before {
+  content: "\e9ce";
+}
+.icomoon-spotify:before {
+  content: "\ea94";
 }
