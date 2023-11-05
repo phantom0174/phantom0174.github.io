@@ -94,6 +94,8 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
     ![](/assets/contents/lightweight_hexo_latex_rendering/3.png)
 
     2. 將以下程式碼貼入：
+    
+    {% fold info @Code %}
 
      ```javascript
     hexo.extend.injector.register('head_end', `
@@ -126,6 +128,8 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
         </script>
     `, 'default');
     ```
+
+    {% endfold %}
 
     這個程式碼的意思是：在每一個 page 或是 post 所生成的 html 檔的 `<head>...</head>` 中，加上**兩個東西**。
     
@@ -163,6 +167,8 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
     1. 在 `./source/` 底下新增名為 `latex_protector.py` 的檔案，並將以下程式碼複製貼上：
 
     ![](/assets/contents/lightweight_hexo_latex_rendering/5.png)
+
+    {% fold info @太長了所以先折起來 %}
 
     ```python
     import os
@@ -228,6 +234,8 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
     for entry in ENTRIES_TO_PROTECT_UNDER_SOURCE_FOLDER:
         traverse_folder(entry)
     ```
+
+    {% endfold %}
 
     2. 將 `ENTRIES_TO_PROTECT_UNDER_SOURCE_FOLDER` 中新增你想要保護的 **資料夾根目錄**（與 `_post` 同等級的）。
 

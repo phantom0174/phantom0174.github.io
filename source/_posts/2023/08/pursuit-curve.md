@@ -108,6 +108,8 @@ $$
 
 筆者去找了些 RK4 的教學影片後，也嘗試利用看看在暑假學了一些的 Unity 去寫了 pursuit-curve 的模擬器，並在裡面實現 Vector DE 版本的 RK4 更新，如下：
 
+{% fold info @Unity code %}
+
 ```csharp
 void RK4UpdatePos()
 {
@@ -125,6 +127,8 @@ Vector3 dP(float t, Vector3 p)
     return moveSpeed * (targetClass.PathPos(t) - p).normalized;
 }
 ```
+
+{% endfold %}
 
 也放上一張模擬的結果owo：
 
@@ -178,6 +182,8 @@ $$
 
 $S$ 代表 System，描述整個系統。而有了這個複合向量之後，我們就可以用 RK4 去模擬這個問題了！以下為核心 code：
 
+{% fold info @Unity code %}
+
 ```csharp
 private void UpdatePos()
 {
@@ -211,6 +217,8 @@ private Sys dS(float t, Sys s)
     );
 }
 ```
+
+{% endfold %}
 
 > 其中 Sys 實作是利用 struct + operator overload。
 

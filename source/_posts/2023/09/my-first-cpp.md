@@ -44,7 +44,7 @@ keywords: 清大, nthu, 競程, competitive programming
 
 &emsp;&emsp;是個簡單版的 1A2B，應該是沒問題。
 
-{% fold success @title %}
+{% fold success @AC Code %}
 
 ```cpp
 #include <iostream>
@@ -84,6 +84,8 @@ int main() {
 ### p2
 
 &emsp;&emsp;筆者一開始就把這題想太難了，直接把黑白灰編碼成 `1, -1, 0` 然後開始用數學的角度來看，事後發現其實只要把灰視為黑白都是就好了。到這邊心情已經`--`。
+
+{% fold success @AC Code %}
 
 ```cpp
 #include <iostream>
@@ -127,9 +129,13 @@ int main() {
 }
 ```
 
+{% endfold %}
+
 ### p3
 
 &emsp;&emsp;這題筆者心態完全炸掉，起初寫了個 `3` 維 dp，果不其然 TLE。後來隔了一天多才抓到可能的降維方式重點，但全觀來看還是沒對。後來是室友直接教筆者這題的 2 維 dp 要怎麼分才過（筆者自己的 2 維 dp 定義爛了，所以做不出來）。室友自己是寫了個 1 維 dp，簡直是鬼，筆者到現在都還沒去想那個 1 維 dp 要怎麼定義。
+
+{% fold success @AC Code %}
 
 ```cpp
 #include <iostream>
@@ -172,6 +178,8 @@ int main() {
 }
 ```
 
+{% endfold %}
+
 ### p4 part.1
 
 &emsp;&emsp;筆者一開始寫了個 $O(N^2)$ 的演算法，完全 TLE 毫不意外（因為測資會到 $10^6$）。但暫時沒想到這題優化方式，先到下一題。
@@ -187,6 +195,8 @@ int main() {
 &emsp;&emsp;筆者在凌晨 2. 確定想法後才去睡（而且隔天是**早八**，**非常刺激**）。明天一早起來看室友還沒想出來，就把這個想法告訴室友；我們當天下午就開始實作這個演算法。結果室友 AC 了，筆者還因為實作能力爛掉導致程式也跟著爛掉，後來發現是有 legacy code 沒刪掉還有記憶體邊界覆寫問題導致檢查失敗的鍋，順利 AC。
 
 > 寫出這題的成就感比前幾題大多了，但實作不出來的感覺還是很躁 ##。
+
+{% fold success @AC Code %}
 
 ```cpp
 #include <bits/stdc++.h>
@@ -268,11 +278,15 @@ int main() {
 
 ```
 
+{% endfold %}
+
 ### p4 part.2
 
 &emsp;&emsp;筆者寫完 p5 的隔天才來想這題，但用錯了想法，只想到一個更爛的 $O(N^2\log N)$ 的演算法。雖然感覺可以用線段樹做，但因為筆者完全沒能力用它所以就先算了。後來室友也跟筆者說了可能的另外一個想法：把能攻擊的 ll 和沒辦法攻擊的 ll 分開看，直接把複雜度壓到 $O(N\log N)$。筆者想了一下之後把其中一些步驟優化變成線性複雜度，但整體來說還是讚讚的 $O(N\log N)$。順利 AC。
 
 &emsp;&emsp;唯獨筆者室友那邊 p4 還是 TLE，後來筆者發現只是 I/O 優化的問題，傳給他筆者之前看 CPP 朋友常用的兩行神奇程式碼就過了，他超氣 w。
+
+{% fold success @AC Code %}
 
 ```cpp
 #include <bits/stdc++.h>
@@ -328,6 +342,8 @@ int main() {
         cout << ll_counter;
 }
 ```
+
+{% endfold %}
 
 ## 後記
 
