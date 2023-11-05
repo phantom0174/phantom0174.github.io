@@ -44,6 +44,8 @@ keywords: 清大, nthu, 競程, competitive programming
 
 &emsp;&emsp;是個簡單版的 1A2B，應該是沒問題。
 
+{% fold success @title %}
+
 ```cpp
 #include <iostream>
 
@@ -75,6 +77,9 @@ int main() {
     cout << A << "A" << B << "B" << endl;
 }
 ```
+
+{% endfold %}
+
 
 ### p2
 
