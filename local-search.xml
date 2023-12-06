@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>線代小筆記</title>
+    <link href="/2023/11/about-linear-algebra/"/>
+    <url>/2023/11/about-linear-algebra/</url>
+    
+    <content type="html"><![CDATA[<!-- Latex Protector: Remove "@" before use --><!--@lp:skip-all--><!--@lp:skip-some--><!-- EMSP Replacer: Auto replacement of double full-width white-space with &emsp;&emsp; --><!-- Spoiler Replacer: Replace ||text||  with   <span class="spoiler" onclick="this.classList.toggle('spoiler')">    <span class="spoiler-blur ">text</span>  </span> --><!--@sprp:skip-all--><!-- Footnote Reposer: Auto repositioning of all the footnotes in post --><!--@ft:skip-all--><h2 id="前言">前言</h2><p>  筆者這學期初實在是被課業完全追著跑，都已經好幾個月沒寫文了QQ。今天上完線代後才實際用學到的東東來算之前想要算的東西。這篇文章就留著給線代相關的咚咚吧。  <span class="spoiler" onclick="this.classList.toggle('spoiler')">    <span class="spoiler-blur ">還有一篇線代的文難產中owo</span>  </span></p><h2 id="咚咚們">咚咚們</h2><h3 id="k-次重複彈碰通式">k 次重複彈碰通式</h3><blockquote><p>eigen 對角化後取冪再化簡</p></blockquote><p>$$\begin{align*}  V^{+} &= \frac{1}{m+M}\begin{pmatrix}    M-m & -2M\\    2m & M-m\\  \end{pmatrix}\\ \\  \Rightarrow (V^+)^k &= \frac{1}{2}\begin{pmatrix}    l^+ + l^- & (l^+ - l^-)\sqrt{\frac{M}{m}}i\\    (l^- - l^+)\sqrt{\frac{m}{M}}i & l^+ + l^-\\  \end{pmatrix} \\ \\   \text{where } l^{\pm} &= e^{\pm ik\theta},\ \theta = \text{atan2}\left( M-m, \sqrt{4mM} \right) \\ \\  \Rightarrow (V^+)^k &= \begin{pmatrix}    \cos(k\theta) & -\sin(k\theta)\sqrt{\frac{M}{m}}\\    \sin(k\theta)\sqrt{\frac{m}{M}} & \cos(k\theta)\\  \end{pmatrix}\end{align*}$$</p><hr><!-- ## 參考 -->]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>life</tag>
+      
+      <tag>mafs</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>中央存檔點</title>
     <link href="/2023/09/ncu-finale-plog/"/>
     <url>/2023/09/ncu-finale-plog/</url>
@@ -54,9 +75,9 @@
     
     <tags>
       
-      <tag>mafs</tag>
-      
       <tag>life</tag>
+      
+      <tag>mafs</tag>
       
       <tag>program</tag>
       
@@ -136,9 +157,9 @@
     
     <tags>
       
-      <tag>mafs</tag>
-      
       <tag>life</tag>
+      
+      <tag>mafs</tag>
       
     </tags>
     
@@ -157,9 +178,9 @@
     
     <tags>
       
-      <tag>mafs</tag>
-      
       <tag>life</tag>
+      
+      <tag>mafs</tag>
       
     </tags>
     
