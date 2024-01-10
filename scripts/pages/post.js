@@ -143,3 +143,44 @@ const adjust_image_preview_size = `
 </style>
 `;
 hexo.extend.injector.register('head_begin', adjust_image_preview_size, 'post');
+
+
+// warning: code block is also implemented by table,
+// but the selector is .markdown-body > figure > table
+
+const full_size_table = `
+<style>
+    .markdown-body > table {
+        display: table !important;
+    }
+</style>
+`;
+
+hexo.extend.injector.register('head_begin', full_size_table, 'post');
+
+const del_left_col = `
+<style>
+    @media (min-width: 992px) {
+        .post-content, post-custom {
+            padding-left: 12% !important;
+            padding-right: 12% !important;
+        }
+    }
+</style>
+`;
+
+hexo.extend.injector.register('head_begin', del_left_col, 'post');
+
+
+// distinguish header and content by serif / sans-serif
+// from himiku.com
+
+const serif_header = `
+<style>
+    h1, h2, h3, h4, h5, h6, h7 {
+        font-family: "PingFang SC","Hiragino Sans GB","Microsoft Yahei","WenQuanYi Micro Hei","Segoe UI Emoji","Segoe UI Symbol",Helvetica,Arial,-apple-system,system-ui,sans-serif !important;
+    }
+</style>
+`;
+
+hexo.extend.injector.register('head_begin', serif_header, 'post');

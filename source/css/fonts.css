@@ -4,9 +4,10 @@
 body,
 .markdown-body {
     font-family: 'PT Serif', 'Noto Serif TC', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: 0.02em;
     font-display: swap;
+    line-height: 1.75;
 }
 
 [class^="icomoon-"] {
