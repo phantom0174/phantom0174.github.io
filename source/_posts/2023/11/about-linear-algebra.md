@@ -1,8 +1,8 @@
 ---
 title: '線代小筆記'
 excerpt: '一堆線代咚咚'
-# index_img: /assets/cover/
-# banner_img: 
+index_img: /assets/cover/about-linear-algebra.avif
+banner_img: /assets/banner/about-linear-algebra.avif
 tags:
   - mafs
   - life
