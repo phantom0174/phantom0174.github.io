@@ -351,7 +351,7 @@ int main() {
 
 那麼，就醬。
 
-![](/assets/contents/my-first-cpp/fin.avif)
+![](fin.avif)
 
 ## 參考
 [^1]: 沒錯，筆者甚至有閒情逸致幫演算法取名稱。

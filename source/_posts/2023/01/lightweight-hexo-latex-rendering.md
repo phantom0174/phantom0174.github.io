@@ -23,7 +23,7 @@ keywords: hexo, theme, fluid, latex, katex, 數學式, 渲染, 程式, python
 不知道你是否曾經為 HEXO 所生成出的厚重檔案所苦？
 尤其是當原始 md 檔裡面有許多 LaTeX 語法時，生成出來的東西就會像這樣：
 
-![](/assets/contents/lightweight_hexo_latex_rendering/0.png)
+![](0.png)
 
 > os: 亂糟糟 超級多密密麻麻的東西看了就不舒服qq
 
@@ -64,7 +64,7 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 
 結果在渲染出來時，它變成了：
 
-![錯誤的渲染結果](/assets/contents/lightweight_hexo_latex_rendering/1.png)
+![錯誤的渲染結果](1.png)
 
 仔細即可看出原因：它把原始語法中的 `_g}\left(\frac{f(u)}{g'(u)}\Big|_` 的左右兩個 `_` 看成 md 語法中的 **強調文字** 了。
 解決方式跟跳脫字元方式一樣：把 **每個** `_` 前面都多加上 `\`，變成 `_` 的跳脫字元。
@@ -77,7 +77,7 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 但要怎麼不讓我們在 md 檔中寫的 LaTeX 語法與普通的 md 語法做出區別呢？
 筆者在埋頭找尋解決方式的過程中，偶然看到了在 `hexo-renderer-markdown-it` 套件[^3]在說明文件上所寫的一段話：
 
-![說明文件的一部分](/assets/contents/lightweight_hexo_latex_rendering/2.png)
+![說明文件的一部分](2.png)
 
 > Render options
 > html
@@ -91,7 +91,7 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 1. 新增 css 與 Auto-render Extension
     1. 使用 **HEXO注入器**[^4]，在專案的根目錄（`root/`）新增一個名為 `scripts` 的資料夾，並在其底下新增名為 `katex.js` 的檔案。
 
-    ![](/assets/contents/lightweight_hexo_latex_rendering/3.png)
+    ![](3.png)
 
     2. 將以下程式碼貼入：
     
@@ -135,7 +135,7 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
     
     - 其一，是起始的 css 部分。這是幫超出邊界的數學式加上滾輪視窗。
 
-    ![](/assets/contents/lightweight_hexo_latex_rendering/4.gif)
+    ![](4.gif)
 
     - 其二，是 `Auto-render Extension` 的程式碼。
 
@@ -166,7 +166,7 @@ $$\frac{f}{g} = \sum_{\omega\in \mathbb{Z}_g}\left(\frac{f(u)}{g'(u)}\Big|_{u=\o
 
     1. 在 `./source/` 底下新增名為 `latex_protector.py` 的檔案，並將以下程式碼複製貼上：
 
-    ![](/assets/contents/lightweight_hexo_latex_rendering/5.png)
+    ![](5.png)
 
     {% fold info @太長了所以先折起來 %}
 

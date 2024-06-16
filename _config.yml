@@ -40,8 +40,8 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
-relative_link: false
+post_asset_folder: true
+relative_link: true
 future: true
 highlight:
   enable: true
@@ -113,12 +113,15 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'add friend link'
+  message: 'new post pt.1'
 
-# protect content inside html tags
 markdown:
   render:
-    html: true
+    html: true # protect content inside html tags
+  images:
+    lazyload: true
+    prepend_root: true
+    post_asset: true
 
 # hexo-neat
 neat_enable: true

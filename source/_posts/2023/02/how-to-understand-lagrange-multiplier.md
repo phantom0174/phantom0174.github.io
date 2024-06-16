@@ -124,9 +124,9 @@ $$
 
 類比上面所想像的情況，因為兩曲面在空間中相交的結果是一條曲線（如下圖），所以這次我們要以它為主角，把 $\nabla f$ 渲染在這條曲線上就好。
 
-![兩曲面的交線](/assets/contents/how-to-understand-lagrange-multiplier/p1.webp)
+![兩曲面的交線](p1.webp)
 
-![分佈在 C 上的 del f](/assets/contents/how-to-understand-lagrange-multiplier/p2.webp)
+![分佈在 C 上的 del f](p2.webp)
 
 > 因為不敢直接拿原文書中圖片的所以就自己畫了 owo
 
@@ -134,7 +134,7 @@ $$
 
 如果要描述 $\nabla f$ 在某點會與曲線垂直，那我們就要先描述出與曲線在那一點垂直的面。要描述這個面，我們可以用 $\nabla g_1$ 與 $\nabla g_2$ 在那點的兩個向量作為基底，並用它們做線性展開，成為我們要描述的面。
 
-![用兩基底展開的面（微觀圖）](/assets/contents/how-to-understand-lagrange-multiplier/p3.webp)
+![用兩基底展開的面（微觀圖）](p3.webp)
 
 而 $\nabla f$ 只要與曲線垂直，就會落在這個面上。這個現象用數學描述為：
 

@@ -43,11 +43,11 @@ keywords: canvas-nest.js, 優化, 演算法, 渲染, 空間分割資料型態, �
 
 在同樣設定下（1000 個點；互動半徑 77.46 像素；不模擬重力），`canvas-nest` 跑出來的成績只有 13.8 FPS，如下圖：
 
-![canvas-nest performance](/assets/contents/canvas-noice.js/nest.avif)
+![canvas-nest performance](nest.avif)
 
 而在同樣設定下，使用筆者優化過後的演算法與資料型態建構出的新套件 `canvas-noice.js`，則是把 60 FPS 跑好跑滿。
 
-![canvas-noice performance](/assets/contents/canvas-noice.js/noice.avif)
+![canvas-noice performance](noice.avif)
 
 為什麼會有如此巨大的差別？原因在於兩個重大的優化 - `chunks` 與 `draw buffer`。
 
@@ -70,9 +70,9 @@ $$
 筆者現在才發現因為不用模擬重力、遍歷的方向性又已經被決定了，所以可以從根本上減少試算的次數，現在在同樣設定下計算次數已經降到了大約 `22000` 次，優化了 `22.7` 倍計算量。
 {% endnote %}
 
-![chunks 加速](/assets/contents/canvas-noice.js/noice-1.webp)
+![chunks 加速](noice-1.webp)
 
-![一些後台數據](/assets/contents/canvas-noice.js/noice-0.webp)
+![一些後台數據](noice-0.webp)
 
 #### chunks 的實作流程
 
@@ -142,7 +142,7 @@ os: 把點全部放進去 qt + 全部查詢過一遍碰撞候選點 + 直接把 
 
 實做這個東西後，大概降低了幾次上述**程式碼對**的呼叫呢？
 
-![一直行的線數目](/assets/contents/canvas-noice.js/noice-3.webp)
+![一直行的線數目](noice-3.webp)
 
 從這張圖可以看出，在有 15 行的狀況下，每一行所需要畫的線總數大約落在 1000 條上下。也就是說，原本會呼叫到 1000 次的程式碼對，現在只會呼叫到至多 9 次，差不多是 111 倍的差距。
   > 一幀差不多要畫 15000 條線，電腦你辛苦惹 owo。

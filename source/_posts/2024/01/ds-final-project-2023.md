@@ -119,7 +119,7 @@ keywords: search engine, 清大資工, nthu, cpp
 
 &emsp;&emsp;從整體跑下來的結果來看，在 linux 上跑的時需只有 windows 的大概 0.74 ~ 0.8 倍而已。下面順便放一張整個優化過程的線性預估時間圖：
 
-![](/assets/contents/ds-final-project-2023/esti.avif)
+![](esti.avif)
 
 > x 軸單位是 100 筆資料；y 軸單位是 100 ms；左邊藍線是這次測資上限；藍線右半邊就是預估在 4 秒內可以跑完多少輸入。
 
@@ -142,7 +142,7 @@ keywords: search engine, 清大資工, nthu, cpp
 
 稍微描點過後，筆者發現實際時間會比線性再好一點點。
 
-![](/assets/contents/ds-final-project-2023/real.avif)
+![](real.avif)
 
 而以下是評分時助教方跑出來的實際數據：
 

@@ -30,15 +30,15 @@ keywords: 追蹤曲線, pursuit curve, radiodrome, differential equation, euler 
 &emsp;&emsp;筆者這個暑假有段時間沉迷於開放世界型遊戲（典型的報復性沉迷 uwu），其中包含了知名的 Terraria。先說個題外話：這是筆者第一次破關（打完 Moonlord），花了成噸的時間在上面，不過娛樂性相當值得 \\^~^。
 
 {% gi 2 1-1 %}
-	![Home sweet home](/assets/contents/pursuit-curve/terraria-house.avif)
-	![精神時光屋](/assets/contents/pursuit-curve/terraria-save.avif)
+	![Home sweet home](terraria-house.avif)
+	![精神時光屋](terraria-save.avif)
 {% endgi %}
 
 &emsp;&emsp;玩過的人應該知道，Terraria 中有一個叫 [Wall Of Flesh (WoF)][wof] 的 Boss。WoF 有一種特殊的 debuff - 狂卷之舌：當你在距離牠太遠時會伸出舌頭把你拉回去。
 
 &emsp;&emsp;筆者在玩的時候就想到，如果玩家利用魔鏡傳送回地表後馬上開始被拉回去地獄時，玩家的軌跡 **真正來說** 會長怎樣呢[^1]？因為在拉的過程中 WoF 並不會靜止不動，而是邊拉著玩家邊前進，造成軌跡會有一定程度的彎曲。而這個東西，讓筆者想起來了之前有看過但沒有詳細研究[^2]的追蹤曲線 - [pursuit curve][pursuit_curve]，研究正式開始。
 
-![spoiler: 會長醬](/assets/contents/pursuit-curve/curve-spoiler.avif)
+![spoiler: 會長醬](curve-spoiler.avif)
 
 ## 正文
 
@@ -132,7 +132,7 @@ Vector3 dP(float t, Vector3 p)
 
 也放上一張模擬的結果owo：
 
-![$T(t) = (\cos(t), \cos(t)^3)$](/assets/contents/pursuit-curve/simu0.avif)
+![$T(t) = (\cos(t), \cos(t)^3)$](simu0.avif)
 
 總地來說，Desmos 和 Unity 在效能上真的差超多；但或許是因為追蹤曲線的 DE 過於簡單，Euler & RK4 之間的模擬只有在 Target path 非常極端的狀況下才會有微小差異。
 
@@ -239,12 +239,12 @@ $A(k)$ 是角度範圍修正量。
 
 > 紅色是人，藍色是鬼
 
-![$\hat{\tau}(t, 45)$](/assets/contents/pursuit-curve/simu45.avif)
-![$\hat{\tau}(t, 30)$](/assets/contents/pursuit-curve/simu30.avif)
+![$\hat{\tau}(t, 45)$](simu45.avif)
+![$\hat{\tau}(t, 30)$](simu30.avif)
 
 人稍微跑慢一點就變醬了qq：
 
-![$V_T/V_P = 0.9$](/assets/contents/pursuit-curve/too_slow.avif)
+![$V_T/V_P = 0.9$](too_slow.avif)
 
 從上面模擬結果可知：跑的時候不要亂擺來擺去，跑直線最好 owo。
 
