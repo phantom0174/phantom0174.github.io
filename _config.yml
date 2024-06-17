@@ -66,12 +66,12 @@ index_generator:
   order_by: -date
 
 archive_generator:
-  enabled: false
-  # per_page: 10
-  # yearly: true
-  # monthly: true
-  # daily: false
-  # order_by: -date
+  enabled: true
+  per_page: 15
+  yearly: true
+  monthly: true
+  daily: false
+  order_by: -date
 
 # Category & Tag
 default_category: uncategorized
@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'new post!'
+  message: 'add archive page'
 
 markdown:
   render:

@@ -20,6 +20,7 @@ comments: false
 - 2024/06/17
   - 更新 hexo 至 7.2.0
   - 分離 post assets
+  - 因文章數量與日俱增，重新引入 archive page
 
 - 2023/11/07
   - 正式更換網站封面圖
