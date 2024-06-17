@@ -41,7 +41,7 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
-relative_link: true
+relative_link: false
 future: true
 highlight:
   enable: true
@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'new post pt.1'
+  message: 'new post!'
 
 markdown:
   render:
