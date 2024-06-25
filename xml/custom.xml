@@ -44,7 +44,7 @@
         {% endif %}
       {% endif %}
       {% if post.index_img %}
-      <media:content url="{{ url + post.index_img.substring(1) | uriencode }}" medium="image" type="image"/>
+      <media:content url="{{ url + post.index_img.substring(1) | uriencode }}" style="max-width: 100%" medium="image" type="image"/>
       {% endif %}
       {% if config.feed.content and post.content %}
       <content:encoded><![CDATA[{{ post.content | noControlChars | safe }}]]></content:encoded>

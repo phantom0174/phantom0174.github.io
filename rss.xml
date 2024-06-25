@@ -28,7 +28,7 @@
       <description>呼噜呼噜...呼噜噜...</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/kyuukei-2024.webp" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/kyuukei-2024.webp" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -42,7 +42,7 @@
       <description>寒假期間了解了三等分角與倍立方問題的不可作證明</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/abstract-algebra-trip.avif" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/abstract-algebra-trip.avif" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -56,7 +56,7 @@
       <description>專題結束後來記錄一下過程 &#92;^~^/</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/ds-final-project-2023.avif" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/ds-final-project-2023.avif" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -70,7 +70,7 @@
       <description>一堆線代咚咚</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/about-linear-algebra.avif" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/about-linear-algebra.avif" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -84,7 +84,7 @@
       <description>辦離校手續時拍下來的一些記憶存檔點</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/ncu-finale-plog.avif" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/ncu-finale-plog.avif" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -98,7 +98,7 @@
       <description>紀錄一下人生第一次認真打的競程趣味賽</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/my-first-cpp.avif" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/my-first-cpp.avif" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -112,7 +112,7 @@
       <description>從 Terraria 發想的小研究</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/pursuit-curve.avif" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/pursuit-curve.avif" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -126,7 +126,7 @@
       <description>解放筆者寫文章的雙手！</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/async-traverser.avif" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/async-traverser.avif" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -140,7 +140,7 @@
       <description>筆者自己的轉學考心得與過程</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/2023-transfer-log.avif" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/2023-transfer-log.avif" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -154,7 +154,7 @@
       <description>一個容易被遺忘的存檔點</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/origin.webp" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/origin.webp" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -180,7 +180,7 @@
       <description>終於搞懂這千年遺恨啦！</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/about-chinese-remainder-theorem.webp" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/about-chinese-remainder-theorem.webp" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -194,7 +194,7 @@
       <description>對 canvas-nest.js 進行算法優化，增快將近 46.7 FPS！</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/canvas-noice.js.webp" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/canvas-noice.js.webp" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -208,7 +208,7 @@
       <description>公開我對這個 hexo fluid blog 的客製化設定</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/blog-config-reveal.webp" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/blog-config-reveal.webp" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -222,7 +222,7 @@
       <description>用爬山的角度來理解拉格朗日乘子</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/how-to-understand-lagrange-multiplier.png" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/how-to-understand-lagrange-multiplier.png" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -236,7 +236,7 @@
       <description>透過環環相扣的知識點解說帶你更了解梯度為何物</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/how-to-understand-gradient.png" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/how-to-understand-gradient.png" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -250,7 +250,7 @@
       <description>功能更加齊全的解析器套件，協助你在 hexo 上渲染輕量型 KaTeX</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/latex-protector-cover.webp" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/latex-protector-cover.webp" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -264,7 +264,7 @@
       <description>就是數學大雜燴</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/mafs_mixture.webp" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/mafs_mixture.webp" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -278,7 +278,7 @@
       <description>用簡單的方式，幫你節省下最多 94.9% 的空間使用</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/lightweight_hexo_latex_rendering.webp" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/lightweight_hexo_latex_rendering.webp" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
@@ -292,7 +292,7 @@
       <description>如何解開那個令超多人為之苦惱的積分</description>
       
       
-      <media:content url="https://phantom0174.github.io/assets/cover/strange_integral.webp" medium="image" type="image"/>
+      <media:content url="https://phantom0174.github.io/assets/cover/strange_integral.webp" style="max-width: 100%" medium="image" type="image"/>
       
       
     </item>
