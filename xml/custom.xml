@@ -45,7 +45,7 @@
       {% endif %}
     {% endif %}
     {% if post.index_img %}
-    <media:content url="{{ post.index_img | formatUrl }}" type="image"/>
+    <media url="{{ post.index_img | formatUrl }}" type="image"/>
     {% endif %}
   </entry>
   {% endfor %}
