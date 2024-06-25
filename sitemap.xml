@@ -202,36 +202,36 @@
 
   <url>
     <loc>https://phantom0174.github.io/</loc>
-    <lastmod>2024-06-17</lastmod>
+    <lastmod>2024-06-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://phantom0174.github.io/tags/mafs/</loc>
-    <lastmod>2024-06-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://phantom0174.github.io/tags/program/</loc>
-    <lastmod>2024-06-17</lastmod>
+    <lastmod>2024-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://phantom0174.github.io/tags/hexo/</loc>
-    <lastmod>2024-06-17</lastmod>
+    <lastmod>2024-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://phantom0174.github.io/tags/mafs/</loc>
+    <lastmod>2024-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://phantom0174.github.io/tags/life/</loc>
-    <lastmod>2024-06-17</lastmod>
+    <lastmod>2024-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
