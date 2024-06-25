@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'add rss'
+  message: 'update rss'
 
 markdown:
   render:
@@ -164,3 +164,4 @@ feed:
   icon: img/favicon.webp
   autodiscovery: true
   template:
+  - ./source/xml/custom.xml
