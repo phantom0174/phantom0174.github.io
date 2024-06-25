@@ -27,9 +27,7 @@
     <summary type="html">呼噜呼噜...呼噜噜...</summary>
     
     
-    
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/kyuukei-2024.webp" type="image"/>
     
   </entry>
   
@@ -44,11 +42,7 @@
     <summary type="html">寒假期間了解了三等分角與倍立方問題的不可作證明</summary>
     
     
-    
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/abstract-algebra-trip.avif" type="image"/>
     
   </entry>
   
@@ -63,11 +57,7 @@
     <summary type="html">專題結束後來記錄一下過程 &#92;^~^/</summary>
     
     
-    
-    
-    <category term="program" scheme="https://phantom0174.github.io/tags/program/"/>
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/ds-final-project-2023.avif" type="image"/>
     
   </entry>
   
@@ -82,11 +72,7 @@
     <summary type="html">一堆線代咚咚</summary>
     
     
-    
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/about-linear-algebra.avif" type="image"/>
     
   </entry>
   
@@ -101,9 +87,7 @@
     <summary type="html">辦離校手續時拍下來的一些記憶存檔點</summary>
     
     
-    
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/ncu-finale-plog.avif" type="image"/>
     
   </entry>
   
@@ -118,11 +102,7 @@
     <summary type="html">紀錄一下人生第一次認真打的競程趣味賽</summary>
     
     
-    
-    
-    <category term="program" scheme="https://phantom0174.github.io/tags/program/"/>
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/my-first-cpp.avif" type="image"/>
     
   </entry>
   
@@ -137,13 +117,7 @@
     <summary type="html">從 Terraria 發想的小研究</summary>
     
     
-    
-    
-    <category term="program" scheme="https://phantom0174.github.io/tags/program/"/>
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/pursuit-curve.avif" type="image"/>
     
   </entry>
   
@@ -158,11 +132,7 @@
     <summary type="html">解放筆者寫文章的雙手！</summary>
     
     
-    
-    
-    <category term="program" scheme="https://phantom0174.github.io/tags/program/"/>
-    
-    <category term="hexo" scheme="https://phantom0174.github.io/tags/hexo/"/>
+    <content src="https://phantom0174.github.io/assets/cover/async-traverser.avif" type="image"/>
     
   </entry>
   
@@ -177,9 +147,7 @@
     <summary type="html">筆者自己的轉學考心得與過程</summary>
     
     
-    
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/2023-transfer-log.avif" type="image"/>
     
   </entry>
   
@@ -194,9 +162,7 @@
     <summary type="html">一個容易被遺忘的存檔點</summary>
     
     
-    
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/origin.webp" type="image"/>
     
   </entry>
   
@@ -211,12 +177,6 @@
     <summary type="html">記錄一下自己複習的歐拉定理證明流程</summary>
     
     
-    
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
-    
   </entry>
   
   <entry>
@@ -230,11 +190,7 @@
     <summary type="html">終於搞懂這千年遺恨啦！</summary>
     
     
-    
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
-    
-    <category term="life" scheme="https://phantom0174.github.io/tags/life/"/>
+    <content src="https://phantom0174.github.io/assets/cover/about-chinese-remainder-theorem.webp" type="image"/>
     
   </entry>
   
@@ -249,11 +205,7 @@
     <summary type="html">對 canvas-nest.js 進行算法優化，增快將近 46.7 FPS！</summary>
     
     
-    
-    
-    <category term="program" scheme="https://phantom0174.github.io/tags/program/"/>
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
+    <content src="https://phantom0174.github.io/assets/cover/canvas-noice.js.webp" type="image"/>
     
   </entry>
   
@@ -268,9 +220,7 @@
     <summary type="html">公開我對這個 hexo fluid blog 的客製化設定</summary>
     
     
-    
-    
-    <category term="hexo" scheme="https://phantom0174.github.io/tags/hexo/"/>
+    <content src="https://phantom0174.github.io/assets/cover/blog-config-reveal.webp" type="image"/>
     
   </entry>
   
@@ -285,9 +235,7 @@
     <summary type="html">用爬山的角度來理解拉格朗日乘子</summary>
     
     
-    
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
+    <content src="https://phantom0174.github.io/assets/cover/how-to-understand-lagrange-multiplier.png" type="image"/>
     
   </entry>
   
@@ -302,9 +250,7 @@
     <summary type="html">透過環環相扣的知識點解說帶你更了解梯度為何物</summary>
     
     
-    
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
+    <content src="https://phantom0174.github.io/assets/cover/how-to-understand-gradient.png" type="image"/>
     
   </entry>
   
@@ -319,13 +265,7 @@
     <summary type="html">功能更加齊全的解析器套件，協助你在 hexo 上渲染輕量型 KaTeX</summary>
     
     
-    
-    
-    <category term="program" scheme="https://phantom0174.github.io/tags/program/"/>
-    
-    <category term="hexo" scheme="https://phantom0174.github.io/tags/hexo/"/>
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
+    <content src="https://phantom0174.github.io/assets/cover/latex-protector-cover.webp" type="image"/>
     
   </entry>
   
@@ -340,9 +280,7 @@
     <summary type="html">就是數學大雜燴</summary>
     
     
-    
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
+    <content src="https://phantom0174.github.io/assets/cover/mafs_mixture.webp" type="image"/>
     
   </entry>
   
@@ -357,13 +295,7 @@
     <summary type="html">用簡單的方式，幫你節省下最多 94.9% 的空間使用</summary>
     
     
-    
-    
-    <category term="program" scheme="https://phantom0174.github.io/tags/program/"/>
-    
-    <category term="hexo" scheme="https://phantom0174.github.io/tags/hexo/"/>
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
+    <content src="https://phantom0174.github.io/assets/cover/lightweight_hexo_latex_rendering.webp" type="image"/>
     
   </entry>
   
@@ -378,9 +310,7 @@
     <summary type="html">如何解開那個令超多人為之苦惱的積分</summary>
     
     
-    
-    
-    <category term="mafs" scheme="https://phantom0174.github.io/tags/mafs/"/>
+    <content src="https://phantom0174.github.io/assets/cover/strange_integral.webp" type="image"/>
     
   </entry>
   
