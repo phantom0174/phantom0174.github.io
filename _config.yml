@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'add archive page'
+  message: 'add rss'
 
 markdown:
   render:
@@ -150,3 +150,17 @@ plugins:
 
 spoiler:
   style: blur
+
+feed:
+  enable: true
+  type: atom
+  path: rss.xml
+  limit: 20
+  hub:
+  content: false
+  content\_limit: false
+  content\_limit\_delim: " "
+  order\_by: \-date
+  icon: img/favicon.webp
+  autodiscovery: true
+  template:
