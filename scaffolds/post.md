@@ -2,6 +2,7 @@
 title: ""
 excerpt: ""
 date: {{ date }}
+# updated: 
 index_img: "/assets/cover/"
 banner_img: "/assets/banner/"
 tags: 

@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'move subs form into .html'
+  message: 'update post'
 
 markdown:
   render:
