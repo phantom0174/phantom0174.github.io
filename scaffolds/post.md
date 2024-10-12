@@ -6,6 +6,7 @@ date: {{ date }}
 index_img: "/assets/cover/"
 banner_img: "/assets/banner/"
 tags: 
+    - quantum
     - mafs
     - program
     - hexo
