@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Quantami&#39;s realm</title>
+    <link>https://phantom0174.github.io/</link>
+    
+    <image>
+      <url>https://phantom0174.github.io/img/favicon.webp</url>
+      <title>Quantami&#39;s realm</title>
+      <link>https://phantom0174.github.io/</link>
+    </image>
+    
+    <atom:link href="https://phantom0174.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>既然沒有人對答案感興趣，那至少讓我來試試看</description>
+    <pubDate>Mon, 28 Oct 2024 13:20:06 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>綠島遊</title>
+      <link>https://phantom0174.github.io/2024/08/travel-recollection/</link>
+      <guid>https://phantom0174.github.io/2024/08/travel-recollection/</guid>
+      <pubDate>Sat, 12 Oct 2024 15:00:00 GMT</pubDate>
+      
+      <description>拖欠了整整六個禮拜的大水文</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/travel-recollection-2024.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>Re:從零開始的量子生活</title>
+      <link>https://phantom0174.github.io/2024/08/quantum-revisit/</link>
+      <guid>https://phantom0174.github.io/2024/08/quantum-revisit/</guid>
+      <pubDate>Sat, 17 Aug 2024 13:45:56 GMT</pubDate>
+      
+      <description>戴上非常現代的線代視鏡來重新觀察量運</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/quantum-revisit-2024.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>小憩</title>
+      <link>https://phantom0174.github.io/2024/06/kyuukei/</link>
+      <guid>https://phantom0174.github.io/2024/06/kyuukei/</guid>
+      <pubDate>Mon, 17 Jun 2024 14:00:00 GMT</pubDate>
+      
+      <description>呼噜呼噜...呼噜噜...</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/kyuukei-2024.webp"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>抽象代數小旅行</title>
+      <link>https://phantom0174.github.io/2024/02/abstract-algebra-trip/</link>
+      <guid>https://phantom0174.github.io/2024/02/abstract-algebra-trip/</guid>
+      <pubDate>Wed, 28 Feb 2024 10:00:00 GMT</pubDate>
+      
+      <description>寒假期間了解了三等分角與倍立方問題的不可作證明</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/abstract-algebra-trip.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>資料結構專題 - 論文查詢</title>
+      <link>https://phantom0174.github.io/2024/01/ds-final-project-2023/</link>
+      <guid>https://phantom0174.github.io/2024/01/ds-final-project-2023/</guid>
+      <pubDate>Sat, 27 Jan 2024 10:53:32 GMT</pubDate>
+      
+      <description>專題結束後來記錄一下過程 &#92;^~^/</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/ds-final-project-2023.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>線代小筆記</title>
+      <link>https://phantom0174.github.io/2023/11/about-linear-algebra/</link>
+      <guid>https://phantom0174.github.io/2023/11/about-linear-algebra/</guid>
+      <pubDate>Wed, 06 Dec 2023 08:00:00 GMT</pubDate>
+      
+      <description>一堆線代咚咚</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/about-linear-algebra.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>中央存檔點</title>
+      <link>https://phantom0174.github.io/2023/09/ncu-finale-plog/</link>
+      <guid>https://phantom0174.github.io/2023/09/ncu-finale-plog/</guid>
+      <pubDate>Sat, 30 Sep 2023 14:40:00 GMT</pubDate>
+      
+      <description>辦離校手續時拍下來的一些記憶存檔點</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/ncu-finale-plog.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>進競程大觀園</title>
+      <link>https://phantom0174.github.io/2023/09/my-first-cpp/</link>
+      <guid>https://phantom0174.github.io/2023/09/my-first-cpp/</guid>
+      <pubDate>Sat, 23 Sep 2023 16:00:00 GMT</pubDate>
+      
+      <description>紀錄一下人生第一次認真打的競程趣味賽</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/my-first-cpp.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>有關追蹤曲線</title>
+      <link>https://phantom0174.github.io/2023/08/pursuit-curve/</link>
+      <guid>https://phantom0174.github.io/2023/08/pursuit-curve/</guid>
+      <pubDate>Sat, 26 Aug 2023 16:00:00 GMT</pubDate>
+      
+      <description>從 Terraria 發想的小研究</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/pursuit-curve.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>Async Traverser 小介紹</title>
+      <link>https://phantom0174.github.io/2023/07/async-traverser/</link>
+      <guid>https://phantom0174.github.io/2023/07/async-traverser/</guid>
+      <pubDate>Wed, 19 Jul 2023 14:57:41 GMT</pubDate>
+      
+      <description>解放筆者寫文章的雙手！</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/async-traverser.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>2023 台聯大轉學考 - 記錄檔</title>
+      <link>https://phantom0174.github.io/2023/07/2023-transfer-log/</link>
+      <guid>https://phantom0174.github.io/2023/07/2023-transfer-log/</guid>
+      <pubDate>Tue, 11 Jul 2023 06:11:00 GMT</pubDate>
+      
+      <description>筆者自己的轉學考心得與過程</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/2023-transfer-log.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>初衷</title>
+      <link>https://phantom0174.github.io/2023/06/origin/</link>
+      <guid>https://phantom0174.github.io/2023/06/origin/</guid>
+      <pubDate>Sun, 04 Jun 2023 15:30:00 GMT</pubDate>
+      
+      <description>一個容易被遺忘的存檔點</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/origin.webp"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>有關歐拉定理</title>
+      <link>https://phantom0174.github.io/2023/02/about-eulers-theorem/</link>
+      <guid>https://phantom0174.github.io/2023/02/about-eulers-theorem/</guid>
+      <pubDate>Thu, 16 Mar 2023 15:46:01 GMT</pubDate>
+      
+      <description>記錄一下自己複習的歐拉定理證明流程</description>
+      
+      
+      
+    </item>
+    
+    <item>
+      <title>關於中國剩餘定理</title>
+      <link>https://phantom0174.github.io/2023/02/about-chinese-remainder-theorem/</link>
+      <guid>https://phantom0174.github.io/2023/02/about-chinese-remainder-theorem/</guid>
+      <pubDate>Mon, 13 Mar 2023 15:35:00 GMT</pubDate>
+      
+      <description>終於搞懂這千年遺恨啦！</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/about-chinese-remainder-theorem.webp"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>【更新】隆重介紹 canvas-noice.js</title>
+      <link>https://phantom0174.github.io/2023/02/introduce-canvas-noice.js/</link>
+      <guid>https://phantom0174.github.io/2023/02/introduce-canvas-noice.js/</guid>
+      <pubDate>Tue, 21 Feb 2023 13:37:00 GMT</pubDate>
+      
+      <description>對 canvas-nest.js 進行算法優化，增快將近 46.7 FPS！</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/canvas-noice.js.webp"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>Blog 設定公開</title>
+      <link>https://phantom0174.github.io/2023/02/blog-config-reveal/</link>
+      <guid>https://phantom0174.github.io/2023/02/blog-config-reveal/</guid>
+      <pubDate>Thu, 16 Feb 2023 09:06:00 GMT</pubDate>
+      
+      <description>公開我對這個 hexo fluid blog 的客製化設定</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/blog-config-reveal.webp"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>如何理解拉格朗日乘子</title>
+      <link>https://phantom0174.github.io/2023/02/how-to-understand-lagrange-multiplier/</link>
+      <guid>https://phantom0174.github.io/2023/02/how-to-understand-lagrange-multiplier/</guid>
+      <pubDate>Wed, 01 Feb 2023 07:25:41 GMT</pubDate>
+      
+      <description>用爬山的角度來理解拉格朗日乘子</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/how-to-understand-lagrange-multiplier.png"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>如何理解梯度與其性質</title>
+      <link>https://phantom0174.github.io/2023/02/how-to-understand-gradient/</link>
+      <guid>https://phantom0174.github.io/2023/02/how-to-understand-gradient/</guid>
+      <pubDate>Wed, 01 Feb 2023 05:20:14 GMT</pubDate>
+      
+      <description>透過環環相扣的知識點解說帶你更了解梯度為何物</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/how-to-understand-gradient.png"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>LaTeX 保護者</title>
+      <link>https://phantom0174.github.io/2023/01/latex-protector/</link>
+      <guid>https://phantom0174.github.io/2023/01/latex-protector/</guid>
+      <pubDate>Sat, 28 Jan 2023 08:38:53 GMT</pubDate>
+      
+      <description>功能更加齊全的解析器套件，協助你在 hexo 上渲染輕量型 KaTeX</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/latex-protector-cover.webp"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>放點新奇的數學東西</title>
+      <link>https://phantom0174.github.io/2023/01/mafs-mixture/</link>
+      <guid>https://phantom0174.github.io/2023/01/mafs-mixture/</guid>
+      <pubDate>Sat, 21 Jan 2023 13:38:00 GMT</pubDate>
+      
+      <description>就是數學大雜燴</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/mafs_mixture.webp"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+  </channel>
+</rss>
