@@ -12,6 +12,7 @@ tags:
     - hexo
     - life
 keywords: 
+hide: true
 ---
 
 <!-- Latex Protector: Remove "@" before use -->
