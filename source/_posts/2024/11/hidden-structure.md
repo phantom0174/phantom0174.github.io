@@ -58,7 +58,7 @@ I = \lim_{r \rightarrow 0} \oint_{C_k}\frac{c_k}{z-\omega_k} + \sum_{j \neq k}\o
 $$
 </p>
 
-接下來做參數化以求解線解積分：
+接下來做參數化以求解兩線積分：
 
 <p>
 $$
