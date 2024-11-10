@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Quantami's realm
-subtitle: '量子的隨筆'
-description: '既然沒有人對答案感興趣，那至少讓我來試試看'
-keywords: 數學, 微積分, 程式設計, 資工, hexo, fluid
+title: Quantami
+subtitle: 'Quantum random thoughts'
+description: '思想的孤島、黑魔法的棲息地'
+keywords: math, program, quantum computing, computer science, hexo, fluid
 author: phantom0174
 language: en
 timezone: 'Asia/Taipei'
