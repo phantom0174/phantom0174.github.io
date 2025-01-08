@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://phantom0174.github.io/2024/01/ds-final-project-2023/</loc>
+    
+    <lastmod>2025-01-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://phantom0174.github.io/2024/10/qc-collection/</loc>
     
     <lastmod>2024-11-09</lastmod>
@@ -57,15 +66,6 @@
   
   <url>
     <loc>https://phantom0174.github.io/about/index.html</loc>
-    
-    <lastmod>2024-10-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://phantom0174.github.io/2024/01/ds-final-project-2023/</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -256,7 +256,7 @@
 
   <url>
     <loc>https://phantom0174.github.io/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -264,35 +264,35 @@
   
   <url>
     <loc>https://phantom0174.github.io/tags/program/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://phantom0174.github.io/tags/life/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://phantom0174.github.io/tags/mafs/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://phantom0174.github.io/tags/quantum/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://phantom0174.github.io/tags/hexo/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
