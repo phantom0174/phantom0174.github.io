@@ -108,7 +108,7 @@ keywords: search engine, 清大資工, nthu, cpp
 
 &emsp;&emsp;原本在將字串或是指令傳入 trie 中時，都要做昂貴的 string operation，像是去頭去尾或是把字串反過來後再丟進去。這類操作基本上複雜度都是正比於字串長度的。如果改為將起始與終止的迭代器傳入，那就不需要做任何的前處理。但這個優化在最後好像沒有優化太多，可能是字串平均長度都不長，但感覺還是有它價值在 owo。
 
-> 思路部分到這邊就大致結束了，前前後後經歷了 6 個版本與快 100 個小時的工作時間。有興趣看實際程式碼與更詳細的實作流程的人可以前往[這裡][proj_link]。
+> 思路部分到這邊就大致結束了，前前後後經歷了 6 個版本與快 100 個小時的工作時間。實際程式碼因為防止抄襲與攸關自身智慧財產權所以撤掉了，不過重要思想都寫在文章裡了，有興趣的讀者可以囊括它們後進行實作 owob
 
 
 ## 速度評測
@@ -177,5 +177,4 @@ keywords: search engine, 清大資工, nthu, cpp
 [^2]: https://dl.acm.org/doi/pdf/10.1145/42411.42420
 
 [inv_ind]: https://zh.wikipedia.org/zh-tw/倒排索引
-[proj_link]: https://github.com/phantom0174/112-1_DS/tree/main/finalproject
 [bomb_party_site]: https://jklm.fun
