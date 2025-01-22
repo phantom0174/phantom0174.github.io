@@ -1,5 +1,5 @@
 ---
-title: ''
+title: '退火 | 下'
 excerpt: ''
 index_img: /assets/cover/
 banner_img: /assets/banner/
@@ -10,7 +10,7 @@ tags:
   - hexo
   - life
 hide: true
-date: 2025-01-17 16:03:18
+date: 2025-01-21 16:17:15
 keywords:
 ---
 
@@ -27,11 +27,27 @@ keywords:
 <!--@ft:skip-all-->
 
 
-## 前言
+## 生活偏向
 
-## 正文
+### 爛掉的筆電
 
-## 後記
+### 大失眠
+
+### 久違的出國
+
+### 遲遲用不滿的電信方案
+
+### 遊戲專區
+
+#### 鳴潮小插曲
+
+#### 非到家的原神
+
+#### 回坑的音遊
+
+### 冰淇淋狂魔
+
+### NAS 再現
 
 ---
 
