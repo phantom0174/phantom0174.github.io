@@ -16,8 +16,26 @@
     <atom:link href="https://phantom0174.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>思想的孤島、黑魔法的棲息地</description>
-    <pubDate>Sat, 09 Nov 2024 12:10:19 GMT</pubDate>
+    <pubDate>Fri, 24 Jan 2025 15:47:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>退火 上</title>
+      <link>https://phantom0174.github.io/2025/01/annealing-academic/</link>
+      <guid>https://phantom0174.github.io/2025/01/annealing-academic/</guid>
+      <pubDate>Thu, 23 Jan 2025 13:35:00 GMT</pubDate>
+      
+      <description>修（休）課（克）篇</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/annealing-academic.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
     
     <item>
       <title>某古早積分的隱藏結構</title>
@@ -342,24 +360,6 @@
       
       <media:content
         url="https://phantom0174.github.io/assets/cover/how-to-understand-lagrange-multiplier.png"
-        style="max-height: 20vh; max-width: 100vw;"
-        medium="image"
-        type="image" />
-      
-      
-    </item>
-    
-    <item>
-      <title>如何理解梯度與其性質</title>
-      <link>https://phantom0174.github.io/2023/02/how-to-understand-gradient/</link>
-      <guid>https://phantom0174.github.io/2023/02/how-to-understand-gradient/</guid>
-      <pubDate>Wed, 01 Feb 2023 05:20:14 GMT</pubDate>
-      
-      <description>透過環環相扣的知識點解說帶你更了解梯度為何物</description>
-      
-      
-      <media:content
-        url="https://phantom0174.github.io/assets/cover/how-to-understand-gradient.png"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
