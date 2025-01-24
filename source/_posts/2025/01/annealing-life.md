@@ -1,13 +1,9 @@
 ---
-title: '退火 | 下'
+title: '退火 下'
 excerpt: ''
-index_img: /assets/cover/
-banner_img: /assets/banner/
+index_img: /assets/cover/annealing-life.avif
+banner_img: /assets/banner/annealing-life.avif
 tags:
-  - quantum
-  - mafs
-  - program
-  - hexo
   - life
 hide: true
 date: 2025-01-21 16:17:15
@@ -44,6 +40,8 @@ keywords:
 #### 非到家的原神
 
 #### 回坑的音遊
+
+### 豆花狂魔
 
 ### 冰淇淋狂魔
 
