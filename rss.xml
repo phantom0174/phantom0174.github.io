@@ -16,8 +16,26 @@
     <atom:link href="https://phantom0174.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>思想的孤島、黑魔法的棲息地</description>
-    <pubDate>Thu, 06 Mar 2025 12:26:19 GMT</pubDate>
+    <pubDate>Fri, 07 Mar 2025 05:15:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>京阪行遊記 - Day2</title>
+      <link>https://phantom0174.github.io/2025/03/keihan-2/</link>
+      <guid>https://phantom0174.github.io/2025/03/keihan-2/</guid>
+      <pubDate>Sun, 02 Mar 2025 16:00:00 GMT</pubDate>
+      
+      <description>神社...好冷...</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/keihan-2.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
     
     <item>
       <title>京阪行遊記 - 始め</title>
@@ -342,24 +360,6 @@
       
       <media:content
         url="https://phantom0174.github.io/assets/cover/canvas-noice.js.webp"
-        style="max-height: 20vh; max-width: 100vw;"
-        medium="image"
-        type="image" />
-      
-      
-    </item>
-    
-    <item>
-      <title>Blog 設定公開</title>
-      <link>https://phantom0174.github.io/2023/02/blog-config-reveal/</link>
-      <guid>https://phantom0174.github.io/2023/02/blog-config-reveal/</guid>
-      <pubDate>Thu, 16 Feb 2023 09:06:00 GMT</pubDate>
-      
-      <description>公開我對這個 hexo fluid blog 的客製化設定</description>
-      
-      
-      <media:content
-        url="https://phantom0174.github.io/assets/cover/blog-config-reveal.webp"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
