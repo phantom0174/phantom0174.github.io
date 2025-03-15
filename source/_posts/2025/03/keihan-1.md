@@ -5,7 +5,7 @@ index_img: /assets/cover/keihan-1.avif
 banner_img: /assets/banner/keihan-1.avif
 tags:
   - life
-hide: true
+hide: false
 date: 2025-03-02 00:00:00
 keywords:
 ---
@@ -25,11 +25,6 @@ keywords:
 {% note success %}
 這是篇合作文－邀請了這次自由行的成員來與筆者共編這篇遊記。
 {% endnote %}
-
-{% note warning %}
-版本：**粗稿**/潤色中/完稿
-{% endnote %}
-
 
 ## 前情提要
 
