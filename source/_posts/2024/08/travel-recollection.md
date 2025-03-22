@@ -5,6 +5,7 @@ index_img: /assets/cover/travel-recollection-2024.avif
 banner_img: /assets/banner/travel-recollection-2024.avif
 tags:
   - life
+  - travel
 date: 2024-10-12 23:00:00
 keywords: travel
 ---

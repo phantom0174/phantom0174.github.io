@@ -5,6 +5,7 @@ index_img: /assets/cover/keihan-4.avif
 banner_img: /assets/banner/keihan-4.avif
 tags:
   - life
+  - travel
 hide: false
 date: 2025-03-05 00:00:00
 keywords:

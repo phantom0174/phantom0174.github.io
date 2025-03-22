@@ -5,6 +5,7 @@ index_img:
 banner_img: 
 tags:
   - life
+  - travel
 hide: true
 date: 2025-03-02 00:00:00
 keywords:
