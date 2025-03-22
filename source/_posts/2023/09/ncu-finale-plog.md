@@ -2,7 +2,7 @@
 title: '中央存檔點'
 excerpt: '辦離校手續時拍下來的一些記憶存檔點'
 index_img: /assets/cover/ncu-finale-plog.avif
-banner_img: front-bars.avif
+banner_img: /assets/banner/ncu-finale-plog.avif
 tags:
   - life
 date: 2023-09-30 22:40:00

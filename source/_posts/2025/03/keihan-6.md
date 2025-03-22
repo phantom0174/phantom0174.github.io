@@ -5,7 +5,7 @@ index_img: /assets/cover/keihan-6.avif
 banner_img: /assets/banner/keihan-6.avif
 tags:
   - life
-hide: true
+hide: false
 date: 2025-03-14 00:00:00
 keywords:
 ---
@@ -143,7 +143,7 @@ The most unique point might be we went to 唐吉訶德（我不會那個英文; 
 
 ![Wo 的戰利品](loot.avif)
 
-如果這些 711 發現 ひねり 銷量突然變好，下次火速進了一堆貨卻發現沒人買，只能在架子上生灰的話，筆者可以肯定 100% 不是 Wo 造成的。嗯，絕對不是（個鬼啦）。
+如果這些 711 發現 ひねり 銷量突然變好，下次火速進了一堆貨卻發現沒人買，只能在架子上生灰的話，筆者可以肯定 100% 不是 Wo 造成的。嗯，絕對不是。
 
 ### 行李大整理
 

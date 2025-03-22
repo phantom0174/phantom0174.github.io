@@ -146,4 +146,4 @@ After the 鐵人三項, Wo bought some cream puff while returning to the hotel (
 
 洗完澡後，節目也剛好變成了 re:0，理所當然地繼續追熱血決戰情節。
 
-> 下集待續...
+> [下集待續...](https://phantom0174.github.io/2025/03/keihan-5/)
