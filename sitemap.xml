@@ -11,6 +11,51 @@
   </url>
   
   <url>
+    <loc>https://phantom0174.github.io/2025/03/keihan-6/</loc>
+    
+    <lastmod>2025-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://phantom0174.github.io/2025/03/keihan-5/</loc>
+    
+    <lastmod>2025-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://phantom0174.github.io/2025/03/keihan-4/</loc>
+    
+    <lastmod>2025-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://phantom0174.github.io/2025/03/keihan-3/</loc>
+    
+    <lastmod>2025-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://phantom0174.github.io/2025/03/keihan-2/</loc>
+    
+    <lastmod>2025-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://phantom0174.github.io/2025/03/keihan-1/</loc>
     
     <lastmod>2025-03-22</lastmod>
@@ -20,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://phantom0174.github.io/2025/03/keihan-6/</loc>
+    <loc>https://phantom0174.github.io/2024/08/travel-recollection/</loc>
     
     <lastmod>2025-03-22</lastmod>
     
@@ -32,51 +77,6 @@
     <loc>https://phantom0174.github.io/2023/09/ncu-finale-plog/</loc>
     
     <lastmod>2025-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://phantom0174.github.io/2025/03/keihan-4/</loc>
-    
-    <lastmod>2025-03-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://phantom0174.github.io/2025/03/keihan-5/</loc>
-    
-    <lastmod>2025-03-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://phantom0174.github.io/2025/03/keihan-3/</loc>
-    
-    <lastmod>2025-03-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://phantom0174.github.io/2025/03/keihan-2/</loc>
-    
-    <lastmod>2025-03-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://phantom0174.github.io/2024/08/travel-recollection/</loc>
-    
-    <lastmod>2025-02-18</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -364,6 +364,13 @@
   
   <url>
     <loc>https://phantom0174.github.io/tags/quantum/</loc>
+    <lastmod>2025-03-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://phantom0174.github.io/tags/travel/</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
