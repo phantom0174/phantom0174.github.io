@@ -16,8 +16,44 @@
     <atom:link href="https://phantom0174.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>思想的孤島、黑魔法的棲息地</description>
-    <pubDate>Mon, 17 Mar 2025 12:10:46 GMT</pubDate>
+    <pubDate>Sat, 22 Mar 2025 08:55:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>京阪行遊記 - 終わり</title>
+      <link>https://phantom0174.github.io/2025/03/keihan-7/</link>
+      <guid>https://phantom0174.github.io/2025/03/keihan-7/</guid>
+      <pubDate>Thu, 20 Mar 2025 16:00:00 GMT</pubDate>
+      
+      <description>平安到家 uwu</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/keihan-7.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
+    
+    <item>
+      <title>京阪行遊記 - Day6</title>
+      <link>https://phantom0174.github.io/2025/03/keihan-6/</link>
+      <guid>https://phantom0174.github.io/2025/03/keihan-6/</guid>
+      <pubDate>Thu, 13 Mar 2025 16:00:00 GMT</pubDate>
+      
+      <description>ひねり...到處都是ひねり...</description>
+      
+      
+      <media:content
+        url="https://phantom0174.github.io/assets/cover/keihan-6.avif"
+        style="max-height: 20vh; max-width: 100vw;"
+        medium="image"
+        type="image" />
+      
+      
+    </item>
     
     <item>
       <title>京阪行遊記 - Day5</title>
@@ -330,42 +366,6 @@
       
       <media:content
         url="https://phantom0174.github.io/assets/cover/async-traverser.avif"
-        style="max-height: 20vh; max-width: 100vw;"
-        medium="image"
-        type="image" />
-      
-      
-    </item>
-    
-    <item>
-      <title>2023 台聯大轉學考 - 記錄檔</title>
-      <link>https://phantom0174.github.io/2023/07/2023-transfer-log/</link>
-      <guid>https://phantom0174.github.io/2023/07/2023-transfer-log/</guid>
-      <pubDate>Tue, 11 Jul 2023 06:11:00 GMT</pubDate>
-      
-      <description>筆者自己的轉學考心得與過程</description>
-      
-      
-      <media:content
-        url="https://phantom0174.github.io/assets/cover/2023-transfer-log.avif"
-        style="max-height: 20vh; max-width: 100vw;"
-        medium="image"
-        type="image" />
-      
-      
-    </item>
-    
-    <item>
-      <title>初衷</title>
-      <link>https://phantom0174.github.io/2023/06/origin/</link>
-      <guid>https://phantom0174.github.io/2023/06/origin/</guid>
-      <pubDate>Sun, 04 Jun 2023 15:30:00 GMT</pubDate>
-      
-      <description>一個容易被遺忘的存檔點</description>
-      
-      
-      <media:content
-        url="https://phantom0174.github.io/assets/cover/origin.webp"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
