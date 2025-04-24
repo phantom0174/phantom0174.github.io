@@ -5,15 +5,15 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Quantami</title>
-    <link>https://phantom0174.github.io/</link>
+    <link>https://blog.phantom0174.online/</link>
     
     <image>
-      <url>https://phantom0174.github.io/img/favicon.webp</url>
+      <url>https://blog.phantom0174.online/img/favicon.webp</url>
       <title>Quantami</title>
-      <link>https://phantom0174.github.io/</link>
+      <link>https://blog.phantom0174.online/</link>
     </image>
     
-    <atom:link href="https://phantom0174.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://blog.phantom0174.online/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>思想的孤島、黑魔法的棲息地</description>
     <pubDate>Sat, 22 Mar 2025 09:02:03 GMT</pubDate>
@@ -21,15 +21,15 @@
     
     <item>
       <title>京阪行遊記 - 終わり</title>
-      <link>https://phantom0174.github.io/2025/03/keihan-7/</link>
-      <guid>https://phantom0174.github.io/2025/03/keihan-7/</guid>
+      <link>https://blog.phantom0174.online/2025/03/keihan-7/</link>
+      <guid>https://blog.phantom0174.online/2025/03/keihan-7/</guid>
       <pubDate>Thu, 20 Mar 2025 16:00:00 GMT</pubDate>
       
       <description>平安到家 uwu</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/keihan-7.avif"
+        url="https://blog.phantom0174.online/assets/cover/keihan-7.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -39,15 +39,15 @@
     
     <item>
       <title>京阪行遊記 - Day6</title>
-      <link>https://phantom0174.github.io/2025/03/keihan-6/</link>
-      <guid>https://phantom0174.github.io/2025/03/keihan-6/</guid>
+      <link>https://blog.phantom0174.online/2025/03/keihan-6/</link>
+      <guid>https://blog.phantom0174.online/2025/03/keihan-6/</guid>
       <pubDate>Thu, 13 Mar 2025 16:00:00 GMT</pubDate>
       
       <description>ひねり...到處都是ひねり...</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/keihan-6.avif"
+        url="https://blog.phantom0174.online/assets/cover/keihan-6.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -57,15 +57,15 @@
     
     <item>
       <title>京阪行遊記 - Day5</title>
-      <link>https://phantom0174.github.io/2025/03/keihan-5/</link>
-      <guid>https://phantom0174.github.io/2025/03/keihan-5/</guid>
+      <link>https://blog.phantom0174.online/2025/03/keihan-5/</link>
+      <guid>https://blog.phantom0174.online/2025/03/keihan-5/</guid>
       <pubDate>Wed, 05 Mar 2025 16:00:00 GMT</pubDate>
       
       <description>HOT! HOT! HOT!</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/keihan-5.avif"
+        url="https://blog.phantom0174.online/assets/cover/keihan-5.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -75,15 +75,15 @@
     
     <item>
       <title>京阪行遊記 - Day4</title>
-      <link>https://phantom0174.github.io/2025/03/keihan-4/</link>
-      <guid>https://phantom0174.github.io/2025/03/keihan-4/</guid>
+      <link>https://blog.phantom0174.online/2025/03/keihan-4/</link>
+      <guid>https://blog.phantom0174.online/2025/03/keihan-4/</guid>
       <pubDate>Tue, 04 Mar 2025 16:00:00 GMT</pubDate>
       
       <description>回歸都市叢林</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/keihan-4.avif"
+        url="https://blog.phantom0174.online/assets/cover/keihan-4.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -93,15 +93,15 @@
     
     <item>
       <title>京阪行遊記 - Day3</title>
-      <link>https://phantom0174.github.io/2025/03/keihan-3/</link>
-      <guid>https://phantom0174.github.io/2025/03/keihan-3/</guid>
+      <link>https://blog.phantom0174.online/2025/03/keihan-3/</link>
+      <guid>https://blog.phantom0174.online/2025/03/keihan-3/</guid>
       <pubDate>Mon, 03 Mar 2025 16:00:00 GMT</pubDate>
       
       <description>一方通行來搗蛋</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/keihan-3.avif"
+        url="https://blog.phantom0174.online/assets/cover/keihan-3.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -111,15 +111,15 @@
     
     <item>
       <title>京阪行遊記 - Day2</title>
-      <link>https://phantom0174.github.io/2025/03/keihan-2/</link>
-      <guid>https://phantom0174.github.io/2025/03/keihan-2/</guid>
+      <link>https://blog.phantom0174.online/2025/03/keihan-2/</link>
+      <guid>https://blog.phantom0174.online/2025/03/keihan-2/</guid>
       <pubDate>Sun, 02 Mar 2025 16:00:00 GMT</pubDate>
       
       <description>神社...好冷...</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/keihan-2.avif"
+        url="https://blog.phantom0174.online/assets/cover/keihan-2.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -129,15 +129,15 @@
     
     <item>
       <title>京阪行遊記 - 始め</title>
-      <link>https://phantom0174.github.io/2025/03/keihan-1/</link>
-      <guid>https://phantom0174.github.io/2025/03/keihan-1/</guid>
+      <link>https://blog.phantom0174.online/2025/03/keihan-1/</link>
+      <guid>https://blog.phantom0174.online/2025/03/keihan-1/</guid>
       <pubDate>Sat, 01 Mar 2025 16:00:00 GMT</pubDate>
       
       <description>睽違七年啊七年</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/keihan-1.avif"
+        url="https://blog.phantom0174.online/assets/cover/keihan-1.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -147,15 +147,15 @@
     
     <item>
       <title>退火 上</title>
-      <link>https://phantom0174.github.io/2025/01/annealing-academic/</link>
-      <guid>https://phantom0174.github.io/2025/01/annealing-academic/</guid>
+      <link>https://blog.phantom0174.online/2025/01/annealing-academic/</link>
+      <guid>https://blog.phantom0174.online/2025/01/annealing-academic/</guid>
       <pubDate>Thu, 23 Jan 2025 13:35:00 GMT</pubDate>
       
       <description>修（休）課（克）篇</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/annealing-academic.avif"
+        url="https://blog.phantom0174.online/assets/cover/annealing-academic.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -165,15 +165,15 @@
     
     <item>
       <title>某古早積分的隱藏結構</title>
-      <link>https://phantom0174.github.io/2024/11/hidden-structure/</link>
-      <guid>https://phantom0174.github.io/2024/11/hidden-structure/</guid>
+      <link>https://blog.phantom0174.online/2024/11/hidden-structure/</link>
+      <guid>https://blog.phantom0174.online/2024/11/hidden-structure/</guid>
       <pubDate>Sat, 09 Nov 2024 11:03:50 GMT</pubDate>
       
       <description>我們小學二年級就學過的東西啊</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/strange_integral_old.webp"
+        url="https://blog.phantom0174.online/assets/cover/strange_integral_old.webp"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -183,8 +183,8 @@
     
     <item>
       <title>量子大水文</title>
-      <link>https://phantom0174.github.io/2024/10/qc-collection/</link>
-      <guid>https://phantom0174.github.io/2024/10/qc-collection/</guid>
+      <link>https://blog.phantom0174.online/2024/10/qc-collection/</link>
+      <guid>https://blog.phantom0174.online/2024/10/qc-collection/</guid>
       <pubDate>Tue, 29 Oct 2024 14:12:47 GMT</pubDate>
       
       <description>某些很重要和很好看的東西先丟在這邊owob</description>
@@ -195,15 +195,15 @@
     
     <item>
       <title>綠島遊</title>
-      <link>https://phantom0174.github.io/2024/08/travel-recollection/</link>
-      <guid>https://phantom0174.github.io/2024/08/travel-recollection/</guid>
+      <link>https://blog.phantom0174.online/2024/08/travel-recollection/</link>
+      <guid>https://blog.phantom0174.online/2024/08/travel-recollection/</guid>
       <pubDate>Sat, 12 Oct 2024 15:00:00 GMT</pubDate>
       
       <description>拖欠了整整六個禮拜的大水文</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/travel-recollection-2024.avif"
+        url="https://blog.phantom0174.online/assets/cover/travel-recollection-2024.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -213,15 +213,15 @@
     
     <item>
       <title>Re:從零開始的量子生活</title>
-      <link>https://phantom0174.github.io/2024/08/quantum-revisit/</link>
-      <guid>https://phantom0174.github.io/2024/08/quantum-revisit/</guid>
+      <link>https://blog.phantom0174.online/2024/08/quantum-revisit/</link>
+      <guid>https://blog.phantom0174.online/2024/08/quantum-revisit/</guid>
       <pubDate>Sat, 17 Aug 2024 13:45:56 GMT</pubDate>
       
       <description>戴上非常現代的線代視鏡來重新觀察量運</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/quantum-revisit-2024.avif"
+        url="https://blog.phantom0174.online/assets/cover/quantum-revisit-2024.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -231,15 +231,15 @@
     
     <item>
       <title>小憩</title>
-      <link>https://phantom0174.github.io/2024/06/kyuukei/</link>
-      <guid>https://phantom0174.github.io/2024/06/kyuukei/</guid>
+      <link>https://blog.phantom0174.online/2024/06/kyuukei/</link>
+      <guid>https://blog.phantom0174.online/2024/06/kyuukei/</guid>
       <pubDate>Mon, 17 Jun 2024 14:00:00 GMT</pubDate>
       
       <description>呼噜呼噜...呼噜噜...</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/kyuukei-2024.webp"
+        url="https://blog.phantom0174.online/assets/cover/kyuukei-2024.webp"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -249,15 +249,15 @@
     
     <item>
       <title>抽象代數小旅行</title>
-      <link>https://phantom0174.github.io/2024/02/abstract-algebra-trip/</link>
-      <guid>https://phantom0174.github.io/2024/02/abstract-algebra-trip/</guid>
+      <link>https://blog.phantom0174.online/2024/02/abstract-algebra-trip/</link>
+      <guid>https://blog.phantom0174.online/2024/02/abstract-algebra-trip/</guid>
       <pubDate>Wed, 28 Feb 2024 10:00:00 GMT</pubDate>
       
       <description>寒假期間了解了三等分角與倍立方問題的不可作證明</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/abstract-algebra-trip.avif"
+        url="https://blog.phantom0174.online/assets/cover/abstract-algebra-trip.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -267,15 +267,15 @@
     
     <item>
       <title>資料結構專題 - 論文查詢</title>
-      <link>https://phantom0174.github.io/2024/01/ds-final-project-2023/</link>
-      <guid>https://phantom0174.github.io/2024/01/ds-final-project-2023/</guid>
+      <link>https://blog.phantom0174.online/2024/01/ds-final-project-2023/</link>
+      <guid>https://blog.phantom0174.online/2024/01/ds-final-project-2023/</guid>
       <pubDate>Sat, 27 Jan 2024 10:53:32 GMT</pubDate>
       
       <description>專題結束後來記錄一下過程 &#92;^~^/</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/ds-final-project-2023.avif"
+        url="https://blog.phantom0174.online/assets/cover/ds-final-project-2023.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -285,15 +285,15 @@
     
     <item>
       <title>線代小筆記</title>
-      <link>https://phantom0174.github.io/2023/11/about-linear-algebra/</link>
-      <guid>https://phantom0174.github.io/2023/11/about-linear-algebra/</guid>
+      <link>https://blog.phantom0174.online/2023/11/about-linear-algebra/</link>
+      <guid>https://blog.phantom0174.online/2023/11/about-linear-algebra/</guid>
       <pubDate>Wed, 06 Dec 2023 08:00:00 GMT</pubDate>
       
       <description>一堆線代咚咚</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/about-linear-algebra.avif"
+        url="https://blog.phantom0174.online/assets/cover/about-linear-algebra.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -303,15 +303,15 @@
     
     <item>
       <title>中央存檔點</title>
-      <link>https://phantom0174.github.io/2023/09/ncu-finale-plog/</link>
-      <guid>https://phantom0174.github.io/2023/09/ncu-finale-plog/</guid>
+      <link>https://blog.phantom0174.online/2023/09/ncu-finale-plog/</link>
+      <guid>https://blog.phantom0174.online/2023/09/ncu-finale-plog/</guid>
       <pubDate>Sat, 30 Sep 2023 14:40:00 GMT</pubDate>
       
       <description>辦離校手續時拍下來的一些記憶存檔點</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/ncu-finale-plog.avif"
+        url="https://blog.phantom0174.online/assets/cover/ncu-finale-plog.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -321,15 +321,15 @@
     
     <item>
       <title>進競程大觀園</title>
-      <link>https://phantom0174.github.io/2023/09/my-first-cpp/</link>
-      <guid>https://phantom0174.github.io/2023/09/my-first-cpp/</guid>
+      <link>https://blog.phantom0174.online/2023/09/my-first-cpp/</link>
+      <guid>https://blog.phantom0174.online/2023/09/my-first-cpp/</guid>
       <pubDate>Sat, 23 Sep 2023 16:00:00 GMT</pubDate>
       
       <description>紀錄一下人生第一次認真打的競程趣味賽</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/my-first-cpp.avif"
+        url="https://blog.phantom0174.online/assets/cover/my-first-cpp.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -339,15 +339,15 @@
     
     <item>
       <title>有關追蹤曲線</title>
-      <link>https://phantom0174.github.io/2023/08/pursuit-curve/</link>
-      <guid>https://phantom0174.github.io/2023/08/pursuit-curve/</guid>
+      <link>https://blog.phantom0174.online/2023/08/pursuit-curve/</link>
+      <guid>https://blog.phantom0174.online/2023/08/pursuit-curve/</guid>
       <pubDate>Sat, 26 Aug 2023 16:00:00 GMT</pubDate>
       
       <description>從 Terraria 發想的小研究</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/pursuit-curve.avif"
+        url="https://blog.phantom0174.online/assets/cover/pursuit-curve.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
@@ -357,15 +357,15 @@
     
     <item>
       <title>Async Traverser 小介紹</title>
-      <link>https://phantom0174.github.io/2023/07/async-traverser/</link>
-      <guid>https://phantom0174.github.io/2023/07/async-traverser/</guid>
+      <link>https://blog.phantom0174.online/2023/07/async-traverser/</link>
+      <guid>https://blog.phantom0174.online/2023/07/async-traverser/</guid>
       <pubDate>Wed, 19 Jul 2023 14:57:41 GMT</pubDate>
       
       <description>解放筆者寫文章的雙手！</description>
       
       
       <media:content
-        url="https://phantom0174.github.io/assets/cover/async-traverser.avif"
+        url="https://blog.phantom0174.online/assets/cover/async-traverser.avif"
         style="max-height: 20vh; max-width: 100vw;"
         medium="image"
         type="image" />
