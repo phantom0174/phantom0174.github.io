@@ -4,43 +4,7 @@
   <url>
     <loc>https://blog.phantom0174.online/2025/06/self-host-2025/</loc>
     
-    <lastmod>2025-06-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.phantom0174.online/2025/03/keihan-7/</loc>
-    
-    <lastmod>2025-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.phantom0174.online/2025/03/keihan-6/</loc>
-    
-    <lastmod>2025-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.phantom0174.online/2025/03/keihan-5/</loc>
-    
-    <lastmod>2025-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.phantom0174.online/2025/03/keihan-4/</loc>
-    
-    <lastmod>2025-03-22</lastmod>
+    <lastmod>2025-07-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +13,7 @@
   <url>
     <loc>https://blog.phantom0174.online/2025/03/keihan-3/</loc>
     
-    <lastmod>2025-03-22</lastmod>
+    <lastmod>2025-07-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +22,25 @@
   <url>
     <loc>https://blog.phantom0174.online/2025/03/keihan-2/</loc>
     
-    <lastmod>2025-03-22</lastmod>
+    <lastmod>2025-07-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.phantom0174.online/2025/03/keihan-5/</loc>
+    
+    <lastmod>2025-07-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.phantom0174.online/2025/03/keihan-4/</loc>
+    
+    <lastmod>2025-07-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,7 +49,25 @@
   <url>
     <loc>https://blog.phantom0174.online/2025/03/keihan-1/</loc>
     
-    <lastmod>2025-03-22</lastmod>
+    <lastmod>2025-07-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.phantom0174.online/2025/03/keihan-6/</loc>
+    
+    <lastmod>2025-07-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.phantom0174.online/2025/03/keihan-7/</loc>
+    
+    <lastmod>2025-07-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://blog.phantom0174.online/subscription/content.html</loc>
+    <loc>https://blog.phantom0174.online/subscription/index.html</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://blog.phantom0174.online/subscription/index.html</loc>
+    <loc>https://blog.phantom0174.online/subscription/content.html</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -191,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://blog.phantom0174.online/2023/01/mafs-mixture/</loc>
+    <loc>https://blog.phantom0174.online/2023/02/about-chinese-remainder-theorem/</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://blog.phantom0174.online/2023/02/about-chinese-remainder-theorem/</loc>
+    <loc>https://blog.phantom0174.online/2023/01/mafs-mixture/</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -337,7 +337,7 @@
 
   <url>
     <loc>https://blog.phantom0174.online/</loc>
-    <lastmod>2025-07-26</lastmod>
+    <lastmod>2025-07-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -345,42 +345,42 @@
   
   <url>
     <loc>https://blog.phantom0174.online/tags/mafs/</loc>
-    <lastmod>2025-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.phantom0174.online/tags/program/</loc>
-    <lastmod>2025-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.phantom0174.online/tags/hexo/</loc>
-    <lastmod>2025-07-26</lastmod>
+    <lastmod>2025-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.phantom0174.online/tags/life/</loc>
-    <lastmod>2025-07-26</lastmod>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.phantom0174.online/tags/hexo/</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.phantom0174.online/tags/program/</loc>
+    <lastmod>2025-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.phantom0174.online/tags/quantum/</loc>
-    <lastmod>2025-07-26</lastmod>
+    <lastmod>2025-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.phantom0174.online/tags/travel/</loc>
-    <lastmod>2025-07-26</lastmod>
+    <lastmod>2025-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
