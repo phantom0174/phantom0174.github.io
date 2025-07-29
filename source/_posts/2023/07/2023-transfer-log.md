@@ -85,7 +85,7 @@ keywords: 台聯大, 轉學考, 資工系, 心得, 紀錄
     - 參考書
         - 計算機概論 重要題型 • 完全攻略, 蕭雄文 `實體書，$480`
     - 考古題＆解答＆筆記＆超多東西
-        - [轉考電腦科學討論區][cs_band_link] `Band 社群`
+        - [轉考電腦科學討論區][cs_band_link] `Band 社群`（邀請連結更新於 2025/7/26）
 
 - 英文
     - 考古題＆解答
@@ -323,7 +323,7 @@ Accommodation info: {
 
 
 [calc_digital_ans]: https://drive.google.com/file/d/1T9H5RZBK7Upw2Sq5avTJSz_DABgSNFwN/view
-[cs_band_link]: https://band.us/n/aaaf95p3a0Rfs
+[cs_band_link]: https://band.us/n/afa9bcg2b8V9h
 [107_ncku_transfer]: https://www.ptt.cc/bbs/Transfer/M.1537723290.A.ABB.html
 [local_test_origin]: https://www.public.com.tw/TestFileManage/17769/anspdf/111地方特考三等-計算機概論.pdf
 [109_nthu_transfer]: https://www.dcard.tw/f/exam/p/234181769
