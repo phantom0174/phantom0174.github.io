@@ -14,7 +14,7 @@ if (device_width > 600) {
         point_color: '238,232,190',
         line_color: '212,195,55',
         line_width_multiplier: 1.5,
-        max_point_speed: 1.5,
+        max_point_speed: 0.5,
         zIndex: -1,
         canvas_opacity: 1,
         render_rate: 30,
