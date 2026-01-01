@@ -271,6 +271,8 @@ _Photo Mosaic_ 原先是筆者在一年前的 ML 個人 side-project，用純 py
 
 筆者後來也用這個去跑最近熱度很高的 Epstein 檔案釋出案，也就是把 release 出來的 pdf file 轉成圖片之後當成 tile library，再下去擬合 Bad Apple。這主題最近在 Youtube 上也是挺熱門的。同時也可以在渲染速度上輾壓其他人的純 CPU 計算方式。
 
+{% youtube 9Xwj1l6WFfg %}
+
 #### GPU 測試－N-Queens Problem
 
 欸嘿，想不到吧，GPU 也可以用來加速 N-Queens Problem。因為筆者 N-Queens Solver 底層用的是基因演算法，而基因演算法的平行性是相當高的，因此初步想法是只要把各個 operator（selection, crossover, mutation, survival）換成 CUDA kernel 版本就可以達成加速效果。
