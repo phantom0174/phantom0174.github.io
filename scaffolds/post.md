@@ -28,13 +28,10 @@ hide: true
 <!-- Footnote Reposer: Auto repositioning of all the footnotes in post -->
 <!--@ft:skip-all-->
 
-
 ## 前言
 
 ## 正文
 
 ## 後記
-
----
 
 <!-- ## 參考 -->
