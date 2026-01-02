@@ -4,7 +4,7 @@
   <url>
     <loc>https://blog.phantom0174.online/2026/01/2025-recap/</loc>
     
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-01-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://blog.phantom0174.online/subscription/content.html</loc>
+    <loc>https://blog.phantom0174.online/subscription/index.html</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://blog.phantom0174.online/subscription/index.html</loc>
+    <loc>https://blog.phantom0174.online/subscription/content.html</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://blog.phantom0174.online/2023/01/mafs-mixture/</loc>
+    <loc>https://blog.phantom0174.online/2023/02/about-chinese-remainder-theorem/</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -209,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://blog.phantom0174.online/2023/02/about-chinese-remainder-theorem/</loc>
+    <loc>https://blog.phantom0174.online/2023/01/mafs-mixture/</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -346,7 +346,7 @@
 
   <url>
     <loc>https://blog.phantom0174.online/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-01-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -354,42 +354,42 @@
   
   <url>
     <loc>https://blog.phantom0174.online/tags/mafs/</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.phantom0174.online/tags/program/</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.phantom0174.online/tags/hexo/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.phantom0174.online/tags/life/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.phantom0174.online/tags/hexo/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.phantom0174.online/tags/program/</loc>
+    <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.phantom0174.online/tags/quantum/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.phantom0174.online/tags/travel/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
