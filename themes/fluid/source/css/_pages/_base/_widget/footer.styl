@@ -6,13 +6,15 @@
     margin .25rem 0
     font-size .85rem
 
+  // CUSTOMIZED: total word count style
   .statistics
     display flex
     flex-direction row
     justify-content center
+    gap 1rem
 
     & > span
-      flex 1
+      // flex 1
       margin 0 .25rem
 
     & > *:nth-last-child(2):first-child
@@ -45,6 +47,7 @@
   @media (max-width: 424px)
     .statistics
       flex-direction column
+      gap 0rem
 
       & > *:nth-last-child(2):first-child
         text-align center

@@ -36,4 +36,10 @@
     <% } %>
     <% import_js(theme.static_prefix.busuanzi, 'busuanzi.pure.mini.js', 'defer') %>
   <% } %>
+
+  <!-- CUSTOMIZED: total word count -->
+  <span id="total-wordcount-container" style="display: inline">
+    <i class='iconfont icon-pen'></i>
+    <span class="post-count"><%= totalcount(site) %></span>
+  </span>
 </div>
