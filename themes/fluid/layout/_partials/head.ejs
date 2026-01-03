@@ -38,6 +38,9 @@ var ogConfig = Object.assign({ image: ogImage && url_for(ogImage) }, theme.open_
     <%- theme.custom_head %>
   <% } %>
   <title><%= title %></title>
+  <%# CUSTOMIZED: high fetch priority for banner img %>
+  <% var banner_img = page.banner_img || theme.index.banner_img %>
+  <link rel="preload" as="image" href="<%= url_for(banner_img) %>" fetchpriority="high">
 
   <%- partial('_partials/css.ejs') %>
   <%- export_config() %>
