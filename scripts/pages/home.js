@@ -10,14 +10,3 @@ const img_enlarge_anima = `
 </style>
 `;
 hexo.extend.injector.register('head_end', img_enlarge_anima, 'home');
-
-
-const remove_blurred_navbar_effect = `
-<style>
-    .navbar .dropdown-collapse, .navbar-col-show, .top-nav-collapse {
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
-    }
-</style>
-`;
-hexo.extend.injector.register('head_begin', remove_blurred_navbar_effect, 'home');
