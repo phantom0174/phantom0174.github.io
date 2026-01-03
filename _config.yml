@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'blink with opacity and scaling'
+  message: 'update site-logs'
 
 markdown:
   render:

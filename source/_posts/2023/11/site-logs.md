@@ -17,6 +17,11 @@ comments: false
 2023/11/07 前多不可考
 {% endnote %}
 
+- 2026/01/03
+  - 原先 blinking 效果會在 navbar 摺疊時造成嚴重卡頓，將 blinking 效果改為瀏覽器友善的 `opacity` & `scale`。
+  - 關閉毛玻璃功能，轉為 opacity
+  - 關閉 banner image parallax
+
 - 2024/06/26
   - 加入 email 訂閱功能
 
