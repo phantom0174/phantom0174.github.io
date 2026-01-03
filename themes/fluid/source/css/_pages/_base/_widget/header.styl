@@ -40,9 +40,6 @@
     -webkit-transition background 0.5s ease-in-out, padding 0.5s ease-in-out
     // transition background 0.5s ease-in-out, padding 0.5s ease-in-out
     transition background 0s, padding 0.5s ease-in-out
-    // CUSTOMIZED: fix lag
-    -webkit-transform translateZ(0)
-    transform translateZ(0)
 
     @media (min-width: 600px)
       &
@@ -148,11 +145,17 @@
           -o-transform rotate(-135deg)
           transform rotate(-135deg)
 
-.navbar .dropdown-collapse, .top-nav-collapse, .navbar-col-show
+.navbar .dropdown-collapse, .top-nav-collapse
   if $navbar-glass-enable
     ground-glass($navbar-glass-px, $navbar-bg-color, $navbar-glass-alpha)
   else
     background-color var(--navbar-bg-color)
+
+.navbar-col-show
+  if $navbar-glass-enable
+    ground-glass($navbar-glass-px, $navbar-bg-color, 0.9)
+  else
+    background-color rgba(31, 49, 68, 0.9)
 
 @media (max-width: 767px)
   .navbar

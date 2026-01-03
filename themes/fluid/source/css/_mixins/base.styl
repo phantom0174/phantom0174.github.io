@@ -16,11 +16,6 @@ ground-glass($px, $bg-color, $alpha)
       background rgba(convert($bg-color), $alpha)
       -webkit-backdrop-filter blur($px)
       backdrop-filter blur($px)
-      // CUSTOMIZED: fix lag
-      -webkit-backface-visibility hidden
-      backface-visibility hidden
-      -webkit-transform translateZ(0)
-      transform translateZ(0)
 
   /* 若浏览器器不支持，则使用透明 */
   @supports not ((-webkit-backdrop-filter: blur($px)) or (backdrop-filter: blur($px)))
