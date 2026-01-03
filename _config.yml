@@ -113,7 +113,7 @@ deploy:
   type: git
   repo: https://github.com/phantom0174/phantom0174.github.io.git
   branch: gh-pages
-  message: 'test2: fix lag on navbar'
+  message: 'test: fix double-click bug on navbar'
 
 markdown:
   render:
