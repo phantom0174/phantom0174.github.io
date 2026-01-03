@@ -30,17 +30,14 @@ Fluid.events = {
       }
     });
     // CUSTOMIZED: fix navbar double-click bug
-    jQuery('#navbar-toggler-btn').on('click', function() {
-      var $this = jQuery(this);
-      if ($this.data('animating')) {
-        return;
-      }
-      $this.data('animating', true);
-      jQuery('.animated-icon').toggleClass('open');
-      jQuery('#navbar').toggleClass('navbar-col-show');
-      setTimeout(function() {
-        $this.data('animating', false);
-      }, 300);
+    var collapse = jQuery('#navbarSupportedContent');
+    collapse.on('show.bs.collapse', function () {
+      jQuery('.animated-icon').addClass('open');
+      jQuery('#navbar').addClass('navbar-col-show');
+    });
+    collapse.on('hide.bs.collapse', function () {
+      jQuery('.animated-icon').removeClass('open');
+      jQuery('#navbar').removeClass('navbar-col-show');
     });
   },
 
