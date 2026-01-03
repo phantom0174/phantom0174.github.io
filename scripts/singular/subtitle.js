@@ -2,12 +2,13 @@
 const subtitle_style = `
 <style>
     #subtitle, .typed-cursor {
+        display: inline-block;
         font-size: 2.2rem;
         animation: blinking 2s ease-in-out 0.5s infinite alternate;
     }
     @keyframes blinking {
-        from { text-shadow: none; }
-        to { text-shadow: 0 0 10px #FC0, 0 0 20px #FC0, 0 0 40px #FC0; }
+        from { opacity: 1; transform: scale(1); }
+        to { opacity: 0.4; transform: scale(0.97); }
     }
     @media (max-width: 991px) { #subtitle, .typed-cursor { font-size: 2.1rem; } }
     @media (max-width: 767px) { #subtitle, .typed-cursor { font-size: 2rem; } }
